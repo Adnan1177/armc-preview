@@ -1,0 +1,241 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>احجز استشارة — أفكار الريادة للاستشارات | ARMC</title>
+<meta name="description" content="أفكار الريادة للاستشارات — استشارات إدارية وقانونية ومحاسبية للأفراد والمنشآت. (تصميم أولي للعرض فقط — © م. عدنان البنا)">
+<meta name="robots" content="noindex, nofollow">
+<meta name="author" content="Eng. Adnan Albanna">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 240 160'%3E%3Crect width='240' height='160' rx='28' fill='%232B4944'/%3E%3Cg transform='translate(4 8)'%3E%3Cpath d='M107 0H131Q135 0 135 4V30Q135 61 172 64.5L232 72H103V4Q103 0 107 0Z' fill='%23FFC800'/%3E%3Cpath d='M107 0H131Q135 0 135 4V30Q135 61 172 64.5L232 72H103V4Q103 0 107 0Z' fill='%23FFC800' transform='rotate(180 116 72)'/%3E%3C/g%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@300;400;500;600;700&amp;family=IBM+Plex+Sans:wght@400;500;600&amp;display=swap">
+<style>
+body{margin:0;background:#F7F2EB}
+a{color:#2B4944}a:hover{color:#D96C00}
+@keyframes up{from{opacity:0;transform:translateY(24px)}to{opacity:1;transform:none}}
+@keyframes pop{from{opacity:0;transform:scale(.6)}to{opacity:1;transform:scale(1)}}
+header{position:sticky;top:0;z-index:20;box-shadow:0 8px 24px -16px rgba(0,0,0,.5)}
+nav a{position:relative;transition:color .2s}
+nav a::after{content:"";position:absolute;right:0;bottom:-6px;height:2px;width:0;background:#FFC800;transition:width .3s}
+nav a:hover{color:#FFC800 !important}nav a:hover::after{width:100%}
+section h1,section>div>p{animation:up .8s cubic-bezier(.2,.7,.2,1) both}
+ol li{transition:background .4s,box-shadow .4s}ol li span:first-child{transition:background .4s,color .4s,transform .4s}
+ol li[style*="#FFFFFF"]{box-shadow:0 14px 30px -18px rgba(43,73,68,.5)}ol li[style*="#FFFFFF"] span:first-child{transform:scale(1.1)}
+section [style*="border-radius: 28px; padding: 40px"]>*{animation:up .5s cubic-bezier(.2,.7,.2,1) both}
+section [style*="border-radius: 50%; background: #2B4944"]{animation:pop .6s cubic-bezier(.3,1.5,.5,1) both}
+button,a[style*="999px"]{transition:transform .25s,box-shadow .25s,background .25s}
+button:hover,a[style*="999px"]:hover{transform:translateY(-2px);box-shadow:0 14px 30px -10px rgba(0,0,0,.3)}
+input,select,textarea{transition:border-color .2s,box-shadow .2s;outline:none}
+input:focus,select:focus,textarea:focus{border-color:#FFC800 !important;box-shadow:0 0 0 4px rgba(255,200,0,.25)}
+aside{position:relative;overflow:hidden}
+aside::before{content:"";position:absolute;width:420px;height:420px;left:-200px;bottom:-220px;border-radius:50%;background:repeating-radial-gradient(circle,transparent 0 58px,rgba(255,200,0,.14) 59px 60px);pointer-events:none}
+@media (prefers-reduced-motion: reduce){*{animation:none !important;transition:none !important}}
+</style>
+<script src="dc-lite.js"></script>
+<script>
+class Component extends DCLogic {
+  constructor(props) {
+    super(props);
+    this.state = { step: 1, service: 'legal', method: 'mada' };
+  }
+  renderVals() {
+    const step = this.state.step;
+    const labels = ['البيانات', 'التحقق OTP', 'الدفع', 'التأكيد'];
+    const steps = labels.map((label, i) => {
+      const n = i + 1;
+      const done = n < step, cur = n === step;
+      return {
+        num: done ? '✓' : String(n),
+        label,
+        bg: cur ? '#FFC800' : (done ? '#2B4944' : '#E6E0D5'),
+        fg: cur ? '#2B4944' : (done ? '#FFC800' : '#6B7A77'),
+        cardBg: cur ? '#FFFFFF' : 'transparent'
+      };
+    });
+    const svcDefs = [
+      { id: 'mgmt', label: 'استشارة إدارية' },
+      { id: 'legal', label: 'استشارة قانونية' },
+      { id: 'acc', label: 'محاسبية وضريبية' }
+    ];
+    const services = svcDefs.map((s) => ({
+      label: s.label,
+      bg: this.state.service === s.id ? '#2B4944' : '#FFFFFF',
+      fg: this.state.service === s.id ? '#FFFFFF' : '#2B4944',
+      pick: () => this.setState({ service: s.id })
+    }));
+    const mDefs = [
+      { id: 'mada', label: 'مدى' },
+      { id: 'card', label: 'فيزا / ماستركارد' },
+      { id: 'apple', label: 'Apple Pay' }
+    ];
+    const methods = mDefs.map((m) => ({
+      label: m.label,
+      bg: this.state.method === m.id ? '#FFF8DD' : '#FFFFFF',
+      border: this.state.method === m.id ? '#FFC800' : '#D9D2C6',
+      pick: () => this.setState({ method: m.id })
+    }));
+    const svc = svcDefs.find((s) => s.id === this.state.service);
+    return {
+      notice: this.props.notice ?? true,
+      steps, services, methods,
+      serviceLabel: svc ? svc.label : '',
+      isStep1: step === 1, isStep2: step === 2, isStep3: step === 3, isStep4: step === 4,
+      isCard: this.state.method !== 'apple',
+      isApple: this.state.method === 'apple',
+      next: () => this.setState({ step: Math.min(4, step + 1) }),
+      back: () => this.setState({ step: Math.max(1, step - 1) }),
+      restart: () => this.setState({ step: 1 })
+    };
+  }
+}
+window.Component = Component;
+</script>
+</head>
+<body>
+<template id="dc-tpl">
+<div dir="rtl" style="font-family: 'IBM Plex Sans Arabic', 'IBM Plex Sans', sans-serif; color: #1F2D2A; background: #F7F2EB; min-height: 100vh; position: relative">
+<sc-if value="{{notice}}" hint-placeholder-val="{{ true }}">
+<div role="note" style="position: relative; z-index: 61; background: #1A2B28; color: #FFC800; padding: 10px 24px; text-align: center; font-size: 14px; line-height: 1.7"><strong>تصميم أولي للعرض فقط</strong> — جميع الحقوق محفوظة © 2026 للمهندس عدنان البنا. يُمنع نسخ هذا التصميم أو استخدامه أو تنفيذه كليًا أو جزئيًا دون إذن كتابي مسبق.</div>
+</sc-if>
+
+<header style="background: #2B4944; padding: 20px 24px">
+<div style="max-width: 1240px; margin: 0 auto; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 16px">
+<a href="index.html" style="display: flex; align-items: center; gap: 10px; text-decoration: none; color: #FFFFFF">
+<svg width="124" height="44" viewBox="0 0 545 192" role="img" aria-label="ARMC"><path d="M107 0H131Q135 0 135 4V30Q135 61 172 64.5L232 72H103V4Q103 0 107 0Z" fill="#FFC800"/><path d="M107 0H131Q135 0 135 4V30Q135 61 172 64.5L232 72H103V4Q103 0 107 0Z" fill="#FFC800" transform="rotate(180 116 72)"/><text x="146" y="188" direction="ltr" unicode-bidi="bidi-override" textLength="392" lengthAdjust="spacingAndGlyphs" font-family="IBM Plex Sans, sans-serif" font-size="172" font-weight="500" letter-spacing="-3" fill="#FFFFFF">armc</text></svg>
+</a>
+<nav aria-label="القائمة الرئيسية" style="display: flex; flex-wrap: wrap; gap: 28px; font-size: 16px">
+<a href="index.html" style="color: #FFFFFF; text-decoration: none">الرئيسية</a>
+<a href="about.html" style="color: #FFFFFF; text-decoration: none">من نحن</a>
+<a href="services.html" style="color: #FFFFFF; text-decoration: none">خدماتنا</a>
+<a href="contact.html" style="color: #FFFFFF; text-decoration: none">تواصل معنا</a>
+</nav>
+<span style="background: #FFC800; color: #2B4944; font-weight: 600; padding: 12px 22px; border-radius: 999px; font-size: 15px">احجز استشارة</span>
+</div>
+</header>
+
+<section style="padding: 56px 24px 96px">
+<div style="max-width: 1100px; margin: 0 auto">
+<h1 style="margin: 0 0 8px; font-size: 42px; color: #2B4944">احجز استشارتك</h1>
+<p style="margin: 0 0 36px; font-size: 17px; color: #4A5E5A">أربع خطوات بسيطة — تحقق برسالة نصية، ودفع آمن، وتأكيد على واتساب.</p>
+
+<ol aria-label="خطوات الحجز" style="list-style: none; margin: 0 0 32px; padding: 0; display: flex; flex-wrap: wrap; gap: 12px">
+<sc-for list="{{steps}}" as="s" hint-placeholder-count="4">
+<li style="flex: 1 1 200px; display: flex; align-items: center; gap: 12px; background: {{s.cardBg}}; border-radius: 16px; padding: 14px 16px">
+<span style="width: 34px; height: 34px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 700; font-family: 'IBM Plex Sans', sans-serif; background: {{s.bg}}; color: {{s.fg}}">{{s.num}}</span>
+<span style="font-weight: 600; color: #2B4944">{{s.label}}</span>
+</li>
+</sc-for>
+</ol>
+
+<div style="display: flex; flex-wrap: wrap; gap: 24px; align-items: flex-start">
+<div style="flex: 2 1 520px; min-width: 0; background: #FFFFFF; border-radius: 28px; padding: 40px 36px; box-sizing: border-box">
+
+<sc-if value="{{isStep1}}" hint-placeholder-val="{{ true }}">
+<h2 style="margin: 0 0 6px; font-size: 26px; color: #2B4944">نوع الاستشارة وبياناتك</h2>
+<p style="margin: 0 0 24px; color: #4A5E5A">اختر المسار المناسب ثم أدخل بياناتك.</p>
+<div role="group" aria-label="نوع الاستشارة" style="display: flex; flex-wrap: wrap; gap: 10px; margin-bottom: 28px">
+<sc-for list="{{services}}" as="sv" hint-placeholder-count="3">
+<button type="button" onClick="{{sv.pick}}" style="font-family: inherit; font-size: 16px; font-weight: 600; padding: 12px 20px; min-height: 48px; border-radius: 999px; cursor: pointer; border: 1.5px solid #2B4944; background: {{sv.bg}}; color: {{sv.fg}}">{{sv.label}}</button>
+</sc-for>
+</div>
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 18px">
+<label style="display: flex; flex-direction: column; gap: 8px; font-weight: 600; color: #2B4944">الاسم الكامل<input type="text" placeholder="مثال: محمد عبدالله" style="font-family: inherit; font-size: 16px; padding: 14px 16px; border: 1.5px solid #D9D2C6; border-radius: 14px; background: #FBF9F5"></label>
+<label style="display: flex; flex-direction: column; gap: 8px; font-weight: 600; color: #2B4944">رقم الجوال<div style="display: flex; direction: ltr; border: 1.5px solid #D9D2C6; border-radius: 14px; background: #FBF9F5; overflow: hidden"><span style="padding: 14px 14px; font-family: 'IBM Plex Sans', sans-serif; color: #4A5E5A; border-right: 1.5px solid #D9D2C6">+966</span><input type="tel" placeholder="5X XXX XXXX" style="flex: 1; min-width: 0; font-family: 'IBM Plex Sans', sans-serif; font-size: 16px; padding: 14px 16px; border: 0; background: transparent"></div></label>
+<label style="display: flex; flex-direction: column; gap: 8px; font-weight: 600; color: #2B4944">التاريخ المفضل<input type="text" placeholder="اختر التاريخ" style="font-family: inherit; font-size: 16px; padding: 14px 16px; border: 1.5px solid #D9D2C6; border-radius: 14px; background: #FBF9F5"></label>
+<label style="display: flex; flex-direction: column; gap: 8px; font-weight: 600; color: #2B4944">طريقة الجلسة<select style="font-family: inherit; font-size: 16px; padding: 14px 16px; border: 1.5px solid #D9D2C6; border-radius: 14px; background: #FBF9F5"><option>حضوري في المكتب</option><option>اتصال مرئي</option><option>مكالمة هاتفية</option></select></label>
+</div>
+<label style="display: flex; flex-direction: column; gap: 8px; font-weight: 600; color: #2B4944; margin-top: 18px">نبذة عن طلبك (اختياري)<textarea rows="3" placeholder="اكتب باختصار ما تحتاج المساعدة فيه" style="font-family: inherit; font-size: 16px; padding: 14px 16px; border: 1.5px solid #D9D2C6; border-radius: 14px; background: #FBF9F5; resize: vertical"></textarea></label>
+<button type="button" onClick="{{next}}" style="margin-top: 28px; width: 100%; min-height: 54px; font-family: inherit; font-size: 17px; font-weight: 700; border: 0; border-radius: 999px; background: #2B4944; color: #FFFFFF; cursor: pointer">أرسل رمز التحقق</button>
+</sc-if>
+
+<sc-if value="{{isStep2}}" hint-placeholder-val="{{ false }}">
+<div style="width: 64px; height: 64px; border-radius: 20px; background: #FFF4CC; display: flex; align-items: center; justify-content: center; margin-bottom: 18px"><svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#D96C00" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="6" y="2" width="12" height="20" rx="2.5"/><path d="M10 18h4"/><path d="M9.5 9.5l1.8 1.8 3.2-3.3"/></svg></div>
+<h2 style="margin: 0 0 6px; font-size: 26px; color: #2B4944">تحقق من رقم جوالك</h2>
+<p style="margin: 0 0 26px; color: #4A5E5A">أرسلنا رمزًا من 4 أرقام برسالة نصية إلى <span style="direction: ltr; unicode-bidi: isolate; font-family: 'IBM Plex Sans', sans-serif">+966 5X XXX XX21</span></p>
+<div role="group" aria-label="رمز التحقق" style="display: flex; gap: 12px; direction: ltr; justify-content: center; margin-bottom: 18px">
+<input aria-label="الرقم 1" inputmode="numeric" maxlength="1" value="4" style="width: 64px; height: 72px; text-align: center; font-size: 30px; font-family: 'IBM Plex Sans', sans-serif; font-weight: 600; border: 2px solid #2B4944; border-radius: 16px; background: #FBF9F5; color: #2B4944">
+<input aria-label="الرقم 2" inputmode="numeric" maxlength="1" value="8" style="width: 64px; height: 72px; text-align: center; font-size: 30px; font-family: 'IBM Plex Sans', sans-serif; font-weight: 600; border: 2px solid #2B4944; border-radius: 16px; background: #FBF9F5; color: #2B4944">
+<input aria-label="الرقم 3" inputmode="numeric" maxlength="1" style="width: 64px; height: 72px; text-align: center; font-size: 30px; font-family: 'IBM Plex Sans', sans-serif; font-weight: 600; border: 2px solid #FFC800; border-radius: 16px; background: #FFFFFF; color: #2B4944">
+<input aria-label="الرقم 4" inputmode="numeric" maxlength="1" style="width: 64px; height: 72px; text-align: center; font-size: 30px; font-family: 'IBM Plex Sans', sans-serif; font-weight: 600; border: 2px solid #D9D2C6; border-radius: 16px; background: #FBF9F5; color: #2B4944">
+</div>
+<p style="margin: 0 0 26px; text-align: center; color: #4A5E5A; font-size: 15px">لم يصلك الرمز؟ إعادة الإرسال بعد <span style="font-family: 'IBM Plex Sans', sans-serif; font-weight: 600; color: #D96C00">00:45</span></p>
+<div style="display: flex; flex-wrap: wrap; gap: 12px">
+<button type="button" onClick="{{back}}" style="flex: 1 1 140px; min-height: 54px; font-family: inherit; font-size: 16px; font-weight: 600; border: 1.5px solid #2B4944; border-radius: 999px; background: #FFFFFF; color: #2B4944; cursor: pointer">رجوع</button>
+<button type="button" onClick="{{next}}" style="flex: 2 1 240px; min-height: 54px; font-family: inherit; font-size: 17px; font-weight: 700; border: 0; border-radius: 999px; background: #2B4944; color: #FFFFFF; cursor: pointer">تأكيد الرمز</button>
+</div>
+</sc-if>
+
+<sc-if value="{{isStep3}}" hint-placeholder-val="{{ false }}">
+<h2 style="margin: 0 0 6px; font-size: 26px; color: #2B4944">الدفع الآمن</h2>
+<p style="margin: 0 0 24px; color: #4A5E5A">اختر طريقة الدفع — تتم المعالجة عبر بوابة دفع معتمدة ومشفّرة.</p>
+<div role="group" aria-label="طريقة الدفع" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 12px; margin-bottom: 24px">
+<sc-for list="{{methods}}" as="m" hint-placeholder-count="3">
+<button type="button" onClick="{{m.pick}}" style="font-family: inherit; min-height: 64px; border-radius: 16px; cursor: pointer; font-size: 16px; font-weight: 600; color: #2B4944; background: {{m.bg}}; border: 2px solid {{m.border}}">{{m.label}}</button>
+</sc-for>
+</div>
+<sc-if value="{{isCard}}" hint-placeholder-val="{{ true }}">
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 16px">
+<label style="grid-column: 1 / -1; display: flex; flex-direction: column; gap: 8px; font-weight: 600; color: #2B4944">رقم البطاقة<input type="text" inputmode="numeric" placeholder="0000 0000 0000 0000" style="direction: ltr; text-align: left; font-family: 'IBM Plex Sans', sans-serif; font-size: 16px; padding: 14px 16px; border: 1.5px solid #D9D2C6; border-radius: 14px; background: #FBF9F5"></label>
+<label style="display: flex; flex-direction: column; gap: 8px; font-weight: 600; color: #2B4944">تاريخ الانتهاء<input type="text" placeholder="MM / YY" style="direction: ltr; text-align: left; font-family: 'IBM Plex Sans', sans-serif; font-size: 16px; padding: 14px 16px; border: 1.5px solid #D9D2C6; border-radius: 14px; background: #FBF9F5"></label>
+<label style="display: flex; flex-direction: column; gap: 8px; font-weight: 600; color: #2B4944">رمز الأمان CVV<input type="text" placeholder="•••" style="direction: ltr; text-align: left; font-family: 'IBM Plex Sans', sans-serif; font-size: 16px; padding: 14px 16px; border: 1.5px solid #D9D2C6; border-radius: 14px; background: #FBF9F5"></label>
+</div>
+</sc-if>
+<sc-if value="{{isApple}}" hint-placeholder-val="{{ false }}">
+<div style="background: #F7F2EB; border-radius: 16px; padding: 22px; text-align: center; color: #4A5E5A">سيظهر نموذج Apple Pay على جهازك لإتمام الدفع.</div>
+</sc-if>
+<div style="display: flex; align-items: center; gap: 10px; margin-top: 22px; color: #4A5E5A; font-size: 14px"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#2B4944" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="10" width="16" height="11" rx="2"/><path d="M8 10V7a4 4 0 0 1 8 0v3"/></svg>بيانات البطاقة لا تُحفظ على موقعنا — تُعالج مباشرة لدى بوابة الدفع.</div>
+<div style="display: flex; flex-wrap: wrap; gap: 12px; margin-top: 24px">
+<button type="button" onClick="{{back}}" style="flex: 1 1 140px; min-height: 54px; font-family: inherit; font-size: 16px; font-weight: 600; border: 1.5px solid #2B4944; border-radius: 999px; background: #FFFFFF; color: #2B4944; cursor: pointer">رجوع</button>
+<button type="button" onClick="{{next}}" style="flex: 2 1 240px; min-height: 54px; font-family: inherit; font-size: 17px; font-weight: 700; border: 0; border-radius: 999px; background: #FFC800; color: #2B4944; cursor: pointer">ادفع [المبلغ] ر.س</button>
+</div>
+</sc-if>
+
+<sc-if value="{{isStep4}}" hint-placeholder-val="{{ false }}">
+<div style="text-align: center; padding: 12px 0">
+<div style="width: 84px; height: 84px; border-radius: 50%; background: #2B4944; display: flex; align-items: center; justify-content: center; margin: 0 auto 22px"><svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#FFC800" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></div>
+<h2 style="margin: 0 0 10px; font-size: 30px; color: #2B4944">تم تأكيد حجزك</h2>
+<p style="margin: 0 0 6px; color: #4A5E5A; font-size: 17px">رقم الحجز <span style="font-family: 'IBM Plex Sans', sans-serif; font-weight: 600; color: #2B4944">#[رقم الحجز]</span></p>
+<p style="margin: 0 0 28px; color: #4A5E5A; font-size: 17px">أرسلنا تفاصيل الموعد والفاتورة إلى واتساب على رقمك المسجّل.</p>
+<div style="max-width: 420px; margin: 0 auto 28px; background: #E9F6EE; border-radius: 20px 20px 4px 20px; padding: 18px 20px; text-align: right; color: #1F2D2A; line-height: 1.8; font-size: 15px">
+<div style="font-weight: 700; color: #1E7A47; margin-bottom: 4px">رسالة واتساب — أفكار الريادة</div>
+مرحبًا [الاسم]، تم تأكيد حجز [نوع الاستشارة] يوم [التاريخ]. للاستفسار ردّ على هذه الرسالة.
+</div>
+<div style="display: flex; flex-wrap: wrap; gap: 12px; justify-content: center">
+<a href="index.html" style="min-height: 52px; box-sizing: border-box; display: inline-flex; align-items: center; padding: 0 28px; border-radius: 999px; background: #2B4944; color: #FFFFFF; text-decoration: none; font-weight: 700">العودة للرئيسية</a>
+<button type="button" onClick="{{restart}}" style="min-height: 52px; padding: 0 28px; font-family: inherit; font-size: 16px; font-weight: 600; border: 1.5px solid #2B4944; border-radius: 999px; background: #FFFFFF; color: #2B4944; cursor: pointer">حجز جديد</button>
+</div>
+</div>
+</sc-if>
+</div>
+
+<aside style="flex: 1 1 300px; min-width: 0; background: #2B4944; color: #FFFFFF; border-radius: 28px 28px 28px 90px; padding: 32px 28px; box-sizing: border-box">
+<h2 style="margin: 0 0 20px; font-size: 20px; color: #FFC800">ملخص الحجز</h2>
+<dl style="margin: 0; display: flex; flex-direction: column; gap: 14px; font-size: 15px">
+<div style="display: flex; justify-content: space-between; gap: 12px"><dt style="color: #B9CCC7">الخدمة</dt><dd style="margin: 0; font-weight: 600">{{serviceLabel}}</dd></div>
+<div style="display: flex; justify-content: space-between; gap: 12px"><dt style="color: #B9CCC7">مدة الجلسة</dt><dd style="margin: 0; font-weight: 600">[المدة]</dd></div>
+<div style="display: flex; justify-content: space-between; gap: 12px"><dt style="color: #B9CCC7">رسوم الاستشارة</dt><dd style="margin: 0; font-weight: 600">[السعر] ر.س</dd></div>
+<div style="display: flex; justify-content: space-between; gap: 12px"><dt style="color: #B9CCC7">ضريبة القيمة المضافة</dt><dd style="margin: 0; font-weight: 600">[الضريبة] ر.س</dd></div>
+<div style="display: flex; justify-content: space-between; gap: 12px; border-top: 1px solid rgba(255,255,255,0.2); padding-top: 14px; font-size: 18px"><dt style="color: #FFFFFF; font-weight: 700">الإجمالي</dt><dd style="margin: 0; font-weight: 700; color: #FFC800">[الإجمالي] ر.س</dd></div>
+</dl>
+<div style="margin-top: 26px; display: flex; flex-direction: column; gap: 10px; font-size: 14px; color: #DCE6E3">
+<div style="display: flex; align-items: center; gap: 8px"><span style="width: 8px; height: 8px; border-radius: 50%; background: #FFC800"></span>تحقق برسالة نصية OTP</div>
+<div style="display: flex; align-items: center; gap: 8px"><span style="width: 8px; height: 8px; border-radius: 50%; background: #FFC800"></span>دفع عبر مدى، Apple Pay، فيزا، ماستركارد</div>
+<div style="display: flex; align-items: center; gap: 8px"><span style="width: 8px; height: 8px; border-radius: 50%; background: #FFC800"></span>تأكيد وفاتورة على واتساب</div>
+</div>
+</aside>
+</div>
+</div>
+</section>
+
+<footer style="background: #2B4944; color: #DCE6E3; padding: 32px 24px">
+<div style="max-width: 1240px; margin: 0 auto; display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 16px; font-size: 14px">
+<div style="display: flex; align-items: center; gap: 10px; color: #FFFFFF"><svg width="110" height="39" viewBox="0 0 545 192" role="img" aria-label="ARMC"><path d="M107 0H131Q135 0 135 4V30Q135 61 172 64.5L232 72H103V4Q103 0 107 0Z" fill="#FFC800"/><path d="M107 0H131Q135 0 135 4V30Q135 61 172 64.5L232 72H103V4Q103 0 107 0Z" fill="#FFC800" transform="rotate(180 116 72)"/><text x="146" y="188" direction="ltr" unicode-bidi="bidi-override" textLength="392" lengthAdjust="spacingAndGlyphs" font-family="IBM Plex Sans, sans-serif" font-size="172" font-weight="500" letter-spacing="-3" fill="#FFFFFF">armc</text></svg></div>
+<span>© 2026 أفكار الريادة للاستشارات. جميع الحقوق محفوظة.</span>
+</div>
+</footer>
+</div>
+</template>
+<div id="dc-root"></div>
+</body>
+</html>

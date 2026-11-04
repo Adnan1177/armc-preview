@@ -1,0 +1,146 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>من نحن — أفكار الريادة للاستشارات | ARMC</title>
+<meta name="description" content="أفكار الريادة للاستشارات — استشارات إدارية وقانونية ومحاسبية للأفراد والمنشآت. (تصميم أولي للعرض فقط — © م. عدنان البنا)">
+<meta name="robots" content="noindex, nofollow">
+<meta name="author" content="Eng. Adnan Albanna">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 240 160'%3E%3Crect width='240' height='160' rx='28' fill='%232B4944'/%3E%3Cg transform='translate(4 8)'%3E%3Cpath d='M107 0H131Q135 0 135 4V30Q135 61 172 64.5L232 72H103V4Q103 0 107 0Z' fill='%23FFC800'/%3E%3Cpath d='M107 0H131Q135 0 135 4V30Q135 61 172 64.5L232 72H103V4Q103 0 107 0Z' fill='%23FFC800' transform='rotate(180 116 72)'/%3E%3C/g%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@300;400;500;600;700&amp;display=swap">
+<style>
+body{margin:0;background:#F7F2EB}
+a{color:#2B4944}a:hover{color:#D96C00}
+@keyframes up{from{opacity:0;transform:translateY(28px)}to{opacity:1;transform:none}}
+@keyframes drift{0%,100%{transform:translate(0,0) rotate(0)}50%{transform:translate(30px,20px) rotate(8deg)}}
+@keyframes shine{from{transform:translateX(120%) skewX(-20deg)}to{transform:translateX(-220%) skewX(-20deg)}}
+header{position:sticky;top:0;z-index:20;box-shadow:0 8px 24px -16px rgba(0,0,0,.5)}
+nav a{position:relative;transition:color .2s}
+nav a::after{content:"";position:absolute;right:0;bottom:-6px;height:2px;width:0;background:#FFC800;transition:width .3s}
+nav a:hover{color:#FFC800 !important}nav a:hover::after{width:100%}
+header+section{position:relative;overflow:hidden}
+header+section::before{content:"";position:absolute;width:1000px;height:1000px;left:-360px;top:-520px;border-radius:50%;background:repeating-radial-gradient(circle,transparent 0 98px,rgba(255,255,255,.1) 99px 100px);animation:drift 18s ease-in-out infinite;pointer-events:none}
+header+section::after{content:"";position:absolute;width:640px;height:640px;right:-240px;bottom:-460px;border-radius:50%;background:repeating-radial-gradient(circle,transparent 0 78px,rgba(255,200,0,.14) 79px 80px);pointer-events:none}
+header+section>div{position:relative;z-index:1}
+header+section+section{position:relative;z-index:2}
+header+section>div>*{animation:up .9s cubic-bezier(.2,.7,.2,1) both}
+header+section>div>*:nth-child(2){animation-delay:.12s}header+section>div>*:nth-child(3){animation-delay:.24s}header+section>div>*:nth-child(4){animation-delay:.36s}
+a[style*="999px"],button{transition:transform .25s ease,box-shadow .25s ease}
+a[style*="999px"]:hover,button:hover{transform:translateY(-2px);box-shadow:0 14px 30px -10px rgba(0,0,0,.3)}
+a[style*="#FFC800"][style*="999px"]{position:relative;overflow:hidden}
+a[style*="#FFC800"][style*="999px"]::after{content:"";position:absolute;inset:0;width:40%;background:linear-gradient(90deg,transparent,rgba(255,255,255,.55),transparent);animation:shine 3.5s ease-in-out infinite}
+section li,section article,section [style*="border-radius: 28px"],section [style*="border-radius: 22px"],section [style*="border-radius: 24px"]{transition:transform .45s cubic-bezier(.2,.7,.2,1),box-shadow .45s}
+section li:hover,section article:hover,section [style*="border-radius: 28px"]:hover,section [style*="border-radius: 22px"]:hover{transform:translateY(-8px);box-shadow:0 28px 50px -22px rgba(43,73,68,.4)}
+form:hover,aside:hover{transform:none !important}
+@supports (animation-timeline: view()){header+section~section>div{animation:up linear both;animation-timeline:view();animation-range:entry 0% entry 40%}}
+@media (prefers-reduced-motion: reduce){*{animation:none !important;transition:none !important}}
+</style>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500&amp;display=swap">
+<script src="dc-lite.js"></script>
+<script>
+class Component extends DCLogic {
+renderVals() {
+return { notice: this.props.notice ?? true };
+}
+}
+window.Component = Component;
+</script>
+</head>
+<body>
+<template id="dc-tpl">
+<div dir="rtl" style="font-family: 'IBM Plex Sans Arabic', 'IBM Plex Sans', sans-serif; color: #1F2D2A; background: #F7F2EB; min-height: 100vh; position: relative">
+<sc-if value="{{notice}}" hint-placeholder-val="{{ true }}">
+<div role="note" style="position: relative; z-index: 61; background: #1A2B28; color: #FFC800; padding: 10px 24px; text-align: center; font-size: 14px; line-height: 1.7"><strong>تصميم أولي للعرض فقط</strong> — جميع الحقوق محفوظة © 2026 للمهندس عدنان البنا. يُمنع نسخ هذا التصميم أو استخدامه أو تنفيذه كليًا أو جزئيًا دون إذن كتابي مسبق.</div>
+</sc-if>
+
+<header style="background: #2B4944; padding: 20px 24px">
+<div style="max-width: 1240px; margin: 0 auto; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 16px">
+<a href="index.html" style="display: flex; align-items: center; gap: 10px; text-decoration: none; color: #FFFFFF">
+<svg width="124" height="44" viewBox="0 0 545 192" role="img" aria-label="ARMC"><path d="M107 0H131Q135 0 135 4V30Q135 61 172 64.5L232 72H103V4Q103 0 107 0Z" fill="#FFC800"/><path d="M107 0H131Q135 0 135 4V30Q135 61 172 64.5L232 72H103V4Q103 0 107 0Z" fill="#FFC800" transform="rotate(180 116 72)"/><text x="146" y="188" direction="ltr" unicode-bidi="bidi-override" textLength="392" lengthAdjust="spacingAndGlyphs" font-family="IBM Plex Sans, sans-serif" font-size="172" font-weight="500" letter-spacing="-3" fill="#FFFFFF">armc</text></svg>
+</a>
+<nav aria-label="القائمة الرئيسية" style="display: flex; flex-wrap: wrap; gap: 28px; font-size: 16px">
+<a href="index.html" style="color: #FFFFFF; text-decoration: none">الرئيسية</a>
+<a href="about.html" style="color: #FFC800; text-decoration: none; font-weight: 600">من نحن</a>
+<a href="services.html" style="color: #FFFFFF; text-decoration: none">خدماتنا</a>
+<a href="contact.html" style="color: #FFFFFF; text-decoration: none">تواصل معنا</a>
+</nav>
+<a href="booking.html" style="background: #FFC800; color: #2B4944; text-decoration: none; font-weight: 600; padding: 12px 22px; border-radius: 999px; font-size: 15px">احجز استشارة</a>
+</div>
+</header>
+
+<section style="background: #2B4944; color: #FFFFFF; padding: 56px 24px 96px">
+<div style="max-width: 1240px; margin: 0 auto">
+<p style="margin: 0 0 12px; font-size: 14px; color: #B9CCC7"><a href="index.html" style="color: #B9CCC7; text-decoration: none">الرئيسية</a> / من نحن</p>
+<h1 style="margin: 0; font-size: 52px; line-height: 1.3">من نحن</h1>
+<p style="margin: 18px 0 0; font-size: 19px; line-height: 1.9; color: #DCE6E3; max-width: 720px">شركة سعودية بُنيت على رؤية واضحة: تبسيط التحديات التي تواجه الأفراد ووكلاءهم وقطاع الأعمال في معاملاتهم اليومية.</p>
+</div>
+</section>
+
+<section style="padding: 0 24px 88px; margin-top: -48px">
+<div style="max-width: 1240px; margin: 0 auto; display: flex; flex-wrap: wrap; gap: 32px; align-items: stretch">
+<div style="flex: 1 1 420px; min-width: 0; min-height: 420px; border-radius: 24px 24px 220px 24px; background: linear-gradient(160deg, #6A8B84 0%, #3A5E58 100%); border-bottom: 4px solid #FFC800; display: flex; align-items: flex-end; padding: 28px; box-sizing: border-box; color: #E7EFEC; font-size: 14px">[صورة: مصافحة عميل — رمز الثقة]</div>
+<div style="flex: 1.2 1 460px; min-width: 0; background: #FFFFFF; border-radius: 28px; padding: 48px 44px">
+<p style="margin: 0 0 10px; color: #D96C00; font-weight: 600">قصتنا</p>
+<h2 style="margin: 0 0 18px; font-size: 34px; color: #2B4944; line-height: 1.45">نسهّل احتياجات عملائنا ونخدمهم بقيمنا وخبرتنا</h2>
+<p style="margin: 0 0 16px; line-height: 2; color: #4A5E5A; font-size: 17px">أفكار الريادة للاستشارات شركة سعودية متخصصة في تقديم الاستشارات الإدارية والقانونية والمحاسبية، تعمل من خلال فريق من المختصين وشراكات مهنية لتقديم حلول عملية تتناسب مع احتياجات كل عميل.</p>
+<p style="margin: 0; line-height: 2; color: #4A5E5A; font-size: 17px">نراعي متغيرات السوق في كل توصية نقدمها، ونضع الثقة والوضوح في جوهر أعمالنا — وهي الفكرة نفسها التي بُنيت عليها هويتنا: عنصران متقابلان، أحدهما الشركة والآخر العميل، يكمّل كل منهما الآخر.</p>
+</div>
+</div>
+</section>
+
+<section style="padding: 0 24px 88px">
+<div style="max-width: 1240px; margin: 0 auto; display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 24px">
+<div style="background: #2B4944; color: #FFFFFF; border-radius: 28px; padding: 40px 36px">
+<div style="width: 52px; height: 52px; border-radius: 16px; background: #FFC800; display: flex; align-items: center; justify-content: center; margin-bottom: 20px"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#2B4944" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7S2 12 2 12z"/><circle cx="12" cy="12" r="3"/></svg></div>
+<h3 style="margin: 0 0 10px; font-size: 24px">رؤيتنا</h3>
+<p style="margin: 0; line-height: 1.9; color: #DCE6E3">[نص الرؤية — يُعتمد من العميل]</p>
+</div>
+<div style="background: #FFFFFF; border-radius: 28px; padding: 40px 36px">
+<div style="width: 52px; height: 52px; border-radius: 16px; background: #2B4944; display: flex; align-items: center; justify-content: center; margin-bottom: 20px"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#FFC800" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="5"/><circle cx="12" cy="12" r="1"/></svg></div>
+<h3 style="margin: 0 0 10px; font-size: 24px; color: #2B4944">رسالتنا</h3>
+<p style="margin: 0; line-height: 1.9; color: #4A5E5A">[نص الرسالة — يُعتمد من العميل]</p>
+</div>
+<div style="background: #FFC800; border-radius: 28px; padding: 40px 36px">
+<div style="width: 52px; height: 52px; border-radius: 16px; background: #2B4944; display: flex; align-items: center; justify-content: center; margin-bottom: 20px"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#FFC800" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3l7 3v6c0 4.5-3 7.5-7 9-4-1.5-7-4.5-7-9V6z"/><path d="M9 12l2 2 4-4"/></svg></div>
+<h3 style="margin: 0 0 10px; font-size: 24px; color: #2B4944">قيمنا</h3>
+<p style="margin: 0; line-height: 1.9; color: #2B4944">الثقة · الوضوح · الاحترافية · الالتزام برضا العميل</p>
+</div>
+</div>
+</section>
+
+<section style="padding: 0 24px 88px">
+<div style="max-width: 1240px; margin: 0 auto">
+<p style="margin: 0 0 10px; color: #D96C00; font-weight: 600">من نخدم</p>
+<h2 style="margin: 0 0 36px; font-size: 36px; color: #2B4944">حلول لكل من يحتاج وضوحًا في معاملاته</h2>
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 20px">
+<div style="border: 1.5px solid #D9D2C6; border-radius: 22px; padding: 28px; background: #FFFFFF"><h3 style="margin: 0 0 8px; font-size: 20px; color: #2B4944">الأفراد</h3><p style="margin: 0; line-height: 1.8; color: #4A5E5A">استشارات قانونية وعقارية، تركات وميراث، وعقود شخصية.</p></div>
+<div style="border: 1.5px solid #D9D2C6; border-radius: 22px; padding: 28px; background: #FFFFFF"><h3 style="margin: 0 0 8px; font-size: 20px; color: #2B4944">الوكلاء</h3><p style="margin: 0; line-height: 1.8; color: #4A5E5A">دعم الوكلاء في متابعة معاملات موكليهم بوضوح وثقة.</p></div>
+<div style="border: 1.5px solid #D9D2C6; border-radius: 22px; padding: 28px; background: #FFFFFF"><h3 style="margin: 0 0 8px; font-size: 20px; color: #2B4944">المنشآت</h3><p style="margin: 0; line-height: 1.8; color: #4A5E5A">تأسيس وتنظيم إداري، أنظمة محاسبية، وامتثال ضريبي.</p></div>
+</div>
+</div>
+</section>
+
+<section style="padding: 0 24px 88px">
+<div style="max-width: 1240px; margin: 0 auto; background: #2B4944; border-radius: 32px; padding: 52px 44px; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 24px; color: #FFFFFF">
+<h2 style="margin: 0; font-size: 32px; flex: 1 1 400px">نأخذ بيدك ونبني حلولًا <span style="color: #FFC800">عميقة وفعّالة</span></h2>
+<a href="booking.html" style="background: #FFC800; color: #2B4944; text-decoration: none; font-weight: 700; padding: 16px 30px; border-radius: 999px; font-size: 17px">احجز استشارة</a>
+</div>
+</section>
+
+<footer style="background: #2B4944; color: #DCE6E3; padding: 40px 24px">
+<div style="max-width: 1240px; margin: 0 auto; display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 16px; font-size: 14px">
+<div style="display: flex; align-items: center; gap: 10px; color: #FFFFFF"><svg width="110" height="39" viewBox="0 0 545 192" role="img" aria-label="ARMC"><path d="M107 0H131Q135 0 135 4V30Q135 61 172 64.5L232 72H103V4Q103 0 107 0Z" fill="#FFC800"/><path d="M107 0H131Q135 0 135 4V30Q135 61 172 64.5L232 72H103V4Q103 0 107 0Z" fill="#FFC800" transform="rotate(180 116 72)"/><text x="146" y="188" direction="ltr" unicode-bidi="bidi-override" textLength="392" lengthAdjust="spacingAndGlyphs" font-family="IBM Plex Sans, sans-serif" font-size="172" font-weight="500" letter-spacing="-3" fill="#FFFFFF">armc</text></svg></div>
+<span>© 2026 أفكار الريادة للاستشارات. جميع الحقوق محفوظة.</span>
+</div>
+</footer>
+
+<a href="contact.html" aria-label="تواصل عبر واتساب" style="position: fixed; left: 24px; bottom: 24px; width: 60px; height: 60px; border-radius: 50%; background: #25A55F; display: flex; align-items: center; justify-content: center; box-shadow: 0 10px 24px rgba(0,0,0,0.25); z-index: 10">
+<svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12a8.5 8.5 0 0 1-12.6 7.4L3 21l1.6-5.2A8.5 8.5 0 1 1 21 12z"/><path d="M9 9.5c.3 2.3 2.2 4.2 4.5 4.5l1-1.2 1.8.8"/></svg>
+</a>
+</div>
+</template>
+<div id="dc-root"></div>
+</body>
+</html>
