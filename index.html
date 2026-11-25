@@ -38,6 +38,27 @@ h2{margin:0;font-size:34px;color:var(--g)}
 .num{font-family:'IBM Plex Sans',sans-serif;color:var(--o);font-weight:600;font-size:13px}
 .pill{display:inline-block;margin-top:8px;font-size:12.5px;font-weight:600;background:#FFF1C2;color:#7A5A00;border-radius:999px;padding:2px 10px}
 .pill.new{background:#DDF3E4;color:#1E7A47}
+/* home picker */
+.picker{padding:44px 24px 10px}
+.opts{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px;margin-bottom:18px}
+.opt{font-family:inherit;text-align:right;cursor:pointer;background:#fff;border:2px solid #E6DFD3;border-radius:20px;padding:14px 16px;display:flex;gap:12px;align-items:center;transition:border-color .2s,transform .2s,box-shadow .2s;color:inherit}
+.opt:hover{transform:translateY(-2px)}
+.opt[aria-pressed="true"]{border-color:var(--y);box-shadow:0 18px 40px -26px rgba(43,73,68,.6);background:#FFFBEA}
+.opt .k{flex:none;width:42px;height:42px;border-radius:14px;background:var(--g);color:var(--y);display:flex;align-items:center;justify-content:center;font-weight:700;font-size:17px}
+.opt[aria-pressed="true"] .k{background:var(--y);color:var(--g)}
+.opt b{display:block;font-size:16px;color:var(--g)}
+.opt small{display:block;font-size:13px;color:var(--mut);line-height:1.5}
+.bar{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:12px;margin-bottom:12px}
+.bar .now{font-size:15px;color:var(--mut)}.bar .now b{color:var(--g)}
+.seg{display:inline-flex;background:#fff;border:1px solid #E6DFD3;border-radius:999px;padding:4px}
+.seg button{font-family:inherit;border:0;background:transparent;border-radius:999px;padding:7px 16px;font-size:14px;font-weight:600;color:var(--g);cursor:pointer}
+.seg button[aria-pressed="true"]{background:var(--g);color:#fff}
+.openfull{display:inline-flex;align-items:center;gap:8px;background:var(--y);color:var(--g);font-weight:700;text-decoration:none;border-radius:999px;padding:9px 18px;font-size:14px}
+.stage{background:#E9E2D6;border-radius:28px;padding:14px;display:flex;justify-content:center;overflow:hidden}
+.screen{position:relative;overflow:hidden;border-radius:16px;background:#fff;box-shadow:0 30px 60px -36px rgba(26,43,40,.6)}
+.screen iframe{position:absolute;top:0;right:0;border:0;transform-origin:top right}
+.screen.mobile{border-radius:40px;border:10px solid #1A2B28}
+@media (max-width:900px){.opts{grid-template-columns:repeat(2,minmax(0,1fr))}}
 footer{margin-top:60px;background:var(--g2);color:#B9CCC7;padding:30px 24px;text-align:center;font-size:14px}
 footer a{color:var(--y)}
 @media (max-width:640px){header h1{font-size:34px}h2{font-size:26px}}
@@ -51,9 +72,27 @@ footer a{color:var(--y)}
 <div class="logo"><svg width="140" height="50" viewBox="0 0 545 192" role="img" aria-label="أفكار الريادة"><path d="M107 0H131Q135 0 135 4V30Q135 61 172 64.5L232 72H103V4Q103 0 107 0Z" fill="#FFC800"/><path d="M107 0H131Q135 0 135 4V30Q135 61 172 64.5L232 72H103V4Q103 0 107 0Z" fill="#FFC800" transform="rotate(180 116 72)"/><text x="146" y="188" direction="ltr" unicode-bidi="bidi-override" textLength="392" lengthAdjust="spacingAndGlyphs" font-family="IBM Plex Sans, sans-serif" font-size="172" font-weight="500" letter-spacing="-3" fill="#FFFFFF">armc</text></svg></div>
 <h1>معرض تصاميم <span>موقع أفكار الريادة</span></h1>
 <p>كل الشاشات تفاعلية: اضغط على أي بطاقة لفتح الصفحة، وجرّب الحجز، ومتابعة الطلب، والقوائم، وزر الوضع الساطع والداكن.</p>
-<nav class="jump" aria-label="أقسام المعرض"><a href="#site">صفحات الموقع</a><a href="#home">نماذج الرئيسية</a><a href="#nav">القائمة الرئيسية</a><a href="#flow">سير العمل</a></nav>
+<nav class="jump" aria-label="أقسام المعرض"><a href="#pick">اختر الرئيسية</a><a href="#site">صفحات الموقع</a><a href="#home">نماذج الرئيسية</a><a href="#nav">القائمة الرئيسية</a><a href="#flow">سير العمل</a></nav>
 </div>
 </header>
+
+<section id="pick" class="picker"><div class="in">
+<div class="head"><div><h2>اختر شكل الصفحة الرئيسية</h2><p>اضغط على أي نموذج ليظهر هنا بكامل الحركات والتفاعل. تقدر تتنقل داخله، وتجرّب الأزرار، وتشوفه على الجوال.</p></div></div>
+<div class="opts" role="group" aria-label="نماذج الرئيسية">
+<button type="button" class="opt" data-k="main" data-src="site/Main.html" data-name="الرئيسية الحالية"><span class="k">١</span><span><b>الرئيسية الحالية</b><small>رحلة الطلب التفاعلية ورسائل واتساب</small></span></button>
+<button type="button" class="opt" data-k="a" data-src="site/Home-V1.html" data-name="النموذج أ · هادئ وتحريري"><span class="k">أ</span><span><b>هادئ وتحريري</b><small>عنوان ضخم ومخطط قنوات الطلب</small></span></button>
+<button type="button" class="opt" data-k="b" data-src="site/Home-V2.html" data-name="النموذج ب · ساطع وداكن"><span class="k">ب</span><span><b>ساطع وداكن</b><small>حلقة المحطات وزر تبديل الوضع</small></span></button>
+<button type="button" class="opt" data-k="c" data-src="site/Home-V3.html" data-name="النموذج ج · تفاعلي بالمسارات"><span class="k">ج</span><span><b>تفاعلي بالمسارات</b><small>فلترة الاستشارات ومعاينة الحجز</small></span></button>
+</div>
+<div class="bar">
+<span class="now">المعروض الآن: <b id="nowName">الرئيسية الحالية</b></span>
+<span style="display:inline-flex;gap:10px;align-items:center;flex-wrap:wrap">
+<span class="seg" role="group" aria-label="حجم الشاشة"><button type="button" id="vDesk" aria-pressed="true">كمبيوتر</button><button type="button" id="vMob" aria-pressed="false">جوال</button></span>
+<a class="openfull" id="openFull" href="site/Main.html" target="_blank" rel="noopener">فتح بملء الشاشة ↗</a>
+</span>
+</div>
+<div class="stage" id="stage"><div class="screen" id="screen"><iframe id="live" src="site/Main.html" title="معاينة الصفحة الرئيسية المختارة"></iframe></div></div>
+</div></section>
 
 <section id="site"><div class="in">
 <div class="head"><div><h2>صفحات الموقع</h2><p>الصفحات التسع بالهوية المعتمدة، مع صفحة لكل مسار استشاري.</p></div></div>
@@ -93,5 +132,33 @@ footer a{color:var(--y)}
 </div></div></section>
 
 <footer>أفكار الريادة للاستشارات · <a href="v1/index.html">التصميم الأولي (النسخة الأولى)</a></footer>
+<script>
+(function(){
+  var opts=[].slice.call(document.querySelectorAll('.opt')), live=document.getElementById('live'), screen=document.getElementById('screen'), stage=document.getElementById('stage');
+  var full=document.getElementById('openFull'), nowName=document.getElementById('nowName'), bD=document.getElementById('vDesk'), bM=document.getElementById('vMob');
+  var mobile=false;
+  function fit(){
+    var avail=stage.clientWidth-28, vw=mobile?390:1440, vh=mobile?780:900;
+    var s=Math.min(1,avail/vw); if(mobile) s=Math.min(1,s);
+    var h=Math.round((mobile?vh:Math.min(window.innerHeight*0.78,760)));
+    live.style.width=vw+'px'; live.style.height=Math.round(h/s)+'px'; live.style.transform='scale('+s+')';
+    screen.style.width=Math.round(vw*s)+(mobile?20:0)+'px'; screen.style.height=h+(mobile?20:0)+'px';
+    if(mobile){live.style.top='0';live.style.right='0';}
+  }
+  function pick(btn,push){
+    opts.forEach(function(o){o.setAttribute('aria-pressed',o===btn?'true':'false');});
+    var src=btn.getAttribute('data-src'); if(live.getAttribute('src')!==src) live.setAttribute('src',src);
+    full.href=src; nowName.textContent=btn.getAttribute('data-name');
+    if(push){ try{history.replaceState(null,'','#home='+btn.getAttribute('data-k'));}catch(e){} }
+  }
+  opts.forEach(function(o){o.addEventListener('click',function(){pick(o,true);});});
+  function setMode(m){mobile=m;bD.setAttribute('aria-pressed',m?'false':'true');bM.setAttribute('aria-pressed',m?'true':'false');screen.classList.toggle('mobile',m);fit();}
+  bD.addEventListener('click',function(){setMode(false);}); bM.addEventListener('click',function(){setMode(true);});
+  window.addEventListener('resize',fit);
+  var m=(location.hash||'').match(/home=(\w+)/), start=opts[0];
+  if(m){opts.forEach(function(o){if(o.getAttribute('data-k')===m[1])start=o;});}
+  pick(start,false); fit();
+})();
+</script>
 </body>
 </html>
