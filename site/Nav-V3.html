@@ -1,0 +1,269 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>أفكار الريادة — القائمة الرئيسية ج</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@300;400;500;600;700&amp;family=IBM+Plex+Sans:wght@300;400;500;600&amp;display=swap">
+<style>
+body{margin:0;background:#F7F2EB}
+a{color:#2B4944}a:hover{color:#D96C00}
+@keyframes up{from{opacity:0;transform:translateY(28px)}to{opacity:1;transform:none}}
+@keyframes spin{to{transform:rotate(360deg)}}
+@keyframes floaty{0%,100%{transform:translateY(0)}50%{transform:translateY(-12px)}}
+@keyframes marquee{to{transform:translateX(-50%)}}
+@keyframes draw{from{stroke-dashoffset:600}to{stroke-dashoffset:0}}
+@keyframes pulse{0%{box-shadow:0 0 0 0 rgba(255,200,0,.55)}100%{box-shadow:0 0 0 18px rgba(255,200,0,0)}}
+@keyframes ring{0%{box-shadow:0 0 0 0 rgba(37,165,95,.5)}100%{box-shadow:0 0 0 20px rgba(37,165,95,0)}}
+@keyframes shine{from{transform:translateX(120%) skewX(-20deg)}to{transform:translateX(-220%) skewX(-20deg)}}
+.up{animation:up .9s cubic-bezier(.2,.7,.2,1) both}
+.d1{animation-delay:.1s}.d2{animation-delay:.25s}.d3{animation-delay:.4s}.d4{animation-delay:.55s}
+.spin{animation:spin 90s linear infinite}.spin-r{animation:spin 120s linear infinite reverse}
+.floaty{animation:floaty 6s ease-in-out infinite}.floaty2{animation:floaty 7s ease-in-out -2s infinite}
+.marquee{animation:marquee 40s linear infinite}
+.draw{stroke-dasharray:600;animation:draw 1.6s .6s cubic-bezier(.6,0,.2,1) both}
+.pulse{animation:pulse 2.2s ease-out infinite}
+.wa{animation:ring 2.4s ease-out infinite}
+.btn{transition:transform .25s ease,box-shadow .25s ease;position:relative;overflow:hidden}
+.btn:hover{transform:translateY(-2px);box-shadow:0 14px 30px -10px rgba(0,0,0,.35)}
+.btn-y::after{content:"";position:absolute;inset:0;width:40%;background:linear-gradient(90deg,transparent,rgba(255,255,255,.55),transparent);animation:shine 3.5s ease-in-out infinite}
+.navl{position:relative;transition:color .2s}
+.navl::after{content:"";position:absolute;right:0;bottom:-6px;height:2px;width:0;background:#FFC800;transition:width .3s}
+.navl:hover{color:#FFC800 !important}.navl:hover::after{width:100%}
+.card{transition:transform .45s cubic-bezier(.2,.7,.2,1),box-shadow .45s}
+.card:hover{transform:translateY(-10px);box-shadow:0 30px 60px -22px rgba(43,73,68,.4)}
+.card .ic{transition:transform .5s cubic-bezier(.2,.7,.2,1)}.card:hover .ic{transform:rotate(-12deg) scale(1.08)}
+.card .bar{transform:scaleX(0);transform-origin:right;transition:transform .5s cubic-bezier(.2,.7,.2,1)}.card:hover .bar{transform:scaleX(1)}
+.tile{transition:background .35s,transform .35s}.tile:hover{transform:translateY(-4px)}
+.stage{transition:background .3s,color .3s,transform .3s,box-shadow .3s}
+@supports (animation-timeline: view()){.rv{animation:up linear both;animation-timeline:view();animation-range:entry 0% entry 45%}}
+@media (max-width: 640px){h1{font-size:44px !important}h2{font-size:30px !important}section{padding-left:16px !important;padding-right:16px !important}}
+@media (prefers-reduced-motion: reduce){*{animation:none !important;transition:none !important}}
+
+.sbtn{font-family:inherit;display:flex;align-items:center;gap:12px;width:100%;max-width:440px;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.18);border-radius:999px;color:#D3E0DC;font-size:15px;padding:12px 18px;cursor:pointer;transition:background .25s,border-color .25s}
+.sbtn:hover{background:rgba(255,255,255,.13);border-color:rgba(255,200,0,.5)}
+.kbd{font-family:'IBM Plex Sans',sans-serif;font-size:12px;border:1px solid rgba(255,255,255,.25);border-radius:6px;padding:1px 7px;margin-inline-start:auto}
+.mbtn{font-family:inherit;display:inline-flex;align-items:center;gap:10px;background:#FFFFFF;color:#2B4944;border:0;border-radius:999px;font-size:15px;font-weight:700;padding:6px 18px 6px 6px;padding-inline-start:18px;cursor:pointer;transition:transform .25s}
+.mbtn:hover{transform:translateY(-2px)}
+.mbtn span.c{width:38px;height:38px;border-radius:50%;background:#2B4944;color:#FFC800;display:inline-flex;align-items:center;justify-content:center}
+.big{display:flex;align-items:center;gap:22px;text-decoration:none;color:#FFFFFF;font-size:58px;font-weight:700;line-height:1.25;padding:10px 0;transition:color .25s}
+.big b{font-family:'IBM Plex Sans',sans-serif;font-size:16px;font-weight:500;color:#B9CCC7;width:34px}
+.big .ar{opacity:0;transform:translateX(16px);transition:opacity .3s,transform .3s;color:#FFC800}
+.big:hover{color:#FFC800}.big:hover .ar{opacity:1;transform:none}
+.rs{display:flex;align-items:center;justify-content:space-between;gap:12px;text-decoration:none;color:#1F2D2A;padding:12px 14px;border-radius:14px;font-size:15px;transition:background .2s}
+.rs:hover{background:#F7F2EB;color:#2B4944}
+.tg{font-size:12px;font-weight:600;color:#2B4944;background:#E9E2D6;border-radius:999px;padding:3px 10px;white-space:nowrap}
+.qp{font-family:inherit;font-size:14px;border:1px solid #D9D2C6;background:#FFFFFF;color:#2B4944;border-radius:999px;padding:7px 14px;cursor:pointer}
+.qp:hover{border-color:#2B4944}
+@keyframes ov{from{opacity:0;clip-path:circle(0% at 8% 6%)}to{opacity:1;clip-path:circle(150% at 8% 6%)}}
+.ov{animation:ov .7s cubic-bezier(.6,0,.2,1) both}
+
+.icb{width:44px;height:44px;border-radius:14px;background:#2B4944;display:inline-flex;align-items:center;justify-content:center;flex:none;transition:transform .4s cubic-bezier(.2,.7,.2,1)}
+.chip{display:inline-flex;align-items:center;gap:8px;background:#FFFFFF;border:1px solid #D9D2C6;border-radius:999px;padding:9px 16px;font-size:14px;color:#2B4944;font-weight:500}
+.chip i{width:7px;height:7px;border-radius:50%;background:#FFC800;display:inline-block}
+.phone{width:360px;height:740px;flex:none;border-radius:48px;border:10px solid #1A2B28;background:#2B4944;overflow:hidden;position:relative;box-shadow:0 40px 80px -30px rgba(26,43,40,.55)}
+.cap{margin:18px 0 0;text-align:center;font-size:14px;color:#4A5E5A;font-weight:500}
+.sub{display:flex;align-items:center;gap:10px;text-decoration:none;padding:7px 0;font-size:15px;color:#1F2D2A;transition:color .2s,transform .25s}
+.sub:hover{color:#A84F00;transform:translateX(-4px)}
+.sub i{width:6px;height:6px;border-radius:50%;background:#D96C00;flex:none;display:inline-block}
+@keyframes drop{from{opacity:0;transform:translateY(-10px) scale(.985)}to{opacity:1;transform:none}}
+.drop{animation:drop .35s cubic-bezier(.2,.7,.2,1) both}
+@keyframes sheet{from{transform:translateY(40px);opacity:0}to{transform:none;opacity:1}}
+</style>
+<script src="dc-lite.js"></script>
+<script>
+class Component extends DCLogic {
+  constructor(props) { super(props); this.state = { search: false, menu: false, q: '' }; }
+  renderVals() {
+    const cat = [["الاستراتيجية وتطوير الأعمال", "إدارية", "Service-Management.dc.html"], ["التأسيس والتنظيم الإداري", "إدارية", "Service-Management.dc.html"], ["الهياكل التنظيمية والسياسات والإجراءات", "إدارية", "Service-Management.dc.html"], ["التشغيل وتحسين العمليات", "إدارية", "Service-Management.dc.html"], ["إدارة المخاطر واستمرارية الأعمال", "إدارية", "Service-Management.dc.html"], ["الأداء ومؤشرات الأداء", "إدارية", "Service-Management.dc.html"], ["الاستشارات القانونية العامة", "قانونية", "Service-Legal.dc.html"], ["مراجعة وصياغة العقود والاتفاقيات", "قانونية", "Service-Legal.dc.html"], ["استشارات النزاعات والمطالبات", "قانونية", "Service-Legal.dc.html"], ["استشارات الأراضي والعقارات", "قانونية", "Service-Legal.dc.html"], ["استشارات التركات والميراث", "قانونية", "Service-Legal.dc.html"], ["استشارات الشركات والأنظمة التجارية", "قانونية", "Service-Legal.dc.html"], ["الاستشارات الضريبية", "محاسبية وضريبية", "Service-Accounting.dc.html"], ["مسك الدفاتر", "محاسبية وضريبية", "Service-Accounting.dc.html"], ["بناء شجرة الحسابات", "محاسبية وضريبية", "Service-Accounting.dc.html"], ["بناء وتطوير النظام المحاسبي", "محاسبية وضريبية", "Service-Accounting.dc.html"], ["الفحص والتدقيق المالي الداخلي", "محاسبية وضريبية", "Service-Accounting.dc.html"]];
+    const st = this.state;
+    const norm = (s) => s.replace(/[أإآ]/g, 'ا').replace(/ة/g, 'ه').replace(/^ال/, '').trim();
+    const q = norm(st.q || '');
+    let list = cat;
+    if (q) {
+      const words = q.split(/\s+/).filter(Boolean).map((w) => { w = w.replace(/^ال/, ''); if (w.length > 3) w = w.replace(/ه$/, ''); if (w.length > 3) w = w.replace(/ي$/, ''); if (w.length > 4) w = w.replace(/ات$/, ''); return w; });
+      list = cat.filter((c) => { const t = norm(c[0] + ' ' + c[1]); return words.every((w) => t.includes(w)); });
+    } else {
+      list = [cat[0], cat[7], cat[12], cat[1]];
+    }
+    const results = list.slice(0, 6).map((c) => ({ title: c[0], track: c[1], href: c[2] }));
+    const n = list.length;
+    const countLabel = !q ? 'اقتراحات' : (n === 0 ? 'لا نتائج' : (n === 1 ? 'نتيجة واحدة' : (n === 2 ? 'نتيجتان' : n + ' نتائج')));
+    const set = (w) => () => this.setState({ q: w });
+    return {
+      notice: this.props.notice ?? true,
+      search: st.search, menu: st.menu, q: st.q,
+      searchExp: st.search ? 'true' : 'false', menuExp: st.menu ? 'true' : 'false',
+      results, empty: !!q && n === 0, countLabel,
+      setQ: (e) => this.setState({ q: e.target.value }),
+      qk0: set('العقود'), qk1: set('الضريبة'), qk2: set('التأسيس'), qk3: set('التركات'),
+      openSearch: () => this.setState({ search: !this.state.search, menu: false }),
+      closeSearch: () => this.setState({ search: false }),
+      openMenu: () => this.setState({ menu: true, search: false }),
+      closeMenu: () => this.setState({ menu: false })
+    };
+  }
+}
+window.Component = Component;
+</script>
+</head>
+<body>
+<template id="dc-tpl">
+
+<div dir="rtl" style="font-family: 'IBM Plex Sans Arabic', 'IBM Plex Sans', sans-serif; color: #1F2D2A; background: #F7F2EB; min-height: 100vh; position: relative; overflow-x: hidden">
+<sc-if value="{{notice}}" hint-placeholder-val="{{ true }}">
+<div role="note" style="background: #1A2B28; color: #FFC800; padding: 8px 24px; text-align: center; font-size: 13px; line-height: 1.7">تصميم أولي للعرض فقط — جميع الحقوق محفوظة © 2026 للمهندس عدنان البنا.</div>
+</sc-if>
+<div style="position: sticky; top: 0; z-index: 40; height: 0; padding: 0 24px">
+<div style="max-width: 1240px; margin: 0 auto; position: relative">
+<header style="display: flex; align-items: center; justify-content: space-between; gap: 24px; padding: 22px 0">
+<a href="Main.html" aria-label="أفكار الريادة — الرئيسية" style="display: flex; align-items: center; flex: 1 1 0"><svg width="124" height="44" viewBox="0 0 545 192" role="img" aria-label="أفكار الريادة"><path d="M107 0H131Q135 0 135 4V30Q135 61 172 64.5L232 72H103V4Q103 0 107 0Z" fill="#FFC800"/><path d="M107 0H131Q135 0 135 4V30Q135 61 172 64.5L232 72H103V4Q103 0 107 0Z" fill="#FFC800" transform="rotate(180 116 72)"/><text x="146" y="188" direction="ltr" unicode-bidi="bidi-override" textLength="392" lengthAdjust="spacingAndGlyphs" font-family="IBM Plex Sans, sans-serif" font-size="172" font-weight="500" letter-spacing="-3" fill="#FFFFFF">armc</text></svg></a>
+<button type="button" class="sbtn" onClick="{{openSearch}}" aria-expanded="{{searchExp}}" aria-label="ابحث عن استشارة"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#FFC800" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5"/></svg>ابحث عن استشارتك… مثل: العقود، الضريبة<span class="kbd">/</span></button>
+<div style="display: flex; align-items: center; justify-content: flex-end; gap: 10px; flex: 1 1 0">
+<a class="btn btn-y" href="Booking.html" style="background: #FFC800; color: #2B4944; text-decoration: none; font-weight: 700; padding: 13px 22px; border-radius: 999px; font-size: 15px">احجز استشارة</a>
+<button type="button" class="mbtn" onClick="{{openMenu}}" aria-expanded="{{menuExp}}">القائمة<span class="c"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 8h16M4 16h10"/></svg></span></button>
+</div>
+</header>
+<sc-if value="{{search}}" hint-placeholder-val="{{ false }}">
+<div class="drop" style="position: absolute; top: 90px; left: 0; right: 0"><div style="background: #FFFFFF; border-radius: 28px; box-shadow: 0 40px 80px -30px rgba(0,0,0,.55); overflow: hidden; width: 100%; max-width: 620px; margin: 0 auto">
+<div style="display: flex; align-items: center; gap: 12px; padding: 18px 22px; border-bottom: 1px solid #E9E2D6"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#2B4944" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5"/></svg><input type="search" value="{{q}}" onInput="{{setQ}}" placeholder="اكتب موضوع استشارتك" aria-label="ابحث عن استشارة" style="flex: 1; min-width: 0; font-family: inherit; font-size: 17px; border: 0; outline: 0; background: transparent; color: #1F2D2A"><button type="button" onClick="{{closeSearch}}" aria-label="إغلاق البحث" style="font-family: inherit; border: 0; background: #E9E2D6; color: #2B4944; border-radius: 999px; padding: 6px 12px; font-size: 13px; cursor: pointer">إغلاق</button></div>
+<div style="padding: 14px 22px 4px; display: flex; flex-wrap: wrap; align-items: center; gap: 8px"><span style="font-size: 13px; color: #4A5E5A; margin-inline-end: 4px">الأكثر طلبًا:</span><button type="button" class="qp" onClick="{{qk0}}">العقود</button><button type="button" class="qp" onClick="{{qk1}}">الضريبة</button><button type="button" class="qp" onClick="{{qk2}}">التأسيس</button><button type="button" class="qp" onClick="{{qk3}}">التركات</button></div>
+<div style="padding: 10px 8px 6px"><div style="padding: 0 14px 6px"><span style="font-size: 13px; color: #4A5E5A">{{countLabel}}</span></div><sc-for list="{{results}}" as="r" hint-placeholder-count="4">
+<a class="rs" href="{{r.href}}"><span>{{r.title}}</span><span class="tg">{{r.track}}</span></a>
+</sc-for>
+<sc-if value="{{empty}}" hint-placeholder-val="{{ false }}"><p style="margin: 8px 14px; font-size: 14px; color: #4A5E5A">لا توجد نتيجة مطابقة. <a href="Booking.html" style="font-weight: 700">اطلب استشارة عامة</a> وسنوجّهك.</p></sc-if></div>
+<div style="display: flex; justify-content: space-between; align-items: center; gap: 12px; background: #F7F2EB; padding: 14px 22px; font-size: 14px; color: #4A5E5A"><span>لم تجد ما تبحث عنه؟</span><a href="Booking.html" style="font-weight: 700; color: #2B4944; text-decoration: none">احجز استشارة عامة ←</a></div>
+</div></div>
+</sc-if>
+</div>
+</div>
+<sc-if value="{{menu}}" hint-placeholder-val="{{ false }}">
+<div class="ov" role="dialog" aria-label="القائمة الرئيسية" style="position: absolute; top: 0; left: 0; right: 0; z-index: 60"><div style="background: #1A2B28; color: #FFFFFF; border-radius: 0 0 48px 48px; padding: 22px 40px 56px; position: relative; overflow: hidden">
+<svg class="spin" style="position: absolute; left: -260px; bottom: -380px; width: 900px; height: 900px; opacity: .1" viewBox="0 0 400 400" aria-hidden="true"><g fill="none" stroke="#FFC800"><circle cx="200" cy="200" r="190"/><circle cx="200" cy="200" r="150"/><circle cx="200" cy="200" r="110"/><circle cx="200" cy="200" r="70"/></g></svg>
+<div style="max-width: 1240px; margin: 0 auto; position: relative">
+<div style="display: flex; align-items: center; justify-content: space-between; gap: 16px"><svg width="124" height="44" viewBox="0 0 545 192" role="img" aria-label="أفكار الريادة"><path d="M107 0H131Q135 0 135 4V30Q135 61 172 64.5L232 72H103V4Q103 0 107 0Z" fill="#FFC800"/><path d="M107 0H131Q135 0 135 4V30Q135 61 172 64.5L232 72H103V4Q103 0 107 0Z" fill="#FFC800" transform="rotate(180 116 72)"/><text x="146" y="188" direction="ltr" unicode-bidi="bidi-override" textLength="392" lengthAdjust="spacingAndGlyphs" font-family="IBM Plex Sans, sans-serif" font-size="172" font-weight="500" letter-spacing="-3" fill="#FFFFFF">armc</text></svg><button type="button" class="mbtn" onClick="{{closeMenu}}" style="background: #FFC800">إغلاق<span class="c"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg></span></button></div>
+<div style="display: grid; grid-template-columns: minmax(0, 1.4fr) minmax(0, 1fr); gap: 60px; margin-top: 46px; align-items: start">
+<nav aria-label="القائمة الرئيسية"><a class="big" href="Main.html" style="color: #FFC800"><b>01</b>الرئيسية<span class="ar"><svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19 12H5M11 6l-6 6 6 6"/></svg></span></a><a class="big" href="About.html"><b>02</b>من نحن<span class="ar"><svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19 12H5M11 6l-6 6 6 6"/></svg></span></a><a class="big" href="Services.html"><b>03</b>خدماتنا<span class="ar"><svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19 12H5M11 6l-6 6 6 6"/></svg></span></a><a class="big" href="Contact.html"><b>04</b>تواصل معنا<span class="ar"><svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19 12H5M11 6l-6 6 6 6"/></svg></span></a><a class="big" href="Track.html"><b>05</b>تابع طلبك<span class="ar"><svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19 12H5M11 6l-6 6 6 6"/></svg></span></a></nav>
+<div style="background: #233B37; border: 1px solid rgba(255,255,255,.08); border-radius: 32px 32px 32px 96px; padding: 28px 30px 32px">
+<div style="font-size: 14px; color: #FFC800; font-weight: 600">مساراتنا</div>
+<a href="Service-Management.html" style="display: flex; align-items: center; gap: 14px; text-decoration: none; color: #FFFFFF; padding: 14px 0; border-bottom: 1px solid rgba(255,255,255,.1)"><span class="icb" style="background: #2B4944"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#FFC800" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 3v18h18"/><path d="M7 15l4-4 3 3 5-6"/><path d="M15 8h4v4"/></svg></span><span><span style="display: block; font-weight: 700; font-size: 17px">الاستشارات الإدارية</span><span style="display: block; font-size: 13px; color: #B9CCC7">6 خدمات</span></span></a><a href="Service-Legal.html" style="display: flex; align-items: center; gap: 14px; text-decoration: none; color: #FFFFFF; padding: 14px 0; border-bottom: 1px solid rgba(255,255,255,.1)"><span class="icb" style="background: #2B4944"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#FFC800" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v18"/><path d="M7 21h10"/><path d="M5 7h14"/><path d="M5 7l-3 7a3 3 0 0 0 6 0z"/><path d="M19 7l-3 7a3 3 0 0 0 6 0z"/></svg></span><span><span style="display: block; font-weight: 700; font-size: 17px">الاستشارات القانونية</span><span style="display: block; font-size: 13px; color: #B9CCC7">6 خدمات</span></span></a><a href="Service-Accounting.html" style="display: flex; align-items: center; gap: 14px; text-decoration: none; color: #FFFFFF; padding: 14px 0; border-bottom: 1px solid rgba(255,255,255,.1)"><span class="icb" style="background: #2B4944"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#FFC800" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="5" y="2" width="14" height="20" rx="2.5"/><path d="M8.5 6h7"/><path d="M8.5 11h.01M12 11h.01M15.5 11h.01M8.5 14.5h.01M12 14.5h.01M15.5 14.5v3M8.5 18h.01M12 18h.01"/></svg></span><span><span style="display: block; font-weight: 700; font-size: 17px">الاستشارات المحاسبية والضريبية</span><span style="display: block; font-size: 13px; color: #B9CCC7">5 خدمات</span></span></a>
+<div style="margin-top: 22px; display: grid; gap: 8px; font-size: 15px; color: #D3E0DC"><span>[رقم الجوال]</span><span>[البريد الإلكتروني]</span><span>[العنوان]</span></div>
+<div style="margin-top: 22px; display: flex; flex-wrap: wrap; gap: 10px">
+<a class="btn btn-y" href="Booking.html" style="background: #FFC800; color: #2B4944; text-decoration: none; font-weight: 700; padding: 13px 22px; border-radius: 999px; font-size: 15px">احجز استشارة</a>
+<a href="Contact.html" style="display: inline-flex; align-items: center; gap: 8px; color: #FFFFFF; text-decoration: none; padding: 12px 18px; border-radius: 999px; font-size: 15px; border: 1px solid rgba(255,255,255,.3)"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="#25A55F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12a8.5 8.5 0 0 1-12.6 7.4L3 21l1.6-5.2A8.5 8.5 0 1 1 21 12z"/></svg>واتساب</a>
+</div>
+</div>
+</div>
+</div>
+</div></div>
+</sc-if>
+<section style="background: #2B4944; color: #FFFFFF; padding: 176px 24px 150px; margin-top: 0px; position: relative; overflow: hidden">
+<svg class="spin" style="position: absolute; left: -380px; top: -300px; width: 1100px; height: 1100px; opacity: 0.16" viewBox="0 0 1100 1100" aria-hidden="true"><g fill="none" stroke="#FFFFFF" stroke-width="1.2"><circle cx="550" cy="550" r="540"/><circle cx="550" cy="550" r="440"/><circle cx="550" cy="550" r="340"/><circle cx="550" cy="550" r="240"/></g><circle cx="550" cy="10" r="7" fill="#FFC800"/><circle cx="990" cy="550" r="5" fill="#FFC800"/></svg>
+<svg class="spin-r" style="position: absolute; right: -260px; bottom: -420px; width: 820px; height: 820px; opacity: 0.12" viewBox="0 0 820 820" aria-hidden="true"><g fill="none" stroke="#FFC800" stroke-width="1.2"><circle cx="410" cy="410" r="400"/><circle cx="410" cy="410" r="300"/></g></svg>
+<div style="max-width: 1240px; margin: 0 auto; display: flex; flex-wrap: wrap; align-items: center; gap: 64px; position: relative">
+<div style="flex: 1 1 500px; min-width: 0">
+<p class="up d1" style="margin: 0 0 22px; display: inline-flex; align-items: center; gap: 10px; color: #FFC800; font-weight: 600; font-size: 15px; background: rgba(255,200,0,0.1); border: 1px solid rgba(255,200,0,0.3); border-radius: 999px; padding: 8px 16px"><span class="pulse" style="width: 8px; height: 8px; border-radius: 50%; background: #FFC800"></span>استشارات إدارية · قانونية · محاسبية</p>
+<h1 class="up d2" style="margin: 0; font-size: 72px; line-height: 1.2; font-weight: 700">خبرة في العمل<br><span style="position: relative; display: inline-block; color: #FFC800">وريادة في الفكر<svg style="position: absolute; right: 0; bottom: -14px; width: 100%; height: 22px" viewBox="0 0 400 22" preserveAspectRatio="none" aria-hidden="true"><path class="draw" d="M4 16 Q200 -2 396 12" fill="none" stroke="#D96C00" stroke-width="5" stroke-linecap="round"/></svg></span></h1>
+<p class="up d3" style="margin: 34px 0 0; font-size: 20px; line-height: 1.9; color: #D3E0DC; max-width: 560px">احجز استشارتك في دقيقتين، وتابع طلبك من جوالك حتى موعد الجلسة — مع فريق من المختصين وشراكات مهنية تقدم لك حلولًا عملية.</p>
+<div class="up d4" style="display: flex; flex-wrap: wrap; gap: 14px; margin-top: 40px">
+<a class="btn btn-y" href="Booking.html" style="background: #FFC800; color: #2B4944; text-decoration: none; font-weight: 700; padding: 18px 34px; border-radius: 999px; font-size: 17px; display: inline-flex; align-items: center; gap: 10px">احجز استشارتك الآن<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19 12H5M11 6l-6 6 6 6"/></svg></a>
+<a class="btn" href="Track.html" style="color: #FFFFFF; text-decoration: none; font-weight: 500; padding: 17px 30px; border-radius: 999px; font-size: 17px; border: 1.5px solid rgba(255,255,255,0.35); background: rgba(255,255,255,0.04)">تابع طلبك</a>
+</div>
+</div>
+<div class="up d3" style="flex: 1 1 420px; min-width: 0; position: relative; height: 540px">
+<div style="position: absolute; inset: 0 40px 0 0; border-radius: 300px 300px 32px 32px; overflow: hidden; background: linear-gradient(170deg, #5E8079 0%, #2E4E49 100%); box-shadow: 0 40px 80px -30px rgba(0,0,0,0.6)">
+<svg class="spin" style="position: absolute; left: 50%; top: 50%; width: 560px; height: 560px; margin: -280px 0 0 -280px; opacity: 0.18" viewBox="0 0 400 400" aria-hidden="true"><g fill="none" stroke="#FFFFFF"><circle cx="200" cy="200" r="190"/><circle cx="200" cy="200" r="140"/><circle cx="200" cy="200" r="90"/></g></svg>
+<svg style="position: absolute; left: 50%; top: 42%; width: 210px; transform: translate(-50%, -50%)" viewBox="0 0 233 146" aria-hidden="true"><path d="M107 0H131Q135 0 135 4V30Q135 61 172 64.5L232 72H103V4Q103 0 107 0Z" fill="#FFC800"/><path d="M107 0H131Q135 0 135 4V30Q135 61 172 64.5L232 72H103V4Q103 0 107 0Z" fill="#FFC800" transform="rotate(180 116 72)"/></svg>
+<span style="position: absolute; bottom: 22px; left: 0; right: 0; text-align: center; color: #D3E0DC; font-size: 13px">[صورة الفريق — تُستبدل بتصوير الشركة]</span>
+</div>
+<div class="floaty" style="position: absolute; top: 60px; right: -6px; background: rgba(247,242,235,0.97); color: #2B4944; border-radius: 22px; padding: 16px 20px; box-shadow: 0 24px 50px -16px rgba(0,0,0,0.45); display: flex; align-items: center; gap: 14px; max-width: 290px">
+<div style="width: 46px; height: 46px; flex: none; border-radius: 14px; background: #25A55F; display: flex; align-items: center; justify-content: center"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12a8.5 8.5 0 0 1-12.6 7.4L3 21l1.6-5.2A8.5 8.5 0 1 1 21 12z"/></svg></div>
+<div><div style="font-weight: 700; font-size: 15px">تحديث تلقائي على واتساب</div><div style="font-size: 13px; color: #4A5E5A">«طلبك قيد المراجعة لدى المستشار»</div></div>
+</div>
+<div class="floaty2" style="position: absolute; bottom: 60px; left: 0; background: #FFC800; color: #2B4944; border-radius: 22px; padding: 16px 20px; box-shadow: 0 24px 50px -16px rgba(0,0,0,0.45); display: flex; align-items: center; gap: 12px">
+<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#2B4944" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="6" y="2" width="12" height="20" rx="2.5"/><path d="M10 18h4"/><path d="M9.5 9.5l1.8 1.8 3.2-3.3"/></svg>
+<div><div style="font-weight: 700; font-size: 15px">دخول برقم جوالك</div><div style="font-size: 13px">رمز تحقق — بدون كلمة مرور</div></div>
+</div>
+</div>
+</div>
+<svg style="position: absolute; left: 0; right: 0; bottom: -1px; width: 100%; height: 110px" viewBox="0 0 1440 110" preserveAspectRatio="none" aria-hidden="true"><path d="M0 110 Q720 -30 1440 110 Z" fill="#F7F2EB"/><path d="M0 110 Q720 -30 1440 110" fill="none" stroke="#FFC800" stroke-width="3"/></svg>
+</section>
+<section style="padding: 110px 24px 120px">
+<div style="max-width: 1240px; margin: 0 auto">
+<p style="margin: 0 0 12px; color: #A84F00; font-weight: 700; font-size: 15px">النموذج ج</p>
+<h2 style="margin: 0; font-size: 44px; line-height: 1.3; color: #2B4944">البحث أولًا والقائمة الكاملة</h2>
+<p style="margin: 16px 0 0; font-size: 18px; line-height: 1.9; color: #4A5E5A; max-width: 760px">واجهة بسيطة تُبقي الصفحة في الواجهة: الشعار، وحقل بحث في المنتصف يجد الاستشارة المناسبة من بين 17 استشارة، وزر الحجز، وزر «القائمة» الذي يفتح شاشة كاملة بروابط كبيرة مرقّمة وبطاقة للمسارات وبيانات التواصل. جرّب البحث أو زر «القائمة» في الأعلى.</p>
+<div style="display: flex; flex-wrap: wrap; gap: 10px; margin-top: 26px"><span class="chip"><i></i>بحث فوري بين جميع الاستشارات</span><span class="chip"><i></i>قائمة بملء الشاشة بحركة انفتاح دائرية</span><span class="chip"><i></i>أقل عدد من العناصر في الشريط</span><span class="chip"><i></i>على الجوال: البحث داخل القائمة</span></div>
+<h3 style="margin: 72px 0 22px; font-size: 24px; color: #2B4944; display: flex; flex-wrap: wrap; align-items: baseline; gap: 12px">البحث عن استشارة<span style="font-size: 15px; font-weight: 400; color: #4A5E5A">مثال: كتابة «العقود»</span></h3>
+<div style="background: #2B4944; border-radius: 40px; padding: 0 40px 48px; position: relative; overflow: hidden">
+<div style="position: relative"><header style="display: flex; align-items: center; justify-content: space-between; gap: 24px; padding: 22px 0">
+<a href="Main.html" aria-label="أفكار الريادة — الرئيسية" style="display: flex; align-items: center; flex: 1 1 0"><svg width="124" height="44" viewBox="0 0 545 192" role="img" aria-label="أفكار الريادة"><path d="M107 0H131Q135 0 135 4V30Q135 61 172 64.5L232 72H103V4Q103 0 107 0Z" fill="#FFC800"/><path d="M107 0H131Q135 0 135 4V30Q135 61 172 64.5L232 72H103V4Q103 0 107 0Z" fill="#FFC800" transform="rotate(180 116 72)"/><text x="146" y="188" direction="ltr" unicode-bidi="bidi-override" textLength="392" lengthAdjust="spacingAndGlyphs" font-family="IBM Plex Sans, sans-serif" font-size="172" font-weight="500" letter-spacing="-3" fill="#FFFFFF">armc</text></svg></a>
+<button type="button" class="sbtn"  aria-label="ابحث عن استشارة"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#FFC800" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5"/></svg>ابحث عن استشارتك… مثل: العقود، الضريبة<span class="kbd">/</span></button>
+<div style="display: flex; align-items: center; justify-content: flex-end; gap: 10px; flex: 1 1 0">
+<a class="btn btn-y" href="Booking.html" style="background: #FFC800; color: #2B4944; text-decoration: none; font-weight: 700; padding: 13px 22px; border-radius: 999px; font-size: 15px">احجز استشارة</a>
+<button type="button" class="mbtn" >القائمة<span class="c"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 8h16M4 16h10"/></svg></span></button>
+</div>
+</header><div style="background: #FFFFFF; border-radius: 28px; box-shadow: 0 40px 80px -30px rgba(0,0,0,.55); overflow: hidden; width: 100%; max-width: 620px; margin: 0 auto">
+<div style="display: flex; align-items: center; gap: 12px; padding: 18px 22px; border-bottom: 1px solid #E9E2D6"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#2B4944" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5"/></svg><span style="flex: 1; font-size: 17px; color: #1F2D2A">العقود<span style="display: inline-block; width: 2px; height: 20px; background: #D96C00; vertical-align: middle; margin-inline-start: 2px"></span></span><span style="background: #E9E2D6; color: #2B4944; border-radius: 999px; padding: 6px 12px; font-size: 13px">إغلاق</span></div>
+<div style="padding: 14px 22px 4px; display: flex; flex-wrap: wrap; align-items: center; gap: 8px"><span style="font-size: 13px; color: #4A5E5A; margin-inline-end: 4px">الأكثر طلبًا:</span><span class="qp">العقود</span><span class="qp">الضريبة</span><span class="qp">التأسيس</span><span class="qp">التركات</span></div>
+<div style="padding: 10px 8px 6px"><div style="padding: 0 14px 6px"><span style="font-size: 13px; color: #4A5E5A">نتيجتان</span></div><a class="rs" href="Service-Legal.html" style="background: #F7F2EB"><span>مراجعة وصياغة <mark style="background: #FFE58A; color: inherit">العقود</mark> والاتفاقيات</span><span class="tg">قانونية</span></a><a class="rs" href="Service-Legal.html"><span>استشارات الشركات والأنظمة التجارية</span><span class="tg">قانونية</span></a></div>
+<div style="display: flex; justify-content: space-between; align-items: center; gap: 12px; background: #F7F2EB; padding: 14px 22px; font-size: 14px; color: #4A5E5A"><span>لم تجد ما تبحث عنه؟</span><a href="Booking.html" style="font-weight: 700; color: #2B4944; text-decoration: none">احجز استشارة عامة ←</a></div>
+</div></div>
+</div>
+<h3 style="margin: 72px 0 22px; font-size: 24px; color: #2B4944; display: flex; flex-wrap: wrap; align-items: baseline; gap: 12px">القائمة الكاملة<span style="font-size: 15px; font-weight: 400; color: #4A5E5A">تنفتح بزر «القائمة»</span></h3>
+<div style="border-radius: 40px; overflow: hidden"><div style="background: #1A2B28; color: #FFFFFF; border-radius: 0 0 48px 48px; padding: 22px 40px 56px; position: relative; overflow: hidden">
+<svg class="spin" style="position: absolute; left: -260px; bottom: -380px; width: 900px; height: 900px; opacity: .1" viewBox="0 0 400 400" aria-hidden="true"><g fill="none" stroke="#FFC800"><circle cx="200" cy="200" r="190"/><circle cx="200" cy="200" r="150"/><circle cx="200" cy="200" r="110"/><circle cx="200" cy="200" r="70"/></g></svg>
+<div style="max-width: 1240px; margin: 0 auto; position: relative">
+<div style="display: flex; align-items: center; justify-content: space-between; gap: 16px"><svg width="124" height="44" viewBox="0 0 545 192" role="img" aria-label="أفكار الريادة"><path d="M107 0H131Q135 0 135 4V30Q135 61 172 64.5L232 72H103V4Q103 0 107 0Z" fill="#FFC800"/><path d="M107 0H131Q135 0 135 4V30Q135 61 172 64.5L232 72H103V4Q103 0 107 0Z" fill="#FFC800" transform="rotate(180 116 72)"/><text x="146" y="188" direction="ltr" unicode-bidi="bidi-override" textLength="392" lengthAdjust="spacingAndGlyphs" font-family="IBM Plex Sans, sans-serif" font-size="172" font-weight="500" letter-spacing="-3" fill="#FFFFFF">armc</text></svg><span class="mbtn" style="background: #FFC800">إغلاق<span class="c"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg></span></span></div>
+<div style="display: grid; grid-template-columns: minmax(0, 1.4fr) minmax(0, 1fr); gap: 60px; margin-top: 46px; align-items: start">
+<nav aria-label="القائمة الرئيسية"><a class="big" href="Main.html" style="color: #FFC800"><b>01</b>الرئيسية<span class="ar"><svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19 12H5M11 6l-6 6 6 6"/></svg></span></a><a class="big" href="About.html"><b>02</b>من نحن<span class="ar"><svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19 12H5M11 6l-6 6 6 6"/></svg></span></a><a class="big" href="Services.html"><b>03</b>خدماتنا<span class="ar"><svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19 12H5M11 6l-6 6 6 6"/></svg></span></a><a class="big" href="Contact.html"><b>04</b>تواصل معنا<span class="ar"><svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19 12H5M11 6l-6 6 6 6"/></svg></span></a><a class="big" href="Track.html"><b>05</b>تابع طلبك<span class="ar"><svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19 12H5M11 6l-6 6 6 6"/></svg></span></a></nav>
+<div style="background: #233B37; border: 1px solid rgba(255,255,255,.08); border-radius: 32px 32px 32px 96px; padding: 28px 30px 32px">
+<div style="font-size: 14px; color: #FFC800; font-weight: 600">مساراتنا</div>
+<a href="Service-Management.html" style="display: flex; align-items: center; gap: 14px; text-decoration: none; color: #FFFFFF; padding: 14px 0; border-bottom: 1px solid rgba(255,255,255,.1)"><span class="icb" style="background: #2B4944"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#FFC800" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 3v18h18"/><path d="M7 15l4-4 3 3 5-6"/><path d="M15 8h4v4"/></svg></span><span><span style="display: block; font-weight: 700; font-size: 17px">الاستشارات الإدارية</span><span style="display: block; font-size: 13px; color: #B9CCC7">6 خدمات</span></span></a><a href="Service-Legal.html" style="display: flex; align-items: center; gap: 14px; text-decoration: none; color: #FFFFFF; padding: 14px 0; border-bottom: 1px solid rgba(255,255,255,.1)"><span class="icb" style="background: #2B4944"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#FFC800" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v18"/><path d="M7 21h10"/><path d="M5 7h14"/><path d="M5 7l-3 7a3 3 0 0 0 6 0z"/><path d="M19 7l-3 7a3 3 0 0 0 6 0z"/></svg></span><span><span style="display: block; font-weight: 700; font-size: 17px">الاستشارات القانونية</span><span style="display: block; font-size: 13px; color: #B9CCC7">6 خدمات</span></span></a><a href="Service-Accounting.html" style="display: flex; align-items: center; gap: 14px; text-decoration: none; color: #FFFFFF; padding: 14px 0; border-bottom: 1px solid rgba(255,255,255,.1)"><span class="icb" style="background: #2B4944"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#FFC800" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="5" y="2" width="14" height="20" rx="2.5"/><path d="M8.5 6h7"/><path d="M8.5 11h.01M12 11h.01M15.5 11h.01M8.5 14.5h.01M12 14.5h.01M15.5 14.5v3M8.5 18h.01M12 18h.01"/></svg></span><span><span style="display: block; font-weight: 700; font-size: 17px">الاستشارات المحاسبية والضريبية</span><span style="display: block; font-size: 13px; color: #B9CCC7">5 خدمات</span></span></a>
+<div style="margin-top: 22px; display: grid; gap: 8px; font-size: 15px; color: #D3E0DC"><span>[رقم الجوال]</span><span>[البريد الإلكتروني]</span><span>[العنوان]</span></div>
+<div style="margin-top: 22px; display: flex; flex-wrap: wrap; gap: 10px">
+<a class="btn btn-y" href="Booking.html" style="background: #FFC800; color: #2B4944; text-decoration: none; font-weight: 700; padding: 13px 22px; border-radius: 999px; font-size: 15px">احجز استشارة</a>
+<a href="Contact.html" style="display: inline-flex; align-items: center; gap: 8px; color: #FFFFFF; text-decoration: none; padding: 12px 18px; border-radius: 999px; font-size: 15px; border: 1px solid rgba(255,255,255,.3)"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="#25A55F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12a8.5 8.5 0 0 1-12.6 7.4L3 21l1.6-5.2A8.5 8.5 0 1 1 21 12z"/></svg>واتساب</a>
+</div>
+</div>
+</div>
+</div>
+</div></div>
+<h3 style="margin: 72px 0 22px; font-size: 24px; color: #2B4944; display: flex; flex-wrap: wrap; align-items: baseline; gap: 12px">على الجوال<span style="font-size: 15px; font-weight: 400; color: #4A5E5A">مغلقة · مفتوحة</span></h3>
+<div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 56px">
+<div><div class="phone">
+<div style="position: absolute; top: 0; right: 0; left: 0; z-index: 2; padding: 16px 18px; display: flex; align-items: center; justify-content: space-between">
+<svg width="92" height="33" viewBox="0 0 545 192" role="img" aria-label="أفكار الريادة"><path d="M107 0H131Q135 0 135 4V30Q135 61 172 64.5L232 72H103V4Q103 0 107 0Z" fill="#FFC800"/><path d="M107 0H131Q135 0 135 4V30Q135 61 172 64.5L232 72H103V4Q103 0 107 0Z" fill="#FFC800" transform="rotate(180 116 72)"/><text x="146" y="188" direction="ltr" unicode-bidi="bidi-override" textLength="392" lengthAdjust="spacingAndGlyphs" font-family="IBM Plex Sans, sans-serif" font-size="172" font-weight="500" letter-spacing="-3" fill="#FFFFFF">armc</text></svg>
+<div style="display: flex; gap: 8px"><span style="width: 42px; height: 42px; border-radius: 50%; background: rgba(255,255,255,.1); border: 1px solid rgba(255,255,255,.2); display: inline-flex; align-items: center; justify-content: center; color: #FFC800"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5"/></svg></span><span style="width: 42px; height: 42px; border-radius: 50%; background: #FFFFFF; display: inline-flex; align-items: center; justify-content: center; color: #2B4944"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 8h16M4 16h10"/></svg></span></div>
+</div>
+<div style="padding: 92px 22px 0; color: #FFFFFF; position: relative">
+<svg style="position: absolute; left: -160px; top: -80px; width: 420px; height: 420px; opacity: .16" viewBox="0 0 400 400" aria-hidden="true"><g fill="none" stroke="#FFFFFF"><circle cx="200" cy="200" r="190"/><circle cx="200" cy="200" r="140"/><circle cx="200" cy="200" r="90"/></g></svg>
+<p style="margin: 0 0 14px; display: inline-flex; color: #FFC800; font-size: 12px; font-weight: 600; border: 1px solid rgba(255,200,0,.3); border-radius: 999px; padding: 5px 12px">استشارات إدارية · قانونية · محاسبية</p>
+<div style="font-size: 36px; line-height: 1.3; font-weight: 700">خبرة في العمل<br><span style="color: #FFC800">وريادة في الفكر</span></div>
+<p style="margin: 16px 0 0; font-size: 14px; line-height: 1.9; color: #D3E0DC">احجز استشارتك في دقيقتين، وتابع طلبك من جوالك حتى موعد الجلسة.</p>
+<div style="margin-top: 22px; background: #FFC800; color: #2B4944; font-weight: 700; border-radius: 999px; padding: 13px 0; text-align: center; font-size: 15px">احجز استشارتك الآن</div>
+<div style="margin: 26px 0 0; height: 230px; border-radius: 160px 160px 24px 24px; background: linear-gradient(170deg, #5E8079 0%, #2E4E49 100%)"></div>
+</div>
+</div><p class="cap">القائمة مغلقة</p></div>
+<div><div class="phone" style="background: #1A2B28; color: #FFFFFF">
+<svg style="position: absolute; left: -180px; bottom: -200px; width: 480px; height: 480px; opacity: .12" viewBox="0 0 400 400" aria-hidden="true"><g fill="none" stroke="#FFC800"><circle cx="200" cy="200" r="190"/><circle cx="200" cy="200" r="140"/><circle cx="200" cy="200" r="90"/></g></svg>
+<div style="padding: 16px 18px; display: flex; align-items: center; justify-content: space-between; position: relative"><svg width="92" height="33" viewBox="0 0 545 192" role="img" aria-label="أفكار الريادة"><path d="M107 0H131Q135 0 135 4V30Q135 61 172 64.5L232 72H103V4Q103 0 107 0Z" fill="#FFC800"/><path d="M107 0H131Q135 0 135 4V30Q135 61 172 64.5L232 72H103V4Q103 0 107 0Z" fill="#FFC800" transform="rotate(180 116 72)"/><text x="146" y="188" direction="ltr" unicode-bidi="bidi-override" textLength="392" lengthAdjust="spacingAndGlyphs" font-family="IBM Plex Sans, sans-serif" font-size="172" font-weight="500" letter-spacing="-3" fill="#FFFFFF">armc</text></svg><span style="width: 42px; height: 42px; border-radius: 50%; background: #FFC800; display: inline-flex; align-items: center; justify-content: center; color: #2B4944"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg></span></div>
+<div style="padding: 6px 22px; position: relative">
+<div style="display: flex; align-items: center; gap: 10px; background: rgba(255,255,255,.08); border: 1px solid rgba(255,255,255,.16); border-radius: 999px; padding: 11px 16px; font-size: 14px; color: #B9CCC7"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#FFC800" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5"/></svg>ابحث عن استشارتك…</div>
+<div style="margin-top: 22px"><div style="display: flex; align-items: center; gap: 14px; font-size: 32px; font-weight: 700; padding: 6px 0; color: #FFC800"><b style="font-family: 'IBM Plex Sans', sans-serif; font-size: 12px; font-weight: 500; color: #B9CCC7; width: 20px">01</b>الرئيسية</div><div style="display: flex; align-items: center; gap: 14px; font-size: 32px; font-weight: 700; padding: 6px 0; color: #FFFFFF"><b style="font-family: 'IBM Plex Sans', sans-serif; font-size: 12px; font-weight: 500; color: #B9CCC7; width: 20px">02</b>من نحن</div><div style="display: flex; align-items: center; gap: 14px; font-size: 32px; font-weight: 700; padding: 6px 0; color: #FFFFFF"><b style="font-family: 'IBM Plex Sans', sans-serif; font-size: 12px; font-weight: 500; color: #B9CCC7; width: 20px">03</b>خدماتنا</div><div style="display: flex; align-items: center; gap: 14px; font-size: 32px; font-weight: 700; padding: 6px 0; color: #FFFFFF"><b style="font-family: 'IBM Plex Sans', sans-serif; font-size: 12px; font-weight: 500; color: #B9CCC7; width: 20px">04</b>تواصل معنا</div><div style="display: flex; align-items: center; gap: 14px; font-size: 32px; font-weight: 700; padding: 6px 0; color: #FFFFFF"><b style="font-family: 'IBM Plex Sans', sans-serif; font-size: 12px; font-weight: 500; color: #B9CCC7; width: 20px">05</b>تابع طلبك</div></div>
+<div style="margin-top: 20px; display: flex; flex-wrap: wrap; gap: 8px"><span style="font-size: 13px; border: 1px solid rgba(255,255,255,.2); border-radius: 999px; padding: 6px 12px; color: #D3E0DC">الإدارية</span><span style="font-size: 13px; border: 1px solid rgba(255,255,255,.2); border-radius: 999px; padding: 6px 12px; color: #D3E0DC">القانونية</span><span style="font-size: 13px; border: 1px solid rgba(255,255,255,.2); border-radius: 999px; padding: 6px 12px; color: #D3E0DC">المحاسبية والضريبية</span></div>
+<div style="margin-top: 26px; text-align: center; background: #FFC800; color: #2B4944; border-radius: 999px; padding: 13px 0; font-weight: 700; font-size: 15px">احجز استشارة</div>
+</div>
+</div><p class="cap">القائمة مفتوحة — مع البحث</p></div>
+</div>
+</div>
+</section>
+<a class="wa" href="Contact.html" aria-label="تواصل عبر واتساب" style="position: fixed; left: 24px; bottom: 24px; width: 60px; height: 60px; border-radius: 50%; background: #25A55F; display: flex; align-items: center; justify-content: center; box-shadow: 0 12px 28px rgba(0,0,0,0.28); z-index: 50">
+<svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12a8.5 8.5 0 0 1-12.6 7.4L3 21l1.6-5.2A8.5 8.5 0 1 1 21 12z"/><path d="M9 9.5c.3 2.3 2.2 4.2 4.5 4.5l1-1.2 1.8.8"/></svg>
+</a>
+</div>
+</template>
+<div id="dc-root"></div>
+</body>
+</html>
