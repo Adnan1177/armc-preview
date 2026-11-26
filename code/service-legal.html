@@ -1,0 +1,654 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>الاستشارات القانونية — أفكار الريادة</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@300;400;500;600;700&amp;family=IBM+Plex+Sans:wght@300;400;500;600&amp;display=swap">
+<style>
+body{margin:0;background:#F7F2EB}
+a{color:#2B4944}a:hover{color:#D96C00}
+@keyframes up{from{opacity:0;transform:translateY(28px)}to{opacity:1;transform:none}}
+@keyframes spin{to{transform:rotate(360deg)}}
+@keyframes ring{0%{box-shadow:0 0 0 0 rgba(37,165,95,.5)}100%{box-shadow:0 0 0 20px rgba(37,165,95,0)}}
+@keyframes shine{from{transform:translateX(120%) skewX(-20deg)}to{transform:translateX(-220%) skewX(-20deg)}}
+.up{animation:up .9s cubic-bezier(.2,.7,.2,1) both}
+.d1{animation-delay:.1s}.d2{animation-delay:.25s}.d3{animation-delay:.4s}
+.spin{animation:spin 90s linear infinite}
+.wa{animation:ring 2.4s ease-out infinite}
+.btn{transition:transform .25s ease,box-shadow .25s ease;position:relative;overflow:hidden}
+.btn:hover{transform:translateY(-2px);box-shadow:0 14px 30px -10px rgba(0,0,0,.35)}
+.btn-y::after{content:"";position:absolute;inset:0;width:40%;background:linear-gradient(90deg,transparent,rgba(255,255,255,.55),transparent);animation:shine 3.5s ease-in-out infinite}
+.navl{position:relative;transition:color .2s}
+.navl::after{content:"";position:absolute;right:0;bottom:-6px;height:2px;width:0;background:#FFC800;transition:width .3s}
+.navl:hover{color:#FFC800 !important}.navl:hover::after{width:100%}
+.svc{transition:transform .4s cubic-bezier(.2,.7,.2,1),box-shadow .4s,border-color .4s}
+.svc:hover{transform:translateY(-6px);box-shadow:0 26px 50px -24px rgba(43,73,68,.45)}
+.tile{transition:transform .35s}.tile:hover{transform:translateY(-4px)}
+@supports (animation-timeline: view()){.rv{animation:up linear both;animation-timeline:view();animation-range:entry 0% entry 45%}}
+@media (max-width: 640px){h1{font-size:40px !important}h2{font-size:30px !important}section{padding-left:16px !important;padding-right:16px !important}}
+@media (prefers-reduced-motion: reduce){*{animation:none !important;transition:none !important}}
+</style>
+
+<link rel="stylesheet" href="assets/css/armc.css">
+</head>
+<body>
+
+<div id="armc-page">
+
+<div dir="rtl" style="font-family: 'IBM Plex Sans Arabic', 'IBM Plex Sans', sans-serif; color: #1F2D2A; background: #F7F2EB; min-height: 100vh; position: relative; overflow-x: hidden">
+
+
+<div role="note" style="background: #1A2B28; color: #FFC800; padding: 8px 24px; text-align: center; font-size: 13px; line-height: 1.7">تصميم أولي للعرض فقط — جميع الحقوق محفوظة © 2026 للمهندس عدنان البنا.</div>
+
+
+<header style="position: sticky; top: 0; z-index: 40; background: rgba(36,62,58,0.92); backdrop-filter: blur(14px); -webkit-backdrop-filter: blur(14px); border-bottom: 1px solid rgba(255,255,255,0.08); padding: 16px 24px">
+<div style="max-width: 1240px; margin: 0 auto; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 16px">
+<a href="index.html" aria-label="أفكار الريادة — الرئيسية" style="display: flex; align-items: center"><svg width="124" height="44" viewBox="0 0 545 192" role="img" aria-label="أفكار الريادة"><path d="M107 0H131Q135 0 135 4V30Q135 61 172 64.5L232 72H103V4Q103 0 107 0Z" fill="#FFC800"></path><path d="M107 0H131Q135 0 135 4V30Q135 61 172 64.5L232 72H103V4Q103 0 107 0Z" fill="#FFC800" transform="rotate(180 116 72)"></path><text x="146" y="188" direction="ltr" unicode-bidi="bidi-override" textLength="392" lengthAdjust="spacingAndGlyphs" font-family="IBM Plex Sans, sans-serif" font-size="172" font-weight="500" letter-spacing="-3" fill="#FFFFFF">armc</text></svg></a>
+<nav aria-label="القائمة الرئيسية" style="display: flex; flex-wrap: wrap; gap: 30px; font-size: 16px">
+<a class="navl" href="index.html" style="color: #FFFFFF; text-decoration: none">الرئيسية</a>
+<a class="navl" href="about.html" style="color: #FFFFFF; text-decoration: none">من نحن</a>
+<a class="navl" href="services.html" style="color: #FFC800; text-decoration: none; font-weight: 600">خدماتنا</a>
+<a class="navl" href="contact.html" style="color: #FFFFFF; text-decoration: none">تواصل معنا</a>
+</nav>
+<div style="display: flex; align-items: center; gap: 10px; flex-wrap: wrap">
+<a class="btn" href="track.html" style="color: #FFFFFF; text-decoration: none; font-weight: 500; padding: 11px 20px; border-radius: 999px; font-size: 15px; border: 1px solid rgba(255,255,255,0.4)">تابع طلبك</a>
+<a class="btn btn-y" href="booking.html" style="background: #FFC800; color: #2B4944; text-decoration: none; font-weight: 700; padding: 12px 22px; border-radius: 999px; font-size: 15px">احجز استشارة</a>
+</div>
+</div>
+</header>
+
+<section style="background: #2B4944; color: #FFFFFF; padding: 64px 24px 120px; position: relative; overflow: hidden">
+<svg class="spin" style="position: absolute; left: -300px; top: -360px; width: 1000px; height: 1000px; opacity: 0.14" viewBox="0 0 1000 1000" aria-hidden="true"><g fill="none" stroke="#FFFFFF" stroke-width="1.2"><circle cx="500" cy="500" r="490"></circle><circle cx="500" cy="500" r="390"></circle><circle cx="500" cy="500" r="290"></circle></g><circle cx="500" cy="10" r="7" fill="#FFC800"></circle></svg>
+<div style="max-width: 1240px; margin: 0 auto; position: relative; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 40px">
+<div style="flex: 1 1 560px; min-width: 0">
+<nav aria-label="مسار التنقل" class="up" style="font-size: 14px; color: #B9CCC7; margin-bottom: 22px"><a href="index.html" style="color: #B9CCC7; text-decoration: none">الرئيسية</a> / <a href="services.html" style="color: #B9CCC7; text-decoration: none">خدماتنا</a> / <span style="color: #FFC800">الاستشارات القانونية</span></nav>
+<p class="up d1" style="margin: 0 0 14px; color: #FFC800; font-weight: 700; font-family: 'IBM Plex Sans', sans-serif; font-size: 15px; letter-spacing: 2px">02 — المسار القانوني</p>
+<h1 class="up d2" style="margin: 0; font-size: 60px; line-height: 1.25; font-weight: 700">الاستشارات القانونية</h1>
+<p class="up d3" style="margin: 22px 0 0; font-size: 20px; line-height: 1.9; color: #D3E0DC; max-width: 600px">رأي قانوني واضح قبل أن تتخذ قرارك: في العقود والعقار والتركات والنزاعات وأنظمة الشركات.</p>
+<p class="up d3" role="note" style="margin: 20px 0 0; display: inline-flex; align-items: flex-start; gap: 10px; background: rgba(255,200,0,0.1); border: 1px solid rgba(255,200,0,0.35); border-radius: 16px; padding: 12px 16px; font-size: 15px; line-height: 1.8; color: #FFFFFF; max-width: 600px"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#FFC800" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex: none; margin-top: 4px"><circle cx="12" cy="12" r="9"></circle><path d="M12 8v5M12 16.5v.5"></path></svg>نقدّم الاستشارة والرأي القانوني، ولا نقدّم خدمات الترافع أو التمثيل أمام الجهات القضائية.</p>
+<div class="up d3" style="display: flex; flex-wrap: wrap; gap: 12px; margin-top: 34px">
+<a class="btn btn-y" href="booking.html" style="background: #FFC800; color: #2B4944; text-decoration: none; font-weight: 700; padding: 16px 30px; border-radius: 999px; font-size: 17px">احجز استشارة قانونية</a>
+<a class="btn" href="#offer" style="color: #FFFFFF; text-decoration: none; font-weight: 500; padding: 15px 28px; border-radius: 999px; font-size: 17px; border: 1.5px solid rgba(255,255,255,0.35)">ما نقدمه</a>
+</div>
+</div>
+<div class="up d2" style="flex: 0 1 300px; display: flex; justify-content: center">
+<div style="width: 240px; height: 240px; border-radius: 120px 120px 32px 120px; background: rgba(255,255,255,0.06); border: 2px solid rgba(255,200,0,0.5); display: flex; align-items: center; justify-content: center">
+<svg width="110" height="110" viewBox="0 0 24 24" fill="none" stroke="#FFC800" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v18M7 21h10M5 7h14M5 7l-3 6a3 3 0 0 0 6 0zM19 7l-3 6a3 3 0 0 0 6 0z"></path></svg>
+</div>
+</div>
+</div>
+<svg style="position: absolute; left: 0; right: 0; bottom: -1px; width: 100%; height: 80px" viewBox="0 0 1440 80" preserveAspectRatio="none" aria-hidden="true"><path d="M0 80 Q720 -20 1440 80 Z" fill="#F7F2EB"></path><path d="M0 80 Q720 -20 1440 80" fill="none" stroke="#FFC800" stroke-width="3"></path></svg>
+</section>
+
+<section id="offer" style="padding: 90px 24px 90px">
+<div style="max-width: 1240px; margin: 0 auto">
+<div class="rv" style="margin-bottom: 40px">
+<p style="margin: 0 0 12px; color: #A84F00; font-weight: 700">— ما نقدمه</p>
+<h2 style="margin: 0 0 10px; font-size: 44px; color: #2B4944">ست استشارات قانونية متخصصة</h2>
+<p style="margin: 0; color: #4A5E5A; font-size: 17px">اضغط على أي استشارة لترى ما تتضمنه.</p>
+</div>
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(340px, 1fr)); gap: 20px; align-items: start" data-armc-region="r1" data-armc-state="0">
+
+<div class="svc" style="background: #FFFFFF; border: 1.5px solid #FFC800; border-radius: 28px 28px 28px 80px; padding: 30px 30px 34px">
+<button type="button" aria-expanded="true" style="width: 100%; display: flex; align-items: flex-start; gap: 16px; background: none; border: 0; padding: 0; cursor: pointer; font-family: inherit; text-align: right; color: inherit; min-height: 44px">
+<span style="width: 52px; height: 52px; flex: none; border-radius: 16px; background: #2B4944; color: #FFC800; display: flex; align-items: center; justify-content: center; font-family: 'IBM Plex Sans', sans-serif; font-weight: 600; font-size: 18px">01</span>
+<span style="flex: 1; display: flex; flex-direction: column; gap: 6px"><span style="font-size: 21px; font-weight: 700; color: #2B4944">الاستشارات القانونية العامة</span><span style="font-size: 15px; line-height: 1.8; color: #4A5E5A">رأي قانوني في مسألة محددة تواجهك، بلغة واضحة.</span></span>
+<span style="width: 36px; height: 36px; flex: none; border-radius: 50%; border: 1.5px solid #2B4944; color: #2B4944; display: flex; align-items: center; justify-content: center; font-size: 22px; font-family: 'IBM Plex Sans', sans-serif">−</span>
+</button>
+
+<div style="margin-top: 20px; padding-top: 18px; border-top: 1px dashed #D9D2C6">
+<p style="margin: 0 0 10px; font-weight: 700; color: #A84F00; font-size: 15px">ما تتضمنه الاستشارة</p>
+<ul style="margin: 0 0 18px; padding: 0 18px 0 0; color: #1F2D2A; line-height: 2; font-size: 15px">
+<li>دراسة الوقائع والمستندات المقدمة</li><li>بيان الموقف النظامي والخيارات المتاحة</li><li>توصية عملية بالخطوة التالية</li>
+</ul>
+<a class="btn btn-y" href="booking.html" style="display: inline-block; background: #FFC800; color: #2B4944; text-decoration: none; font-weight: 700; padding: 12px 22px; border-radius: 999px; font-size: 15px">احجز هذه الاستشارة</a>
+</div>
+
+</div>
+
+<div class="svc" style="background: #FFFFFF; border: 1.5px solid #E6DFD3; border-radius: 28px 28px 28px 80px; padding: 30px 30px 34px">
+<button type="button" aria-expanded="false" style="width: 100%; display: flex; align-items: flex-start; gap: 16px; background: none; border: 0; padding: 0; cursor: pointer; font-family: inherit; text-align: right; color: inherit; min-height: 44px">
+<span style="width: 52px; height: 52px; flex: none; border-radius: 16px; background: #2B4944; color: #FFC800; display: flex; align-items: center; justify-content: center; font-family: 'IBM Plex Sans', sans-serif; font-weight: 600; font-size: 18px">02</span>
+<span style="flex: 1; display: flex; flex-direction: column; gap: 6px"><span style="font-size: 21px; font-weight: 700; color: #2B4944">مراجعة وصياغة العقود والاتفاقيات</span><span style="font-size: 15px; line-height: 1.8; color: #4A5E5A">عقد يحمي حقوقك قبل التوقيع، لا بعده.</span></span>
+<span style="width: 36px; height: 36px; flex: none; border-radius: 50%; border: 1.5px solid #2B4944; color: #2B4944; display: flex; align-items: center; justify-content: center; font-size: 22px; font-family: 'IBM Plex Sans', sans-serif">+</span>
+</button>
+
+</div>
+
+<div class="svc" style="background: #FFFFFF; border: 1.5px solid #E6DFD3; border-radius: 28px 28px 28px 80px; padding: 30px 30px 34px">
+<button type="button" aria-expanded="false" style="width: 100%; display: flex; align-items: flex-start; gap: 16px; background: none; border: 0; padding: 0; cursor: pointer; font-family: inherit; text-align: right; color: inherit; min-height: 44px">
+<span style="width: 52px; height: 52px; flex: none; border-radius: 16px; background: #2B4944; color: #FFC800; display: flex; align-items: center; justify-content: center; font-family: 'IBM Plex Sans', sans-serif; font-weight: 600; font-size: 18px">03</span>
+<span style="flex: 1; display: flex; flex-direction: column; gap: 6px"><span style="font-size: 21px; font-weight: 700; color: #2B4944">استشارات النزاعات والمطالبات</span><span style="font-size: 15px; line-height: 1.8; color: #4A5E5A">تقييم موقفك في الخلاف وأفضل طريق لحله.</span></span>
+<span style="width: 36px; height: 36px; flex: none; border-radius: 50%; border: 1.5px solid #2B4944; color: #2B4944; display: flex; align-items: center; justify-content: center; font-size: 22px; font-family: 'IBM Plex Sans', sans-serif">+</span>
+</button>
+
+</div>
+
+<div class="svc" style="background: #FFFFFF; border: 1.5px solid #E6DFD3; border-radius: 28px 28px 28px 80px; padding: 30px 30px 34px">
+<button type="button" aria-expanded="false" style="width: 100%; display: flex; align-items: flex-start; gap: 16px; background: none; border: 0; padding: 0; cursor: pointer; font-family: inherit; text-align: right; color: inherit; min-height: 44px">
+<span style="width: 52px; height: 52px; flex: none; border-radius: 16px; background: #2B4944; color: #FFC800; display: flex; align-items: center; justify-content: center; font-family: 'IBM Plex Sans', sans-serif; font-weight: 600; font-size: 18px">04</span>
+<span style="flex: 1; display: flex; flex-direction: column; gap: 6px"><span style="font-size: 21px; font-weight: 700; color: #2B4944">استشارات الأراضي والعقارات</span><span style="font-size: 15px; line-height: 1.8; color: #4A5E5A">وضوح قانوني قبل الشراء أو البيع أو الإفراغ.</span></span>
+<span style="width: 36px; height: 36px; flex: none; border-radius: 50%; border: 1.5px solid #2B4944; color: #2B4944; display: flex; align-items: center; justify-content: center; font-size: 22px; font-family: 'IBM Plex Sans', sans-serif">+</span>
+</button>
+
+</div>
+
+<div class="svc" style="background: #FFFFFF; border: 1.5px solid #E6DFD3; border-radius: 28px 28px 28px 80px; padding: 30px 30px 34px">
+<button type="button" aria-expanded="false" style="width: 100%; display: flex; align-items: flex-start; gap: 16px; background: none; border: 0; padding: 0; cursor: pointer; font-family: inherit; text-align: right; color: inherit; min-height: 44px">
+<span style="width: 52px; height: 52px; flex: none; border-radius: 16px; background: #2B4944; color: #FFC800; display: flex; align-items: center; justify-content: center; font-family: 'IBM Plex Sans', sans-serif; font-weight: 600; font-size: 18px">05</span>
+<span style="flex: 1; display: flex; flex-direction: column; gap: 6px"><span style="font-size: 21px; font-weight: 700; color: #2B4944">استشارات التركات والميراث</span><span style="font-size: 15px; line-height: 1.8; color: #4A5E5A">فهم الحقوق والإجراءات في توزيع التركة.</span></span>
+<span style="width: 36px; height: 36px; flex: none; border-radius: 50%; border: 1.5px solid #2B4944; color: #2B4944; display: flex; align-items: center; justify-content: center; font-size: 22px; font-family: 'IBM Plex Sans', sans-serif">+</span>
+</button>
+
+</div>
+
+<div class="svc" style="background: #FFFFFF; border: 1.5px solid #E6DFD3; border-radius: 28px 28px 28px 80px; padding: 30px 30px 34px">
+<button type="button" aria-expanded="false" style="width: 100%; display: flex; align-items: flex-start; gap: 16px; background: none; border: 0; padding: 0; cursor: pointer; font-family: inherit; text-align: right; color: inherit; min-height: 44px">
+<span style="width: 52px; height: 52px; flex: none; border-radius: 16px; background: #2B4944; color: #FFC800; display: flex; align-items: center; justify-content: center; font-family: 'IBM Plex Sans', sans-serif; font-weight: 600; font-size: 18px">06</span>
+<span style="flex: 1; display: flex; flex-direction: column; gap: 6px"><span style="font-size: 21px; font-weight: 700; color: #2B4944">استشارات الشركات والأنظمة التجارية</span><span style="font-size: 15px; line-height: 1.8; color: #4A5E5A">رأي قانوني في تأسيس الشركات وعلاقات الشركاء.</span></span>
+<span style="width: 36px; height: 36px; flex: none; border-radius: 50%; border: 1.5px solid #2B4944; color: #2B4944; display: flex; align-items: center; justify-content: center; font-size: 22px; font-family: 'IBM Plex Sans', sans-serif">+</span>
+</button>
+
+</div>
+
+</div>
+</div>
+</section>
+
+<section style="padding: 0 24px 90px">
+<div class="rv" style="max-width: 1240px; margin: 0 auto; background: #FFFFFF; border-radius: 36px; padding: 56px 48px">
+<p style="margin: 0 0 12px; color: #A84F00; font-weight: 700">— لمن هذه الخدمة</p>
+<h2 style="margin: 0 0 32px; font-size: 38px; color: #2B4944">لكل من يحتاج وضوحًا قانونيًا قبل القرار</h2>
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 18px">
+<div class="tile" style="background: #F7F2EB; border-radius: 24px; padding: 28px"><h3 style="margin: 0 0 8px; font-size: 21px; color: #2B4944">الأفراد</h3><p style="margin: 0; line-height: 1.8; color: #4A5E5A">قبل توقيع عقد، أو شراء عقار، أو تقسيم تركة.</p></div>
+<div class="tile" style="background: #F7F2EB; border-radius: 24px; padding: 28px"><h3 style="margin: 0 0 8px; font-size: 21px; color: #2B4944">الوكلاء</h3><p style="margin: 0; line-height: 1.8; color: #4A5E5A">الذين يتابعون معاملات موكليهم ويحتاجون رأيًا قانونيًا موثوقًا.</p></div>
+<div class="tile" style="background: #F7F2EB; border-radius: 24px; padding: 28px"><h3 style="margin: 0 0 8px; font-size: 21px; color: #2B4944">المنشآت</h3><p style="margin: 0; line-height: 1.8; color: #4A5E5A">في العقود التجارية، وعلاقات الشركاء، ومتطلبات الأنظمة.</p></div>
+</div>
+</div>
+</section>
+
+<section style="padding: 0 24px 90px">
+<div style="max-width: 1240px; margin: 0 auto">
+<div class="rv" style="text-align: center; margin-bottom: 44px"><p style="margin: 0 0 12px; color: #A84F00; font-weight: 700">— كيف تتم الاستشارة</p><h2 style="margin: 0; font-size: 40px; color: #2B4944">خمس خطوات، وكل خطوة تصلك على واتساب</h2></div>
+<ol style="list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(190px, 1fr)); gap: 18px">
+<li class="rv" style="background: #FFFFFF; border-radius: 24px; padding: 24px; border-top: 4px solid #FFC800"><span style="font-family: 'IBM Plex Sans', sans-serif; font-size: 30px; font-weight: 300; color: #A84F00">01</span><h3 style="margin: 8px 0 6px; font-size: 19px; color: #2B4944">الطلب</h3><p style="margin: 0; font-size: 15px; line-height: 1.8; color: #4A5E5A">تختار الاستشارة وتكتب بياناتك.</p></li>
+<li class="rv" style="background: #FFFFFF; border-radius: 24px; padding: 24px; border-top: 4px solid #FFC800"><span style="font-family: 'IBM Plex Sans', sans-serif; font-size: 30px; font-weight: 300; color: #A84F00">02</span><h3 style="margin: 8px 0 6px; font-size: 19px; color: #2B4944">التحقق</h3><p style="margin: 0; font-size: 15px; line-height: 1.8; color: #4A5E5A">رمز من 4 أرقام يصلك على واتساب.</p></li>
+<li class="rv" style="background: #FFFFFF; border-radius: 24px; padding: 24px; border-top: 4px solid #FFC800"><span style="font-family: 'IBM Plex Sans', sans-serif; font-size: 30px; font-weight: 300; color: #A84F00">03</span><h3 style="margin: 8px 0 6px; font-size: 19px; color: #2B4944">المراجعة والدفع</h3><p style="margin: 0; font-size: 15px; line-height: 1.8; color: #4A5E5A">نراجع طلبك ونرسل لك رابط دفع آمن.</p></li>
+<li class="rv" style="background: #FFFFFF; border-radius: 24px; padding: 24px; border-top: 4px solid #FFC800"><span style="font-family: 'IBM Plex Sans', sans-serif; font-size: 30px; font-weight: 300; color: #A84F00">04</span><h3 style="margin: 8px 0 6px; font-size: 19px; color: #2B4944">الجلسة</h3><p style="margin: 0; font-size: 15px; line-height: 1.8; color: #4A5E5A">حضوريًا أو عبر اتصال مرئي في الموعد المؤكد.</p></li>
+<li class="rv" style="background: #2B4944; color: #FFFFFF; border-radius: 24px; padding: 24px; border-top: 4px solid #FFC800"><span style="font-family: 'IBM Plex Sans', sans-serif; font-size: 30px; font-weight: 300; color: #FFC800">05</span><h3 style="margin: 8px 0 6px; font-size: 19px">المتابعة</h3><p style="margin: 0; font-size: 15px; line-height: 1.8; color: #D3E0DC">ملخص التوصيات ومتابعة ما بعد الجلسة.</p></li>
+</ol>
+</div>
+</section>
+
+<section style="padding: 0 24px 90px">
+<div style="max-width: 900px; margin: 0 auto">
+<div class="rv" style="margin-bottom: 30px"><p style="margin: 0 0 12px; color: #A84F00; font-weight: 700">— أسئلة شائعة</p><h2 style="margin: 0; font-size: 38px; color: #2B4944">قبل أن تحجز</h2></div>
+<div style="display: flex; flex-direction: column; gap: 12px">
+
+<div style="background: #FFFFFF; border-radius: 20px; border: 1.5px solid #E6DFD3" data-armc-region="r2" data-armc-state="0">
+<button type="button" aria-expanded="false" style="width: 100%; min-height: 60px; display: flex; align-items: center; justify-content: space-between; gap: 16px; padding: 18px 24px; background: none; border: 0; cursor: pointer; font-family: inherit; font-size: 18px; font-weight: 700; color: #2B4944; text-align: right">كم مدة الاستشارة؟<span style="font-family: 'IBM Plex Sans', sans-serif; font-size: 24px; color: #A84F00">+</span></button>
+
+</div>
+
+<div style="background: #FFFFFF; border-radius: 20px; border: 1.5px solid #E6DFD3" data-armc-region="r3" data-armc-state="0">
+<button type="button" aria-expanded="false" style="width: 100%; min-height: 60px; display: flex; align-items: center; justify-content: space-between; gap: 16px; padding: 18px 24px; background: none; border: 0; cursor: pointer; font-family: inherit; font-size: 18px; font-weight: 700; color: #2B4944; text-align: right">كم تكلفة الاستشارة؟<span style="font-family: 'IBM Plex Sans', sans-serif; font-size: 24px; color: #A84F00">+</span></button>
+
+</div>
+
+<div style="background: #FFFFFF; border-radius: 20px; border: 1.5px solid #E6DFD3" data-armc-region="r4" data-armc-state="0">
+<button type="button" aria-expanded="false" style="width: 100%; min-height: 60px; display: flex; align-items: center; justify-content: space-between; gap: 16px; padding: 18px 24px; background: none; border: 0; cursor: pointer; font-family: inherit; font-size: 18px; font-weight: 700; color: #2B4944; text-align: right">هل تمثلونني أمام المحكمة؟<span style="font-family: 'IBM Plex Sans', sans-serif; font-size: 24px; color: #A84F00">+</span></button>
+
+</div>
+
+<div style="background: #FFFFFF; border-radius: 20px; border: 1.5px solid #E6DFD3" data-armc-region="r5" data-armc-state="0">
+<button type="button" aria-expanded="false" style="width: 100%; min-height: 60px; display: flex; align-items: center; justify-content: space-between; gap: 16px; padding: 18px 24px; background: none; border: 0; cursor: pointer; font-family: inherit; font-size: 18px; font-weight: 700; color: #2B4944; text-align: right">كيف أتابع طلبي؟<span style="font-family: 'IBM Plex Sans', sans-serif; font-size: 24px; color: #A84F00">+</span></button>
+
+</div>
+
+</div>
+</div>
+</section>
+
+<section style="padding: 0 24px 90px">
+<div style="max-width: 1240px; margin: 0 auto">
+<h2 class="rv" style="margin: 0 0 24px; font-size: 30px; color: #2B4944">مسارات أخرى قد تهمك</h2>
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 18px">
+<a class="svc rv" href="service-management.html" style="text-decoration: none; background: #2B4944; color: #FFFFFF; border-radius: 28px; padding: 30px; display: flex; align-items: center; justify-content: space-between; gap: 16px; border: 1.5px solid #2B4944"><span><span style="display: block; color: #FFC800; font-weight: 700; font-size: 14px">01</span><span style="display: block; font-size: 22px; font-weight: 700; margin-top: 4px">الاستشارات الإدارية</span></span><span style="font-size: 22px">←</span></a>
+<a class="svc rv" href="service-accounting.html" style="text-decoration: none; background: #FFFFFF; color: #2B4944; border-radius: 28px; padding: 30px; display: flex; align-items: center; justify-content: space-between; gap: 16px; border: 1.5px solid #D9D2C6"><span><span style="display: block; color: #A84F00; font-weight: 700; font-size: 14px">03</span><span style="display: block; font-size: 22px; font-weight: 700; margin-top: 4px">الاستشارات المحاسبية والضريبية</span></span><span style="font-size: 22px">←</span></a>
+</div>
+</div>
+</section>
+
+<section style="padding: 0 24px 100px">
+<div class="rv" style="max-width: 1240px; margin: 0 auto; background: #FFC800; border-radius: 40px 40px 40px 160px; padding: 60px 52px; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 28px">
+<div style="flex: 1 1 420px; min-width: 0"><h2 style="margin: 0 0 10px; font-size: 40px; color: #2B4944">اعرف موقفك القانوني قبل أن تقرر</h2><p style="margin: 0; font-size: 18px; color: #2B4944; line-height: 1.8">احجز استشارتك، وتصلك كل التحديثات على واتساب.</p></div>
+<a class="btn" href="booking.html" style="background: #2B4944; color: #FFFFFF; text-decoration: none; font-weight: 700; padding: 18px 34px; border-radius: 999px; font-size: 17px">احجز استشارة قانونية</a>
+</div>
+</section>
+
+<footer style="background: #233B37; color: #B9CCC7; padding: 80px 24px 32px">
+<div style="max-width: 1240px; margin: 0 auto; display: flex; flex-wrap: wrap; justify-content: space-between; gap: 48px">
+<div style="flex: 1 1 300px; min-width: 0">
+<svg width="140" height="50" viewBox="0 0 545 192" role="img" aria-label="أفكار الريادة"><path d="M107 0H131Q135 0 135 4V30Q135 61 172 64.5L232 72H103V4Q103 0 107 0Z" fill="#FFC800"></path><path d="M107 0H131Q135 0 135 4V30Q135 61 172 64.5L232 72H103V4Q103 0 107 0Z" fill="#FFC800" transform="rotate(180 116 72)"></path><text x="146" y="188" direction="ltr" unicode-bidi="bidi-override" textLength="392" lengthAdjust="spacingAndGlyphs" font-family="IBM Plex Sans, sans-serif" font-size="172" font-weight="500" letter-spacing="-3" fill="#FFFFFF">armc</text></svg>
+<p style="margin: 18px 0 0; line-height: 1.9; max-width: 340px">أفكار الريادة للاستشارات — استشارات إدارية وقانونية ومحاسبية للأفراد والمنشآت.</p>
+</div>
+<div style="flex: 0 1 170px"><h3 style="margin: 0 0 16px; color: #FFC800; font-size: 16px">روابط</h3><div style="display: flex; flex-direction: column; gap: 10px"><a class="navl" href="about.html" style="color: #B9CCC7; text-decoration: none">من نحن</a><a class="navl" href="services.html" style="color: #B9CCC7; text-decoration: none">خدماتنا</a><a class="navl" href="booking.html" style="color: #B9CCC7; text-decoration: none">احجز استشارة</a><a class="navl" href="track.html" style="color: #B9CCC7; text-decoration: none">تابع طلبك</a><a class="navl" href="contact.html" style="color: #B9CCC7; text-decoration: none">تواصل معنا</a></div></div>
+<div style="flex: 0 1 220px"><h3 style="margin: 0 0 16px; color: #FFC800; font-size: 16px">الخدمات</h3><div style="display: flex; flex-direction: column; gap: 10px"><a class="navl" href="service-management.html" style="color: #B9CCC7; text-decoration: none">الاستشارات الإدارية</a><a class="navl" href="service-legal.html" style="color: #B9CCC7; text-decoration: none">الاستشارات القانونية</a><a class="navl" href="service-accounting.html" style="color: #B9CCC7; text-decoration: none">المحاسبية والضريبية</a></div></div>
+<div style="flex: 0 1 220px"><h3 style="margin: 0 0 16px; color: #FFC800; font-size: 16px">تواصل</h3><div style="display: flex; flex-direction: column; gap: 10px"><span>[رقم الجوال]</span><span>[البريد الإلكتروني]</span><span>[العنوان — المدينة]</span></div></div>
+</div>
+<div style="max-width: 1240px; margin: 56px auto 0; padding-top: 22px; border-top: 1px solid rgba(255,255,255,0.1); display: flex; flex-wrap: wrap; justify-content: space-between; gap: 12px; font-size: 14px">
+<span>© 2026 أفكار الريادة للاستشارات. جميع الحقوق محفوظة.</span><span>[رقم السجل التجاري] · [الرقم الضريبي]</span>
+</div>
+</footer>
+
+<a class="wa" href="contact.html" aria-label="تواصل عبر واتساب" style="position: fixed; left: 24px; bottom: 24px; width: 60px; height: 60px; border-radius: 50%; background: #25A55F; display: flex; align-items: center; justify-content: center; box-shadow: 0 12px 28px rgba(0,0,0,0.28); z-index: 50">
+<svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12a8.5 8.5 0 0 1-12.6 7.4L3 21l1.6-5.2A8.5 8.5 0 1 1 21 12z"></path><path d="M9 9.5c.3 2.3 2.2 4.2 4.5 4.5l1-1.2 1.8.8"></path></svg>
+</a>
+</div>
+</div>
+
+<!-- حالات العناصر التفاعلية: تُعرض عند الضغط على الأزرار (انظر assets/js/armc.js) -->
+<template id="r1-s1"><div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(340px, 1fr)); gap: 20px; align-items: start" data-armc-region="r1" data-armc-state="1">
+
+<div class="svc" style="background: #FFFFFF; border: 1.5px solid #E6DFD3; border-radius: 28px 28px 28px 80px; padding: 30px 30px 34px">
+<button type="button" aria-expanded="false" style="width: 100%; display: flex; align-items: flex-start; gap: 16px; background: none; border: 0; padding: 0; cursor: pointer; font-family: inherit; text-align: right; color: inherit; min-height: 44px">
+<span style="width: 52px; height: 52px; flex: none; border-radius: 16px; background: #2B4944; color: #FFC800; display: flex; align-items: center; justify-content: center; font-family: 'IBM Plex Sans', sans-serif; font-weight: 600; font-size: 18px">01</span>
+<span style="flex: 1; display: flex; flex-direction: column; gap: 6px"><span style="font-size: 21px; font-weight: 700; color: #2B4944">الاستشارات القانونية العامة</span><span style="font-size: 15px; line-height: 1.8; color: #4A5E5A">رأي قانوني في مسألة محددة تواجهك، بلغة واضحة.</span></span>
+<span style="width: 36px; height: 36px; flex: none; border-radius: 50%; border: 1.5px solid #2B4944; color: #2B4944; display: flex; align-items: center; justify-content: center; font-size: 22px; font-family: 'IBM Plex Sans', sans-serif">+</span>
+</button>
+
+</div>
+
+<div class="svc" style="background: #FFFFFF; border: 1.5px solid #E6DFD3; border-radius: 28px 28px 28px 80px; padding: 30px 30px 34px">
+<button type="button" aria-expanded="false" style="width: 100%; display: flex; align-items: flex-start; gap: 16px; background: none; border: 0; padding: 0; cursor: pointer; font-family: inherit; text-align: right; color: inherit; min-height: 44px">
+<span style="width: 52px; height: 52px; flex: none; border-radius: 16px; background: #2B4944; color: #FFC800; display: flex; align-items: center; justify-content: center; font-family: 'IBM Plex Sans', sans-serif; font-weight: 600; font-size: 18px">02</span>
+<span style="flex: 1; display: flex; flex-direction: column; gap: 6px"><span style="font-size: 21px; font-weight: 700; color: #2B4944">مراجعة وصياغة العقود والاتفاقيات</span><span style="font-size: 15px; line-height: 1.8; color: #4A5E5A">عقد يحمي حقوقك قبل التوقيع، لا بعده.</span></span>
+<span style="width: 36px; height: 36px; flex: none; border-radius: 50%; border: 1.5px solid #2B4944; color: #2B4944; display: flex; align-items: center; justify-content: center; font-size: 22px; font-family: 'IBM Plex Sans', sans-serif">+</span>
+</button>
+
+</div>
+
+<div class="svc" style="background: #FFFFFF; border: 1.5px solid #E6DFD3; border-radius: 28px 28px 28px 80px; padding: 30px 30px 34px">
+<button type="button" aria-expanded="false" style="width: 100%; display: flex; align-items: flex-start; gap: 16px; background: none; border: 0; padding: 0; cursor: pointer; font-family: inherit; text-align: right; color: inherit; min-height: 44px">
+<span style="width: 52px; height: 52px; flex: none; border-radius: 16px; background: #2B4944; color: #FFC800; display: flex; align-items: center; justify-content: center; font-family: 'IBM Plex Sans', sans-serif; font-weight: 600; font-size: 18px">03</span>
+<span style="flex: 1; display: flex; flex-direction: column; gap: 6px"><span style="font-size: 21px; font-weight: 700; color: #2B4944">استشارات النزاعات والمطالبات</span><span style="font-size: 15px; line-height: 1.8; color: #4A5E5A">تقييم موقفك في الخلاف وأفضل طريق لحله.</span></span>
+<span style="width: 36px; height: 36px; flex: none; border-radius: 50%; border: 1.5px solid #2B4944; color: #2B4944; display: flex; align-items: center; justify-content: center; font-size: 22px; font-family: 'IBM Plex Sans', sans-serif">+</span>
+</button>
+
+</div>
+
+<div class="svc" style="background: #FFFFFF; border: 1.5px solid #E6DFD3; border-radius: 28px 28px 28px 80px; padding: 30px 30px 34px">
+<button type="button" aria-expanded="false" style="width: 100%; display: flex; align-items: flex-start; gap: 16px; background: none; border: 0; padding: 0; cursor: pointer; font-family: inherit; text-align: right; color: inherit; min-height: 44px">
+<span style="width: 52px; height: 52px; flex: none; border-radius: 16px; background: #2B4944; color: #FFC800; display: flex; align-items: center; justify-content: center; font-family: 'IBM Plex Sans', sans-serif; font-weight: 600; font-size: 18px">04</span>
+<span style="flex: 1; display: flex; flex-direction: column; gap: 6px"><span style="font-size: 21px; font-weight: 700; color: #2B4944">استشارات الأراضي والعقارات</span><span style="font-size: 15px; line-height: 1.8; color: #4A5E5A">وضوح قانوني قبل الشراء أو البيع أو الإفراغ.</span></span>
+<span style="width: 36px; height: 36px; flex: none; border-radius: 50%; border: 1.5px solid #2B4944; color: #2B4944; display: flex; align-items: center; justify-content: center; font-size: 22px; font-family: 'IBM Plex Sans', sans-serif">+</span>
+</button>
+
+</div>
+
+<div class="svc" style="background: #FFFFFF; border: 1.5px solid #E6DFD3; border-radius: 28px 28px 28px 80px; padding: 30px 30px 34px">
+<button type="button" aria-expanded="false" style="width: 100%; display: flex; align-items: flex-start; gap: 16px; background: none; border: 0; padding: 0; cursor: pointer; font-family: inherit; text-align: right; color: inherit; min-height: 44px">
+<span style="width: 52px; height: 52px; flex: none; border-radius: 16px; background: #2B4944; color: #FFC800; display: flex; align-items: center; justify-content: center; font-family: 'IBM Plex Sans', sans-serif; font-weight: 600; font-size: 18px">05</span>
+<span style="flex: 1; display: flex; flex-direction: column; gap: 6px"><span style="font-size: 21px; font-weight: 700; color: #2B4944">استشارات التركات والميراث</span><span style="font-size: 15px; line-height: 1.8; color: #4A5E5A">فهم الحقوق والإجراءات في توزيع التركة.</span></span>
+<span style="width: 36px; height: 36px; flex: none; border-radius: 50%; border: 1.5px solid #2B4944; color: #2B4944; display: flex; align-items: center; justify-content: center; font-size: 22px; font-family: 'IBM Plex Sans', sans-serif">+</span>
+</button>
+
+</div>
+
+<div class="svc" style="background: #FFFFFF; border: 1.5px solid #E6DFD3; border-radius: 28px 28px 28px 80px; padding: 30px 30px 34px">
+<button type="button" aria-expanded="false" style="width: 100%; display: flex; align-items: flex-start; gap: 16px; background: none; border: 0; padding: 0; cursor: pointer; font-family: inherit; text-align: right; color: inherit; min-height: 44px">
+<span style="width: 52px; height: 52px; flex: none; border-radius: 16px; background: #2B4944; color: #FFC800; display: flex; align-items: center; justify-content: center; font-family: 'IBM Plex Sans', sans-serif; font-weight: 600; font-size: 18px">06</span>
+<span style="flex: 1; display: flex; flex-direction: column; gap: 6px"><span style="font-size: 21px; font-weight: 700; color: #2B4944">استشارات الشركات والأنظمة التجارية</span><span style="font-size: 15px; line-height: 1.8; color: #4A5E5A">رأي قانوني في تأسيس الشركات وعلاقات الشركاء.</span></span>
+<span style="width: 36px; height: 36px; flex: none; border-radius: 50%; border: 1.5px solid #2B4944; color: #2B4944; display: flex; align-items: center; justify-content: center; font-size: 22px; font-family: 'IBM Plex Sans', sans-serif">+</span>
+</button>
+
+</div>
+
+</div></template>
+<template id="r1-s2"><div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(340px, 1fr)); gap: 20px; align-items: start" data-armc-region="r1" data-armc-state="2">
+
+<div class="svc" style="background: #FFFFFF; border: 1.5px solid #E6DFD3; border-radius: 28px 28px 28px 80px; padding: 30px 30px 34px">
+<button type="button" aria-expanded="false" style="width: 100%; display: flex; align-items: flex-start; gap: 16px; background: none; border: 0; padding: 0; cursor: pointer; font-family: inherit; text-align: right; color: inherit; min-height: 44px">
+<span style="width: 52px; height: 52px; flex: none; border-radius: 16px; background: #2B4944; color: #FFC800; display: flex; align-items: center; justify-content: center; font-family: 'IBM Plex Sans', sans-serif; font-weight: 600; font-size: 18px">01</span>
+<span style="flex: 1; display: flex; flex-direction: column; gap: 6px"><span style="font-size: 21px; font-weight: 700; color: #2B4944">الاستشارات القانونية العامة</span><span style="font-size: 15px; line-height: 1.8; color: #4A5E5A">رأي قانوني في مسألة محددة تواجهك، بلغة واضحة.</span></span>
+<span style="width: 36px; height: 36px; flex: none; border-radius: 50%; border: 1.5px solid #2B4944; color: #2B4944; display: flex; align-items: center; justify-content: center; font-size: 22px; font-family: 'IBM Plex Sans', sans-serif">+</span>
+</button>
+
+</div>
+
+<div class="svc" style="background: #FFFFFF; border: 1.5px solid #FFC800; border-radius: 28px 28px 28px 80px; padding: 30px 30px 34px">
+<button type="button" aria-expanded="true" style="width: 100%; display: flex; align-items: flex-start; gap: 16px; background: none; border: 0; padding: 0; cursor: pointer; font-family: inherit; text-align: right; color: inherit; min-height: 44px">
+<span style="width: 52px; height: 52px; flex: none; border-radius: 16px; background: #2B4944; color: #FFC800; display: flex; align-items: center; justify-content: center; font-family: 'IBM Plex Sans', sans-serif; font-weight: 600; font-size: 18px">02</span>
+<span style="flex: 1; display: flex; flex-direction: column; gap: 6px"><span style="font-size: 21px; font-weight: 700; color: #2B4944">مراجعة وصياغة العقود والاتفاقيات</span><span style="font-size: 15px; line-height: 1.8; color: #4A5E5A">عقد يحمي حقوقك قبل التوقيع، لا بعده.</span></span>
+<span style="width: 36px; height: 36px; flex: none; border-radius: 50%; border: 1.5px solid #2B4944; color: #2B4944; display: flex; align-items: center; justify-content: center; font-size: 22px; font-family: 'IBM Plex Sans', sans-serif">−</span>
+</button>
+
+<div style="margin-top: 20px; padding-top: 18px; border-top: 1px dashed #D9D2C6">
+<p style="margin: 0 0 10px; font-weight: 700; color: #A84F00; font-size: 15px">ما تتضمنه الاستشارة</p>
+<ul style="margin: 0 0 18px; padding: 0 18px 0 0; color: #1F2D2A; line-height: 2; font-size: 15px">
+<li>مراجعة البنود وتحديد المخاطر</li><li>اقتراح صياغات بديلة واضحة</li><li>صياغة عقد جديد عند الحاجة</li>
+</ul>
+<a class="btn btn-y" href="booking.html" style="display: inline-block; background: #FFC800; color: #2B4944; text-decoration: none; font-weight: 700; padding: 12px 22px; border-radius: 999px; font-size: 15px">احجز هذه الاستشارة</a>
+</div>
+
+</div>
+
+<div class="svc" style="background: #FFFFFF; border: 1.5px solid #E6DFD3; border-radius: 28px 28px 28px 80px; padding: 30px 30px 34px">
+<button type="button" aria-expanded="false" style="width: 100%; display: flex; align-items: flex-start; gap: 16px; background: none; border: 0; padding: 0; cursor: pointer; font-family: inherit; text-align: right; color: inherit; min-height: 44px">
+<span style="width: 52px; height: 52px; flex: none; border-radius: 16px; background: #2B4944; color: #FFC800; display: flex; align-items: center; justify-content: center; font-family: 'IBM Plex Sans', sans-serif; font-weight: 600; font-size: 18px">03</span>
+<span style="flex: 1; display: flex; flex-direction: column; gap: 6px"><span style="font-size: 21px; font-weight: 700; color: #2B4944">استشارات النزاعات والمطالبات</span><span style="font-size: 15px; line-height: 1.8; color: #4A5E5A">تقييم موقفك في الخلاف وأفضل طريق لحله.</span></span>
+<span style="width: 36px; height: 36px; flex: none; border-radius: 50%; border: 1.5px solid #2B4944; color: #2B4944; display: flex; align-items: center; justify-content: center; font-size: 22px; font-family: 'IBM Plex Sans', sans-serif">+</span>
+</button>
+
+</div>
+
+<div class="svc" style="background: #FFFFFF; border: 1.5px solid #E6DFD3; border-radius: 28px 28px 28px 80px; padding: 30px 30px 34px">
+<button type="button" aria-expanded="false" style="width: 100%; display: flex; align-items: flex-start; gap: 16px; background: none; border: 0; padding: 0; cursor: pointer; font-family: inherit; text-align: right; color: inherit; min-height: 44px">
+<span style="width: 52px; height: 52px; flex: none; border-radius: 16px; background: #2B4944; color: #FFC800; display: flex; align-items: center; justify-content: center; font-family: 'IBM Plex Sans', sans-serif; font-weight: 600; font-size: 18px">04</span>
+<span style="flex: 1; display: flex; flex-direction: column; gap: 6px"><span style="font-size: 21px; font-weight: 700; color: #2B4944">استشارات الأراضي والعقارات</span><span style="font-size: 15px; line-height: 1.8; color: #4A5E5A">وضوح قانوني قبل الشراء أو البيع أو الإفراغ.</span></span>
+<span style="width: 36px; height: 36px; flex: none; border-radius: 50%; border: 1.5px solid #2B4944; color: #2B4944; display: flex; align-items: center; justify-content: center; font-size: 22px; font-family: 'IBM Plex Sans', sans-serif">+</span>
+</button>
+
+</div>
+
+<div class="svc" style="background: #FFFFFF; border: 1.5px solid #E6DFD3; border-radius: 28px 28px 28px 80px; padding: 30px 30px 34px">
+<button type="button" aria-expanded="false" style="width: 100%; display: flex; align-items: flex-start; gap: 16px; background: none; border: 0; padding: 0; cursor: pointer; font-family: inherit; text-align: right; color: inherit; min-height: 44px">
+<span style="width: 52px; height: 52px; flex: none; border-radius: 16px; background: #2B4944; color: #FFC800; display: flex; align-items: center; justify-content: center; font-family: 'IBM Plex Sans', sans-serif; font-weight: 600; font-size: 18px">05</span>
+<span style="flex: 1; display: flex; flex-direction: column; gap: 6px"><span style="font-size: 21px; font-weight: 700; color: #2B4944">استشارات التركات والميراث</span><span style="font-size: 15px; line-height: 1.8; color: #4A5E5A">فهم الحقوق والإجراءات في توزيع التركة.</span></span>
+<span style="width: 36px; height: 36px; flex: none; border-radius: 50%; border: 1.5px solid #2B4944; color: #2B4944; display: flex; align-items: center; justify-content: center; font-size: 22px; font-family: 'IBM Plex Sans', sans-serif">+</span>
+</button>
+
+</div>
+
+<div class="svc" style="background: #FFFFFF; border: 1.5px solid #E6DFD3; border-radius: 28px 28px 28px 80px; padding: 30px 30px 34px">
+<button type="button" aria-expanded="false" style="width: 100%; display: flex; align-items: flex-start; gap: 16px; background: none; border: 0; padding: 0; cursor: pointer; font-family: inherit; text-align: right; color: inherit; min-height: 44px">
+<span style="width: 52px; height: 52px; flex: none; border-radius: 16px; background: #2B4944; color: #FFC800; display: flex; align-items: center; justify-content: center; font-family: 'IBM Plex Sans', sans-serif; font-weight: 600; font-size: 18px">06</span>
+<span style="flex: 1; display: flex; flex-direction: column; gap: 6px"><span style="font-size: 21px; font-weight: 700; color: #2B4944">استشارات الشركات والأنظمة التجارية</span><span style="font-size: 15px; line-height: 1.8; color: #4A5E5A">رأي قانوني في تأسيس الشركات وعلاقات الشركاء.</span></span>
+<span style="width: 36px; height: 36px; flex: none; border-radius: 50%; border: 1.5px solid #2B4944; color: #2B4944; display: flex; align-items: center; justify-content: center; font-size: 22px; font-family: 'IBM Plex Sans', sans-serif">+</span>
+</button>
+
+</div>
+
+</div></template>
+<template id="r1-s3"><div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(340px, 1fr)); gap: 20px; align-items: start" data-armc-region="r1" data-armc-state="3">
+
+<div class="svc" style="background: #FFFFFF; border: 1.5px solid #E6DFD3; border-radius: 28px 28px 28px 80px; padding: 30px 30px 34px">
+<button type="button" aria-expanded="false" style="width: 100%; display: flex; align-items: flex-start; gap: 16px; background: none; border: 0; padding: 0; cursor: pointer; font-family: inherit; text-align: right; color: inherit; min-height: 44px">
+<span style="width: 52px; height: 52px; flex: none; border-radius: 16px; background: #2B4944; color: #FFC800; display: flex; align-items: center; justify-content: center; font-family: 'IBM Plex Sans', sans-serif; font-weight: 600; font-size: 18px">01</span>
+<span style="flex: 1; display: flex; flex-direction: column; gap: 6px"><span style="font-size: 21px; font-weight: 700; color: #2B4944">الاستشارات القانونية العامة</span><span style="font-size: 15px; line-height: 1.8; color: #4A5E5A">رأي قانوني في مسألة محددة تواجهك، بلغة واضحة.</span></span>
+<span style="width: 36px; height: 36px; flex: none; border-radius: 50%; border: 1.5px solid #2B4944; color: #2B4944; display: flex; align-items: center; justify-content: center; font-size: 22px; font-family: 'IBM Plex Sans', sans-serif">+</span>
+</button>
+
+</div>
+
+<div class="svc" style="background: #FFFFFF; border: 1.5px solid #E6DFD3; border-radius: 28px 28px 28px 80px; padding: 30px 30px 34px">
+<button type="button" aria-expanded="false" style="width: 100%; display: flex; align-items: flex-start; gap: 16px; background: none; border: 0; padding: 0; cursor: pointer; font-family: inherit; text-align: right; color: inherit; min-height: 44px">
+<span style="width: 52px; height: 52px; flex: none; border-radius: 16px; background: #2B4944; color: #FFC800; display: flex; align-items: center; justify-content: center; font-family: 'IBM Plex Sans', sans-serif; font-weight: 600; font-size: 18px">02</span>
+<span style="flex: 1; display: flex; flex-direction: column; gap: 6px"><span style="font-size: 21px; font-weight: 700; color: #2B4944">مراجعة وصياغة العقود والاتفاقيات</span><span style="font-size: 15px; line-height: 1.8; color: #4A5E5A">عقد يحمي حقوقك قبل التوقيع، لا بعده.</span></span>
+<span style="width: 36px; height: 36px; flex: none; border-radius: 50%; border: 1.5px solid #2B4944; color: #2B4944; display: flex; align-items: center; justify-content: center; font-size: 22px; font-family: 'IBM Plex Sans', sans-serif">+</span>
+</button>
+
+</div>
+
+<div class="svc" style="background: #FFFFFF; border: 1.5px solid #FFC800; border-radius: 28px 28px 28px 80px; padding: 30px 30px 34px">
+<button type="button" aria-expanded="true" style="width: 100%; display: flex; align-items: flex-start; gap: 16px; background: none; border: 0; padding: 0; cursor: pointer; font-family: inherit; text-align: right; color: inherit; min-height: 44px">
+<span style="width: 52px; height: 52px; flex: none; border-radius: 16px; background: #2B4944; color: #FFC800; display: flex; align-items: center; justify-content: center; font-family: 'IBM Plex Sans', sans-serif; font-weight: 600; font-size: 18px">03</span>
+<span style="flex: 1; display: flex; flex-direction: column; gap: 6px"><span style="font-size: 21px; font-weight: 700; color: #2B4944">استشارات النزاعات والمطالبات</span><span style="font-size: 15px; line-height: 1.8; color: #4A5E5A">تقييم موقفك في الخلاف وأفضل طريق لحله.</span></span>
+<span style="width: 36px; height: 36px; flex: none; border-radius: 50%; border: 1.5px solid #2B4944; color: #2B4944; display: flex; align-items: center; justify-content: center; font-size: 22px; font-family: 'IBM Plex Sans', sans-serif">−</span>
+</button>
+
+<div style="margin-top: 20px; padding-top: 18px; border-top: 1px dashed #D9D2C6">
+<p style="margin: 0 0 10px; font-weight: 700; color: #A84F00; font-size: 15px">ما تتضمنه الاستشارة</p>
+<ul style="margin: 0 0 18px; padding: 0 18px 0 0; color: #1F2D2A; line-height: 2; font-size: 15px">
+<li>تحليل أطراف الخلاف ومستنداته</li><li>تقدير قوة الموقف والبدائل الودية</li><li>إرشاد حول الإجراءات المتاحة نظامًا</li>
+</ul>
+<a class="btn btn-y" href="booking.html" style="display: inline-block; background: #FFC800; color: #2B4944; text-decoration: none; font-weight: 700; padding: 12px 22px; border-radius: 999px; font-size: 15px">احجز هذه الاستشارة</a>
+</div>
+
+</div>
+
+<div class="svc" style="background: #FFFFFF; border: 1.5px solid #E6DFD3; border-radius: 28px 28px 28px 80px; padding: 30px 30px 34px">
+<button type="button" aria-expanded="false" style="width: 100%; display: flex; align-items: flex-start; gap: 16px; background: none; border: 0; padding: 0; cursor: pointer; font-family: inherit; text-align: right; color: inherit; min-height: 44px">
+<span style="width: 52px; height: 52px; flex: none; border-radius: 16px; background: #2B4944; color: #FFC800; display: flex; align-items: center; justify-content: center; font-family: 'IBM Plex Sans', sans-serif; font-weight: 600; font-size: 18px">04</span>
+<span style="flex: 1; display: flex; flex-direction: column; gap: 6px"><span style="font-size: 21px; font-weight: 700; color: #2B4944">استشارات الأراضي والعقارات</span><span style="font-size: 15px; line-height: 1.8; color: #4A5E5A">وضوح قانوني قبل الشراء أو البيع أو الإفراغ.</span></span>
+<span style="width: 36px; height: 36px; flex: none; border-radius: 50%; border: 1.5px solid #2B4944; color: #2B4944; display: flex; align-items: center; justify-content: center; font-size: 22px; font-family: 'IBM Plex Sans', sans-serif">+</span>
+</button>
+
+</div>
+
+<div class="svc" style="background: #FFFFFF; border: 1.5px solid #E6DFD3; border-radius: 28px 28px 28px 80px; padding: 30px 30px 34px">
+<button type="button" aria-expanded="false" style="width: 100%; display: flex; align-items: flex-start; gap: 16px; background: none; border: 0; padding: 0; cursor: pointer; font-family: inherit; text-align: right; color: inherit; min-height: 44px">
+<span style="width: 52px; height: 52px; flex: none; border-radius: 16px; background: #2B4944; color: #FFC800; display: flex; align-items: center; justify-content: center; font-family: 'IBM Plex Sans', sans-serif; font-weight: 600; font-size: 18px">05</span>
+<span style="flex: 1; display: flex; flex-direction: column; gap: 6px"><span style="font-size: 21px; font-weight: 700; color: #2B4944">استشارات التركات والميراث</span><span style="font-size: 15px; line-height: 1.8; color: #4A5E5A">فهم الحقوق والإجراءات في توزيع التركة.</span></span>
+<span style="width: 36px; height: 36px; flex: none; border-radius: 50%; border: 1.5px solid #2B4944; color: #2B4944; display: flex; align-items: center; justify-content: center; font-size: 22px; font-family: 'IBM Plex Sans', sans-serif">+</span>
+</button>
+
+</div>
+
+<div class="svc" style="background: #FFFFFF; border: 1.5px solid #E6DFD3; border-radius: 28px 28px 28px 80px; padding: 30px 30px 34px">
+<button type="button" aria-expanded="false" style="width: 100%; display: flex; align-items: flex-start; gap: 16px; background: none; border: 0; padding: 0; cursor: pointer; font-family: inherit; text-align: right; color: inherit; min-height: 44px">
+<span style="width: 52px; height: 52px; flex: none; border-radius: 16px; background: #2B4944; color: #FFC800; display: flex; align-items: center; justify-content: center; font-family: 'IBM Plex Sans', sans-serif; font-weight: 600; font-size: 18px">06</span>
+<span style="flex: 1; display: flex; flex-direction: column; gap: 6px"><span style="font-size: 21px; font-weight: 700; color: #2B4944">استشارات الشركات والأنظمة التجارية</span><span style="font-size: 15px; line-height: 1.8; color: #4A5E5A">رأي قانوني في تأسيس الشركات وعلاقات الشركاء.</span></span>
+<span style="width: 36px; height: 36px; flex: none; border-radius: 50%; border: 1.5px solid #2B4944; color: #2B4944; display: flex; align-items: center; justify-content: center; font-size: 22px; font-family: 'IBM Plex Sans', sans-serif">+</span>
+</button>
+
+</div>
+
+</div></template>
+<template id="r1-s4"><div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(340px, 1fr)); gap: 20px; align-items: start" data-armc-region="r1" data-armc-state="4">
+
+<div class="svc" style="background: #FFFFFF; border: 1.5px solid #E6DFD3; border-radius: 28px 28px 28px 80px; padding: 30px 30px 34px">
+<button type="button" aria-expanded="false" style="width: 100%; display: flex; align-items: flex-start; gap: 16px; background: none; border: 0; padding: 0; cursor: pointer; font-family: inherit; text-align: right; color: inherit; min-height: 44px">
+<span style="width: 52px; height: 52px; flex: none; border-radius: 16px; background: #2B4944; color: #FFC800; display: flex; align-items: center; justify-content: center; font-family: 'IBM Plex Sans', sans-serif; font-weight: 600; font-size: 18px">01</span>
+<span style="flex: 1; display: flex; flex-direction: column; gap: 6px"><span style="font-size: 21px; font-weight: 700; color: #2B4944">الاستشارات القانونية العامة</span><span style="font-size: 15px; line-height: 1.8; color: #4A5E5A">رأي قانوني في مسألة محددة تواجهك، بلغة واضحة.</span></span>
+<span style="width: 36px; height: 36px; flex: none; border-radius: 50%; border: 1.5px solid #2B4944; color: #2B4944; display: flex; align-items: center; justify-content: center; font-size: 22px; font-family: 'IBM Plex Sans', sans-serif">+</span>
+</button>
+
+</div>
+
+<div class="svc" style="background: #FFFFFF; border: 1.5px solid #E6DFD3; border-radius: 28px 28px 28px 80px; padding: 30px 30px 34px">
+<button type="button" aria-expanded="false" style="width: 100%; display: flex; align-items: flex-start; gap: 16px; background: none; border: 0; padding: 0; cursor: pointer; font-family: inherit; text-align: right; color: inherit; min-height: 44px">
+<span style="width: 52px; height: 52px; flex: none; border-radius: 16px; background: #2B4944; color: #FFC800; display: flex; align-items: center; justify-content: center; font-family: 'IBM Plex Sans', sans-serif; font-weight: 600; font-size: 18px">02</span>
+<span style="flex: 1; display: flex; flex-direction: column; gap: 6px"><span style="font-size: 21px; font-weight: 700; color: #2B4944">مراجعة وصياغة العقود والاتفاقيات</span><span style="font-size: 15px; line-height: 1.8; color: #4A5E5A">عقد يحمي حقوقك قبل التوقيع، لا بعده.</span></span>
+<span style="width: 36px; height: 36px; flex: none; border-radius: 50%; border: 1.5px solid #2B4944; color: #2B4944; display: flex; align-items: center; justify-content: center; font-size: 22px; font-family: 'IBM Plex Sans', sans-serif">+</span>
+</button>
+
+</div>
+
+<div class="svc" style="background: #FFFFFF; border: 1.5px solid #E6DFD3; border-radius: 28px 28px 28px 80px; padding: 30px 30px 34px">
+<button type="button" aria-expanded="false" style="width: 100%; display: flex; align-items: flex-start; gap: 16px; background: none; border: 0; padding: 0; cursor: pointer; font-family: inherit; text-align: right; color: inherit; min-height: 44px">
+<span style="width: 52px; height: 52px; flex: none; border-radius: 16px; background: #2B4944; color: #FFC800; display: flex; align-items: center; justify-content: center; font-family: 'IBM Plex Sans', sans-serif; font-weight: 600; font-size: 18px">03</span>
+<span style="flex: 1; display: flex; flex-direction: column; gap: 6px"><span style="font-size: 21px; font-weight: 700; color: #2B4944">استشارات النزاعات والمطالبات</span><span style="font-size: 15px; line-height: 1.8; color: #4A5E5A">تقييم موقفك في الخلاف وأفضل طريق لحله.</span></span>
+<span style="width: 36px; height: 36px; flex: none; border-radius: 50%; border: 1.5px solid #2B4944; color: #2B4944; display: flex; align-items: center; justify-content: center; font-size: 22px; font-family: 'IBM Plex Sans', sans-serif">+</span>
+</button>
+
+</div>
+
+<div class="svc" style="background: #FFFFFF; border: 1.5px solid #FFC800; border-radius: 28px 28px 28px 80px; padding: 30px 30px 34px">
+<button type="button" aria-expanded="true" style="width: 100%; display: flex; align-items: flex-start; gap: 16px; background: none; border: 0; padding: 0; cursor: pointer; font-family: inherit; text-align: right; color: inherit; min-height: 44px">
+<span style="width: 52px; height: 52px; flex: none; border-radius: 16px; background: #2B4944; color: #FFC800; display: flex; align-items: center; justify-content: center; font-family: 'IBM Plex Sans', sans-serif; font-weight: 600; font-size: 18px">04</span>
+<span style="flex: 1; display: flex; flex-direction: column; gap: 6px"><span style="font-size: 21px; font-weight: 700; color: #2B4944">استشارات الأراضي والعقارات</span><span style="font-size: 15px; line-height: 1.8; color: #4A5E5A">وضوح قانوني قبل الشراء أو البيع أو الإفراغ.</span></span>
+<span style="width: 36px; height: 36px; flex: none; border-radius: 50%; border: 1.5px solid #2B4944; color: #2B4944; display: flex; align-items: center; justify-content: center; font-size: 22px; font-family: 'IBM Plex Sans', sans-serif">−</span>
+</button>
+
+<div style="margin-top: 20px; padding-top: 18px; border-top: 1px dashed #D9D2C6">
+<p style="margin: 0 0 10px; font-weight: 700; color: #A84F00; font-size: 15px">ما تتضمنه الاستشارة</p>
+<ul style="margin: 0 0 18px; padding: 0 18px 0 0; color: #1F2D2A; line-height: 2; font-size: 15px">
+<li>مراجعة الصكوك والمستندات العقارية</li><li>بيان المتطلبات النظامية للصفقة</li><li>التنبيه على المخاطر المحتملة</li>
+</ul>
+<a class="btn btn-y" href="booking.html" style="display: inline-block; background: #FFC800; color: #2B4944; text-decoration: none; font-weight: 700; padding: 12px 22px; border-radius: 999px; font-size: 15px">احجز هذه الاستشارة</a>
+</div>
+
+</div>
+
+<div class="svc" style="background: #FFFFFF; border: 1.5px solid #E6DFD3; border-radius: 28px 28px 28px 80px; padding: 30px 30px 34px">
+<button type="button" aria-expanded="false" style="width: 100%; display: flex; align-items: flex-start; gap: 16px; background: none; border: 0; padding: 0; cursor: pointer; font-family: inherit; text-align: right; color: inherit; min-height: 44px">
+<span style="width: 52px; height: 52px; flex: none; border-radius: 16px; background: #2B4944; color: #FFC800; display: flex; align-items: center; justify-content: center; font-family: 'IBM Plex Sans', sans-serif; font-weight: 600; font-size: 18px">05</span>
+<span style="flex: 1; display: flex; flex-direction: column; gap: 6px"><span style="font-size: 21px; font-weight: 700; color: #2B4944">استشارات التركات والميراث</span><span style="font-size: 15px; line-height: 1.8; color: #4A5E5A">فهم الحقوق والإجراءات في توزيع التركة.</span></span>
+<span style="width: 36px; height: 36px; flex: none; border-radius: 50%; border: 1.5px solid #2B4944; color: #2B4944; display: flex; align-items: center; justify-content: center; font-size: 22px; font-family: 'IBM Plex Sans', sans-serif">+</span>
+</button>
+
+</div>
+
+<div class="svc" style="background: #FFFFFF; border: 1.5px solid #E6DFD3; border-radius: 28px 28px 28px 80px; padding: 30px 30px 34px">
+<button type="button" aria-expanded="false" style="width: 100%; display: flex; align-items: flex-start; gap: 16px; background: none; border: 0; padding: 0; cursor: pointer; font-family: inherit; text-align: right; color: inherit; min-height: 44px">
+<span style="width: 52px; height: 52px; flex: none; border-radius: 16px; background: #2B4944; color: #FFC800; display: flex; align-items: center; justify-content: center; font-family: 'IBM Plex Sans', sans-serif; font-weight: 600; font-size: 18px">06</span>
+<span style="flex: 1; display: flex; flex-direction: column; gap: 6px"><span style="font-size: 21px; font-weight: 700; color: #2B4944">استشارات الشركات والأنظمة التجارية</span><span style="font-size: 15px; line-height: 1.8; color: #4A5E5A">رأي قانوني في تأسيس الشركات وعلاقات الشركاء.</span></span>
+<span style="width: 36px; height: 36px; flex: none; border-radius: 50%; border: 1.5px solid #2B4944; color: #2B4944; display: flex; align-items: center; justify-content: center; font-size: 22px; font-family: 'IBM Plex Sans', sans-serif">+</span>
+</button>
+
+</div>
+
+</div></template>
+<template id="r1-s5"><div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(340px, 1fr)); gap: 20px; align-items: start" data-armc-region="r1" data-armc-state="5">
+
+<div class="svc" style="background: #FFFFFF; border: 1.5px solid #E6DFD3; border-radius: 28px 28px 28px 80px; padding: 30px 30px 34px">
+<button type="button" aria-expanded="false" style="width: 100%; display: flex; align-items: flex-start; gap: 16px; background: none; border: 0; padding: 0; cursor: pointer; font-family: inherit; text-align: right; color: inherit; min-height: 44px">
+<span style="width: 52px; height: 52px; flex: none; border-radius: 16px; background: #2B4944; color: #FFC800; display: flex; align-items: center; justify-content: center; font-family: 'IBM Plex Sans', sans-serif; font-weight: 600; font-size: 18px">01</span>
+<span style="flex: 1; display: flex; flex-direction: column; gap: 6px"><span style="font-size: 21px; font-weight: 700; color: #2B4944">الاستشارات القانونية العامة</span><span style="font-size: 15px; line-height: 1.8; color: #4A5E5A">رأي قانوني في مسألة محددة تواجهك، بلغة واضحة.</span></span>
+<span style="width: 36px; height: 36px; flex: none; border-radius: 50%; border: 1.5px solid #2B4944; color: #2B4944; display: flex; align-items: center; justify-content: center; font-size: 22px; font-family: 'IBM Plex Sans', sans-serif">+</span>
+</button>
+
+</div>
+
+<div class="svc" style="background: #FFFFFF; border: 1.5px solid #E6DFD3; border-radius: 28px 28px 28px 80px; padding: 30px 30px 34px">
+<button type="button" aria-expanded="false" style="width: 100%; display: flex; align-items: flex-start; gap: 16px; background: none; border: 0; padding: 0; cursor: pointer; font-family: inherit; text-align: right; color: inherit; min-height: 44px">
+<span style="width: 52px; height: 52px; flex: none; border-radius: 16px; background: #2B4944; color: #FFC800; display: flex; align-items: center; justify-content: center; font-family: 'IBM Plex Sans', sans-serif; font-weight: 600; font-size: 18px">02</span>
+<span style="flex: 1; display: flex; flex-direction: column; gap: 6px"><span style="font-size: 21px; font-weight: 700; color: #2B4944">مراجعة وصياغة العقود والاتفاقيات</span><span style="font-size: 15px; line-height: 1.8; color: #4A5E5A">عقد يحمي حقوقك قبل التوقيع، لا بعده.</span></span>
+<span style="width: 36px; height: 36px; flex: none; border-radius: 50%; border: 1.5px solid #2B4944; color: #2B4944; display: flex; align-items: center; justify-content: center; font-size: 22px; font-family: 'IBM Plex Sans', sans-serif">+</span>
+</button>
+
+</div>
+
+<div class="svc" style="background: #FFFFFF; border: 1.5px solid #E6DFD3; border-radius: 28px 28px 28px 80px; padding: 30px 30px 34px">
+<button type="button" aria-expanded="false" style="width: 100%; display: flex; align-items: flex-start; gap: 16px; background: none; border: 0; padding: 0; cursor: pointer; font-family: inherit; text-align: right; color: inherit; min-height: 44px">
+<span style="width: 52px; height: 52px; flex: none; border-radius: 16px; background: #2B4944; color: #FFC800; display: flex; align-items: center; justify-content: center; font-family: 'IBM Plex Sans', sans-serif; font-weight: 600; font-size: 18px">03</span>
+<span style="flex: 1; display: flex; flex-direction: column; gap: 6px"><span style="font-size: 21px; font-weight: 700; color: #2B4944">استشارات النزاعات والمطالبات</span><span style="font-size: 15px; line-height: 1.8; color: #4A5E5A">تقييم موقفك في الخلاف وأفضل طريق لحله.</span></span>
+<span style="width: 36px; height: 36px; flex: none; border-radius: 50%; border: 1.5px solid #2B4944; color: #2B4944; display: flex; align-items: center; justify-content: center; font-size: 22px; font-family: 'IBM Plex Sans', sans-serif">+</span>
+</button>
+
+</div>
+
+<div class="svc" style="background: #FFFFFF; border: 1.5px solid #E6DFD3; border-radius: 28px 28px 28px 80px; padding: 30px 30px 34px">
+<button type="button" aria-expanded="false" style="width: 100%; display: flex; align-items: flex-start; gap: 16px; background: none; border: 0; padding: 0; cursor: pointer; font-family: inherit; text-align: right; color: inherit; min-height: 44px">
+<span style="width: 52px; height: 52px; flex: none; border-radius: 16px; background: #2B4944; color: #FFC800; display: flex; align-items: center; justify-content: center; font-family: 'IBM Plex Sans', sans-serif; font-weight: 600; font-size: 18px">04</span>
+<span style="flex: 1; display: flex; flex-direction: column; gap: 6px"><span style="font-size: 21px; font-weight: 700; color: #2B4944">استشارات الأراضي والعقارات</span><span style="font-size: 15px; line-height: 1.8; color: #4A5E5A">وضوح قانوني قبل الشراء أو البيع أو الإفراغ.</span></span>
+<span style="width: 36px; height: 36px; flex: none; border-radius: 50%; border: 1.5px solid #2B4944; color: #2B4944; display: flex; align-items: center; justify-content: center; font-size: 22px; font-family: 'IBM Plex Sans', sans-serif">+</span>
+</button>
+
+</div>
+
+<div class="svc" style="background: #FFFFFF; border: 1.5px solid #FFC800; border-radius: 28px 28px 28px 80px; padding: 30px 30px 34px">
+<button type="button" aria-expanded="true" style="width: 100%; display: flex; align-items: flex-start; gap: 16px; background: none; border: 0; padding: 0; cursor: pointer; font-family: inherit; text-align: right; color: inherit; min-height: 44px">
+<span style="width: 52px; height: 52px; flex: none; border-radius: 16px; background: #2B4944; color: #FFC800; display: flex; align-items: center; justify-content: center; font-family: 'IBM Plex Sans', sans-serif; font-weight: 600; font-size: 18px">05</span>
+<span style="flex: 1; display: flex; flex-direction: column; gap: 6px"><span style="font-size: 21px; font-weight: 700; color: #2B4944">استشارات التركات والميراث</span><span style="font-size: 15px; line-height: 1.8; color: #4A5E5A">فهم الحقوق والإجراءات في توزيع التركة.</span></span>
+<span style="width: 36px; height: 36px; flex: none; border-radius: 50%; border: 1.5px solid #2B4944; color: #2B4944; display: flex; align-items: center; justify-content: center; font-size: 22px; font-family: 'IBM Plex Sans', sans-serif">−</span>
+</button>
+
+<div style="margin-top: 20px; padding-top: 18px; border-top: 1px dashed #D9D2C6">
+<p style="margin: 0 0 10px; font-weight: 700; color: #A84F00; font-size: 15px">ما تتضمنه الاستشارة</p>
+<ul style="margin: 0 0 18px; padding: 0 18px 0 0; color: #1F2D2A; line-height: 2; font-size: 15px">
+<li>بيان الأنصبة وفق الأحكام الشرعية</li><li>إرشاد في إجراءات حصر الورثة</li><li>خيارات التسوية الودية بين الورثة</li>
+</ul>
+<a class="btn btn-y" href="booking.html" style="display: inline-block; background: #FFC800; color: #2B4944; text-decoration: none; font-weight: 700; padding: 12px 22px; border-radius: 999px; font-size: 15px">احجز هذه الاستشارة</a>
+</div>
+
+</div>
+
+<div class="svc" style="background: #FFFFFF; border: 1.5px solid #E6DFD3; border-radius: 28px 28px 28px 80px; padding: 30px 30px 34px">
+<button type="button" aria-expanded="false" style="width: 100%; display: flex; align-items: flex-start; gap: 16px; background: none; border: 0; padding: 0; cursor: pointer; font-family: inherit; text-align: right; color: inherit; min-height: 44px">
+<span style="width: 52px; height: 52px; flex: none; border-radius: 16px; background: #2B4944; color: #FFC800; display: flex; align-items: center; justify-content: center; font-family: 'IBM Plex Sans', sans-serif; font-weight: 600; font-size: 18px">06</span>
+<span style="flex: 1; display: flex; flex-direction: column; gap: 6px"><span style="font-size: 21px; font-weight: 700; color: #2B4944">استشارات الشركات والأنظمة التجارية</span><span style="font-size: 15px; line-height: 1.8; color: #4A5E5A">رأي قانوني في تأسيس الشركات وعلاقات الشركاء.</span></span>
+<span style="width: 36px; height: 36px; flex: none; border-radius: 50%; border: 1.5px solid #2B4944; color: #2B4944; display: flex; align-items: center; justify-content: center; font-size: 22px; font-family: 'IBM Plex Sans', sans-serif">+</span>
+</button>
+
+</div>
+
+</div></template>
+<template id="r1-s6"><div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(340px, 1fr)); gap: 20px; align-items: start" data-armc-region="r1" data-armc-state="6">
+
+<div class="svc" style="background: #FFFFFF; border: 1.5px solid #E6DFD3; border-radius: 28px 28px 28px 80px; padding: 30px 30px 34px">
+<button type="button" aria-expanded="false" style="width: 100%; display: flex; align-items: flex-start; gap: 16px; background: none; border: 0; padding: 0; cursor: pointer; font-family: inherit; text-align: right; color: inherit; min-height: 44px">
+<span style="width: 52px; height: 52px; flex: none; border-radius: 16px; background: #2B4944; color: #FFC800; display: flex; align-items: center; justify-content: center; font-family: 'IBM Plex Sans', sans-serif; font-weight: 600; font-size: 18px">01</span>
+<span style="flex: 1; display: flex; flex-direction: column; gap: 6px"><span style="font-size: 21px; font-weight: 700; color: #2B4944">الاستشارات القانونية العامة</span><span style="font-size: 15px; line-height: 1.8; color: #4A5E5A">رأي قانوني في مسألة محددة تواجهك، بلغة واضحة.</span></span>
+<span style="width: 36px; height: 36px; flex: none; border-radius: 50%; border: 1.5px solid #2B4944; color: #2B4944; display: flex; align-items: center; justify-content: center; font-size: 22px; font-family: 'IBM Plex Sans', sans-serif">+</span>
+</button>
+
+</div>
+
+<div class="svc" style="background: #FFFFFF; border: 1.5px solid #E6DFD3; border-radius: 28px 28px 28px 80px; padding: 30px 30px 34px">
+<button type="button" aria-expanded="false" style="width: 100%; display: flex; align-items: flex-start; gap: 16px; background: none; border: 0; padding: 0; cursor: pointer; font-family: inherit; text-align: right; color: inherit; min-height: 44px">
+<span style="width: 52px; height: 52px; flex: none; border-radius: 16px; background: #2B4944; color: #FFC800; display: flex; align-items: center; justify-content: center; font-family: 'IBM Plex Sans', sans-serif; font-weight: 600; font-size: 18px">02</span>
+<span style="flex: 1; display: flex; flex-direction: column; gap: 6px"><span style="font-size: 21px; font-weight: 700; color: #2B4944">مراجعة وصياغة العقود والاتفاقيات</span><span style="font-size: 15px; line-height: 1.8; color: #4A5E5A">عقد يحمي حقوقك قبل التوقيع، لا بعده.</span></span>
+<span style="width: 36px; height: 36px; flex: none; border-radius: 50%; border: 1.5px solid #2B4944; color: #2B4944; display: flex; align-items: center; justify-content: center; font-size: 22px; font-family: 'IBM Plex Sans', sans-serif">+</span>
+</button>
+
+</div>
+
+<div class="svc" style="background: #FFFFFF; border: 1.5px solid #E6DFD3; border-radius: 28px 28px 28px 80px; padding: 30px 30px 34px">
+<button type="button" aria-expanded="false" style="width: 100%; display: flex; align-items: flex-start; gap: 16px; background: none; border: 0; padding: 0; cursor: pointer; font-family: inherit; text-align: right; color: inherit; min-height: 44px">
+<span style="width: 52px; height: 52px; flex: none; border-radius: 16px; background: #2B4944; color: #FFC800; display: flex; align-items: center; justify-content: center; font-family: 'IBM Plex Sans', sans-serif; font-weight: 600; font-size: 18px">03</span>
+<span style="flex: 1; display: flex; flex-direction: column; gap: 6px"><span style="font-size: 21px; font-weight: 700; color: #2B4944">استشارات النزاعات والمطالبات</span><span style="font-size: 15px; line-height: 1.8; color: #4A5E5A">تقييم موقفك في الخلاف وأفضل طريق لحله.</span></span>
+<span style="width: 36px; height: 36px; flex: none; border-radius: 50%; border: 1.5px solid #2B4944; color: #2B4944; display: flex; align-items: center; justify-content: center; font-size: 22px; font-family: 'IBM Plex Sans', sans-serif">+</span>
+</button>
+
+</div>
+
+<div class="svc" style="background: #FFFFFF; border: 1.5px solid #E6DFD3; border-radius: 28px 28px 28px 80px; padding: 30px 30px 34px">
+<button type="button" aria-expanded="false" style="width: 100%; display: flex; align-items: flex-start; gap: 16px; background: none; border: 0; padding: 0; cursor: pointer; font-family: inherit; text-align: right; color: inherit; min-height: 44px">
+<span style="width: 52px; height: 52px; flex: none; border-radius: 16px; background: #2B4944; color: #FFC800; display: flex; align-items: center; justify-content: center; font-family: 'IBM Plex Sans', sans-serif; font-weight: 600; font-size: 18px">04</span>
+<span style="flex: 1; display: flex; flex-direction: column; gap: 6px"><span style="font-size: 21px; font-weight: 700; color: #2B4944">استشارات الأراضي والعقارات</span><span style="font-size: 15px; line-height: 1.8; color: #4A5E5A">وضوح قانوني قبل الشراء أو البيع أو الإفراغ.</span></span>
+<span style="width: 36px; height: 36px; flex: none; border-radius: 50%; border: 1.5px solid #2B4944; color: #2B4944; display: flex; align-items: center; justify-content: center; font-size: 22px; font-family: 'IBM Plex Sans', sans-serif">+</span>
+</button>
+
+</div>
+
+<div class="svc" style="background: #FFFFFF; border: 1.5px solid #E6DFD3; border-radius: 28px 28px 28px 80px; padding: 30px 30px 34px">
+<button type="button" aria-expanded="false" style="width: 100%; display: flex; align-items: flex-start; gap: 16px; background: none; border: 0; padding: 0; cursor: pointer; font-family: inherit; text-align: right; color: inherit; min-height: 44px">
+<span style="width: 52px; height: 52px; flex: none; border-radius: 16px; background: #2B4944; color: #FFC800; display: flex; align-items: center; justify-content: center; font-family: 'IBM Plex Sans', sans-serif; font-weight: 600; font-size: 18px">05</span>
+<span style="flex: 1; display: flex; flex-direction: column; gap: 6px"><span style="font-size: 21px; font-weight: 700; color: #2B4944">استشارات التركات والميراث</span><span style="font-size: 15px; line-height: 1.8; color: #4A5E5A">فهم الحقوق والإجراءات في توزيع التركة.</span></span>
+<span style="width: 36px; height: 36px; flex: none; border-radius: 50%; border: 1.5px solid #2B4944; color: #2B4944; display: flex; align-items: center; justify-content: center; font-size: 22px; font-family: 'IBM Plex Sans', sans-serif">+</span>
+</button>
+
+</div>
+
+<div class="svc" style="background: #FFFFFF; border: 1.5px solid #FFC800; border-radius: 28px 28px 28px 80px; padding: 30px 30px 34px">
+<button type="button" aria-expanded="true" style="width: 100%; display: flex; align-items: flex-start; gap: 16px; background: none; border: 0; padding: 0; cursor: pointer; font-family: inherit; text-align: right; color: inherit; min-height: 44px">
+<span style="width: 52px; height: 52px; flex: none; border-radius: 16px; background: #2B4944; color: #FFC800; display: flex; align-items: center; justify-content: center; font-family: 'IBM Plex Sans', sans-serif; font-weight: 600; font-size: 18px">06</span>
+<span style="flex: 1; display: flex; flex-direction: column; gap: 6px"><span style="font-size: 21px; font-weight: 700; color: #2B4944">استشارات الشركات والأنظمة التجارية</span><span style="font-size: 15px; line-height: 1.8; color: #4A5E5A">رأي قانوني في تأسيس الشركات وعلاقات الشركاء.</span></span>
+<span style="width: 36px; height: 36px; flex: none; border-radius: 50%; border: 1.5px solid #2B4944; color: #2B4944; display: flex; align-items: center; justify-content: center; font-size: 22px; font-family: 'IBM Plex Sans', sans-serif">−</span>
+</button>
+
+<div style="margin-top: 20px; padding-top: 18px; border-top: 1px dashed #D9D2C6">
+<p style="margin: 0 0 10px; font-weight: 700; color: #A84F00; font-size: 15px">ما تتضمنه الاستشارة</p>
+<ul style="margin: 0 0 18px; padding: 0 18px 0 0; color: #1F2D2A; line-height: 2; font-size: 15px">
+<li>اختيار الشكل النظامي المناسب للشركة</li><li>مراجعة عقود التأسيس واتفاقيات الشركاء</li><li>متطلبات الأنظمة التجارية ذات العلاقة</li>
+</ul>
+<a class="btn btn-y" href="booking.html" style="display: inline-block; background: #FFC800; color: #2B4944; text-decoration: none; font-weight: 700; padding: 12px 22px; border-radius: 999px; font-size: 15px">احجز هذه الاستشارة</a>
+</div>
+
+</div>
+
+</div></template>
+<template id="r2-s1"><div style="background: #FFFFFF; border-radius: 20px; border: 1.5px solid #FFC800" data-armc-region="r2" data-armc-state="1">
+<button type="button" aria-expanded="true" style="width: 100%; min-height: 60px; display: flex; align-items: center; justify-content: space-between; gap: 16px; padding: 18px 24px; background: none; border: 0; cursor: pointer; font-family: inherit; font-size: 18px; font-weight: 700; color: #2B4944; text-align: right">كم مدة الاستشارة؟<span style="font-family: 'IBM Plex Sans', sans-serif; font-size: 24px; color: #A84F00">−</span></button>
+<p style="margin: 0; padding: 0 24px 22px; line-height: 1.9; color: #4A5E5A; font-size: 16px">تتراوح مدة الجلسة عادة بين [المدة]، وتُحدد بدقة بعد مراجعة طلبك.</p>
+</div></template>
+<template id="r3-s1"><div style="background: #FFFFFF; border-radius: 20px; border: 1.5px solid #FFC800" data-armc-region="r3" data-armc-state="1">
+<button type="button" aria-expanded="true" style="width: 100%; min-height: 60px; display: flex; align-items: center; justify-content: space-between; gap: 16px; padding: 18px 24px; background: none; border: 0; cursor: pointer; font-family: inherit; font-size: 18px; font-weight: 700; color: #2B4944; text-align: right">كم تكلفة الاستشارة؟<span style="font-family: 'IBM Plex Sans', sans-serif; font-size: 24px; color: #A84F00">−</span></button>
+<p style="margin: 0; padding: 0 24px 22px; line-height: 1.9; color: #4A5E5A; font-size: 16px">تبدأ الأسعار من [السعر] ريال، ويصلك المبلغ النهائي مع رابط الدفع بعد المراجعة وقبل أي التزام.</p>
+</div></template>
+<template id="r4-s1"><div style="background: #FFFFFF; border-radius: 20px; border: 1.5px solid #FFC800" data-armc-region="r4" data-armc-state="1">
+<button type="button" aria-expanded="true" style="width: 100%; min-height: 60px; display: flex; align-items: center; justify-content: space-between; gap: 16px; padding: 18px 24px; background: none; border: 0; cursor: pointer; font-family: inherit; font-size: 18px; font-weight: 700; color: #2B4944; text-align: right">هل تمثلونني أمام المحكمة؟<span style="font-family: 'IBM Plex Sans', sans-serif; font-size: 24px; color: #A84F00">−</span></button>
+<p style="margin: 0; padding: 0 24px 22px; line-height: 1.9; color: #4A5E5A; font-size: 16px">لا. نقدّم الاستشارة والرأي القانوني فقط، ولا نقدّم خدمات الترافع أو التمثيل أمام الجهات القضائية.</p>
+</div></template>
+<template id="r5-s1"><div style="background: #FFFFFF; border-radius: 20px; border: 1.5px solid #FFC800" data-armc-region="r5" data-armc-state="1">
+<button type="button" aria-expanded="true" style="width: 100%; min-height: 60px; display: flex; align-items: center; justify-content: space-between; gap: 16px; padding: 18px 24px; background: none; border: 0; cursor: pointer; font-family: inherit; font-size: 18px; font-weight: 700; color: #2B4944; text-align: right">كيف أتابع طلبي؟<span style="font-family: 'IBM Plex Sans', sans-serif; font-size: 24px; color: #A84F00">−</span></button>
+<p style="margin: 0; padding: 0 24px 22px; line-height: 1.9; color: #4A5E5A; font-size: 16px">تصلك كل التحديثات على واتساب تلقائيًا، ويمكنك الدخول إلى صفحة «تابع طلبك» برقم جوالك ورمز التحقق في أي وقت.</p>
+</div></template>
+<script type="application/json" id="armc-flow">{"r1":{"0":{"0":1,"1":2,"2":3,"3":4,"4":5,"5":6},"1":{"0":0,"1":2,"2":3,"3":4,"4":5,"5":6},"2":{"0":0,"1":1,"2":3,"3":4,"4":5,"5":6},"3":{"0":0,"1":2,"2":1,"3":4,"4":5,"5":6},"4":{"0":0,"1":2,"2":3,"3":1,"4":5,"5":6},"5":{"0":0,"1":2,"2":3,"3":4,"4":1,"5":6},"6":{"0":0,"1":2,"2":3,"3":4,"4":5,"5":1}},"r2":{"0":{"0":1},"1":{"0":0}},"r3":{"0":{"0":1},"1":{"0":0}},"r4":{"0":{"0":1},"1":{"0":0}},"r5":{"0":{"0":1},"1":{"0":0}}}</script>
+<script src="assets/js/armc.js" defer></script>
+</body>
+</html>

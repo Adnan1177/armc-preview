@@ -76,7 +76,9 @@
         if (v === false || v === null || v === undefined || v === 'false' || v === '') node.removeAttribute(a.name); else node.setAttribute(a.name, '');
         return;
       }
-      node.setAttribute(a.name, interp(a.value, scope));
+      let val = interp(a.value, scope);
+      if (a.name === 'href') val = val.replace(/\.dc\.html/g, '.html');
+      node.setAttribute(a.name, val);
     });
     processChildren(node, scope);
   }

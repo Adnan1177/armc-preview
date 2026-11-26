@@ -1,0 +1,762 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>أفكار الريادة — النموذج ج</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@300;400;500;600;700&amp;family=IBM+Plex+Sans:wght@300;400;500;600&amp;display=swap">
+<style>
+body{margin:0;background:#F7F2EB}
+a{color:#2B4944}a:hover{color:#D96C00}
+@keyframes up{from{opacity:0;transform:translateY(28px)}to{opacity:1;transform:none}}
+@keyframes marquee{to{transform:translateX(-50%)}}
+@keyframes spin{to{transform:rotate(360deg)}}
+@keyframes pop{from{opacity:0;transform:scale(.96) translateY(8px)}to{opacity:1;transform:none}}
+@keyframes ring{0%{box-shadow:0 0 0 0 rgba(37,165,95,.5)}100%{box-shadow:0 0 0 20px rgba(37,165,95,0)}}
+@keyframes shine{from{transform:translateX(120%) skewX(-20deg)}to{transform:translateX(-220%) skewX(-20deg)}}
+.up{animation:up .9s cubic-bezier(.2,.7,.2,1) both}
+.d1{animation-delay:.1s}.d2{animation-delay:.22s}.d3{animation-delay:.34s}.d4{animation-delay:.46s}
+.marquee{animation:marquee 45s linear infinite}
+.spin{animation:spin 100s linear infinite}
+.pop{animation:pop .45s cubic-bezier(.2,.7,.2,1) both}
+.wa{animation:ring 2.4s ease-out infinite}
+.btn{transition:transform .25s ease,box-shadow .25s ease;position:relative;overflow:hidden}
+.btn:hover{transform:translateY(-2px);box-shadow:0 14px 30px -10px rgba(0,0,0,.35)}
+.btn-y::after{content:"";position:absolute;inset:0;width:40%;background:linear-gradient(90deg,transparent,rgba(255,255,255,.55),transparent);animation:shine 3.5s ease-in-out infinite}
+.navl{position:relative;transition:color .2s}
+.navl::after{content:"";position:absolute;right:0;bottom:-6px;height:2px;width:0;background:#FFC800;transition:width .3s}
+.navl:hover{color:#FFC800 !important}.navl:hover::after{width:100%}
+.pill{transition:background .25s,color .25s,transform .25s}.pill:hover{transform:translateY(-2px)}
+.ccard{transition:transform .4s cubic-bezier(.2,.7,.2,1),box-shadow .4s,background .4s}
+.ccard:hover{transform:translateY(-8px);box-shadow:0 26px 50px -24px rgba(0,0,0,.55)}
+.bento{transition:transform .4s cubic-bezier(.2,.7,.2,1)}.bento:hover{transform:translateY(-6px)}
+@supports (animation-timeline: view()){.rv{animation:up linear both;animation-timeline:view();animation-range:entry 0% entry 45%}}
+@media (max-width: 640px){h1{font-size:44px !important}h2{font-size:30px !important}section{padding-left:16px !important;padding-right:16px !important}}
+@media (prefers-reduced-motion: reduce){*{animation:none !important;transition:none !important}}
+</style>
+
+<link rel="stylesheet" href="assets/css/armc.css">
+</head>
+<body>
+
+<div id="armc-page">
+
+<div dir="rtl" style="font-family: 'IBM Plex Sans Arabic', 'IBM Plex Sans', sans-serif; color: #1F2D2A; background: #F7F2EB; min-height: 100vh; position: relative; overflow-x: hidden">
+
+
+<div role="note" style="background: #1A2B28; color: #FFC800; padding: 8px 24px; text-align: center; font-size: 13px; line-height: 1.7">تصميم أولي للعرض فقط — جميع الحقوق محفوظة © 2026 للمهندس عدنان البنا.</div>
+
+
+<header style="position: sticky; top: 0; z-index: 40; background: rgba(36,62,58,0.92); backdrop-filter: blur(14px); -webkit-backdrop-filter: blur(14px); border-bottom: 1px solid rgba(255,255,255,0.08); padding: 16px 24px">
+<div style="max-width: 1240px; margin: 0 auto; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 16px">
+<a href="index.html" aria-label="أفكار الريادة — الرئيسية" style="display: flex; align-items: center"><svg width="124" height="44" viewBox="0 0 545 192" role="img" aria-label="أفكار الريادة"><path d="M107 0H131Q135 0 135 4V30Q135 61 172 64.5L232 72H103V4Q103 0 107 0Z" fill="#FFC800"></path><path d="M107 0H131Q135 0 135 4V30Q135 61 172 64.5L232 72H103V4Q103 0 107 0Z" fill="#FFC800" transform="rotate(180 116 72)"></path><text x="146" y="188" direction="ltr" unicode-bidi="bidi-override" textLength="392" lengthAdjust="spacingAndGlyphs" font-family="IBM Plex Sans, sans-serif" font-size="172" font-weight="500" letter-spacing="-3" fill="#FFFFFF">armc</text></svg></a>
+<nav aria-label="القائمة الرئيسية" style="display: flex; flex-wrap: wrap; gap: 30px; font-size: 16px">
+<a class="navl" href="index.html" style="color: #FFC800; text-decoration: none; font-weight: 600">الرئيسية</a>
+<a class="navl" href="about.html" style="color: #FFFFFF; text-decoration: none">من نحن</a>
+<a class="navl" href="services.html" style="color: #FFFFFF; text-decoration: none">خدماتنا</a>
+<a class="navl" href="contact.html" style="color: #FFFFFF; text-decoration: none">تواصل معنا</a>
+</nav>
+<div style="display: flex; align-items: center; gap: 10px; flex-wrap: wrap">
+<a class="btn" href="track.html" style="color: #FFFFFF; text-decoration: none; font-weight: 500; padding: 11px 20px; border-radius: 999px; font-size: 15px; border: 1px solid rgba(255,255,255,0.4)">تابع طلبك</a>
+<a class="btn btn-y" href="booking.html" style="background: #FFC800; color: #2B4944; text-decoration: none; font-weight: 700; padding: 12px 22px; border-radius: 999px; font-size: 15px">احجز استشارة</a>
+</div>
+</div>
+</header>
+
+<section style="padding: 88px 24px 96px; position: relative; overflow: hidden">
+<svg class="spin" style="position: absolute; left: -260px; top: -200px; width: 760px; height: 760px; opacity: 0.35" viewBox="0 0 400 400" aria-hidden="true"><g fill="none" stroke="#D9D2C6" stroke-width="1"><circle cx="200" cy="200" r="190"></circle><circle cx="200" cy="200" r="140"></circle><circle cx="200" cy="200" r="90"></circle></g></svg>
+<div style="max-width: 1240px; margin: 0 auto; display: flex; flex-wrap: wrap; align-items: center; gap: 56px; position: relative">
+<div style="flex: 1.1 1 520px; min-width: 0">
+<p class="up d1" style="margin: 0 0 22px; color: #A84F00; font-weight: 700; font-size: 15px; letter-spacing: 0.5px">أفكار الريادة للاستشارات — ٣ مسارات · ١٧ استشارة</p>
+<h1 class="up d2" style="margin: 0; font-size: 76px; line-height: 1.18; font-weight: 700; color: #2B4944">اختر مسارك.<br><span style="display: inline-block; background: #2B4944; color: #F7F2EB; padding: 0 18px; border-radius: 18px; margin: 8px 0">احجز في دقيقتين.</span><br>وتابع من جوالك.</h1>
+<p class="up d3" style="margin: 30px 0 0; font-size: 20px; line-height: 1.9; color: #4A5E5A; max-width: 560px">استشارات إدارية وقانونية ومحاسبية للأفراد والمنشآت والوكلاء — بتحقق برقم الجوال، ودفع آمن، وتحديثات تلقائية على واتساب.</p>
+<div class="up d4" style="display: flex; flex-wrap: wrap; gap: 14px; margin-top: 38px">
+<a class="btn btn-y" href="booking.html" style="background: #FFC800; color: #2B4944; text-decoration: none; font-weight: 700; padding: 18px 34px; border-radius: 999px; font-size: 17px">احجز استشارتك</a>
+<a class="btn" href="#paths" style="background: #2B4944; color: #FFFFFF; text-decoration: none; font-weight: 600; padding: 18px 30px; border-radius: 999px; font-size: 17px">استكشف المسارات ↓</a>
+</div>
+</div>
+
+<div class="up d3" style="flex: 1 1 400px; min-width: 0; background: #FFFFFF; border-radius: 36px 36px 36px 110px; padding: 32px; box-shadow: 0 40px 80px -40px rgba(43,73,68,0.45); border: 1px solid #E6DFD3" data-armc-region="r1" data-armc-state="0">
+<div style="display: flex; justify-content: space-between; align-items: center; gap: 12px; margin-bottom: 20px">
+<span style="font-weight: 700; color: #2B4944; font-size: 18px">معاينة الحجز</span>
+<span style="font-size: 13px; color: #4A5E5A; background: #F7F2EB; border-radius: 999px; padding: 6px 12px">تجربة تفاعلية</span>
+</div>
+<p style="margin: 0 0 10px; font-size: 14px; color: #4A5E5A; font-weight: 600">١. اختر المسار</p>
+<div role="group" aria-label="المسار" style="display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 22px">
+
+<button type="button" class="pill" aria-pressed="true" style="font-family: inherit; font-size: 15px; font-weight: 600; min-height: 44px; padding: 10px 16px; border-radius: 999px; cursor: pointer; border: 1.5px solid #2B4944; background: #2B4944; color: #FFFFFF">إدارية</button>
+
+<button type="button" class="pill" aria-pressed="false" style="font-family: inherit; font-size: 15px; font-weight: 600; min-height: 44px; padding: 10px 16px; border-radius: 999px; cursor: pointer; border: 1.5px solid #2B4944; background: #FFFFFF; color: #2B4944">قانونية</button>
+
+<button type="button" class="pill" aria-pressed="false" style="font-family: inherit; font-size: 15px; font-weight: 600; min-height: 44px; padding: 10px 16px; border-radius: 999px; cursor: pointer; border: 1.5px solid #2B4944; background: #FFFFFF; color: #2B4944">محاسبية وضريبية</button>
+
+</div>
+<p style="margin: 0 0 10px; font-size: 14px; color: #4A5E5A; font-weight: 600">٢. الاستشارة المقترحة</p>
+<div style="background: #F7F2EB; border-radius: 20px; padding: 18px 20px; display: flex; justify-content: space-between; align-items: center; gap: 12px; margin-bottom: 22px">
+<div><div style="font-weight: 700; color: #2B4944; font-size: 17px">الاستراتيجية وتطوير الأعمال</div><div style="font-size: 14px; color: #4A5E5A; margin-top: 4px">اتصال مرئي · 60 دقيقة [المدة]</div></div>
+<span style="width: 40px; height: 40px; flex: none; border-radius: 12px; background: #2B4944; display: flex; align-items: center; justify-content: center"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#FFC800" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"></path></svg></span>
+</div>
+<div style="display: flex; justify-content: space-between; align-items: center; gap: 12px; margin-bottom: 10px">
+<p style="margin: 0; font-size: 14px; color: #4A5E5A; font-weight: 600">٣. ما يصلك على واتساب</p>
+<button type="button" style="font-family: inherit; font-size: 13px; font-weight: 700; min-height: 36px; padding: 6px 14px; border-radius: 999px; cursor: pointer; border: 1px solid #1E7A47; background: #FFFFFF; color: #1E7A47">عرض رسالة التأكيد</button>
+</div>
+<div class="pop" style="background: #ECE5D8; border-radius: 22px; padding: 16px">
+<div style="display: flex; align-items: center; gap: 8px; color: #1E7A47; font-weight: 700; font-size: 13px; margin-bottom: 10px"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#1E7A47" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12a8.5 8.5 0 0 1-12.6 7.4L3 21l1.6-5.2A8.5 8.5 0 1 1 21 12z"></path></svg>أفكار الريادة · رمز التحقق</div>
+<p style="margin: 0; background: #DDF3E4; border-radius: 18px 18px 4px 18px; padding: 14px 16px; line-height: 1.8; font-size: 15px; color: #1F2D2A">رمز الدخول إلى بوابة أفكار الريادة هو 4821، وصالح لمدة 5 دقائق.</p>
+</div>
+<a class="btn btn-y" href="booking.html" style="display: block; text-align: center; margin-top: 22px; background: #FFC800; color: #2B4944; text-decoration: none; font-weight: 700; padding: 15px; border-radius: 999px">ابدأ الحجز الفعلي</a>
+</div>
+</div>
+</section>
+
+<div dir="ltr" style="background: #2B4944; padding: 20px 0; overflow: hidden">
+<div class="marquee" style="display: flex; width: max-content; font-size: 19px; font-weight: 500; color: #F7F2EB; white-space: nowrap">
+<span style="padding: 0 26px">الاستراتيجية وتطوير الأعمال</span><span style="color: #FFC800">●</span><span style="padding: 0 26px">مراجعة وصياغة العقود والاتفاقيات</span><span style="color: #FFC800">●</span><span style="padding: 0 26px">الاستشارات الضريبية</span><span style="color: #FFC800">●</span><span style="padding: 0 26px">استشارات التركات والميراث</span><span style="color: #FFC800">●</span><span style="padding: 0 26px">بناء وتطوير النظام المحاسبي</span><span style="color: #FFC800">●</span><span style="padding: 0 26px">إدارة المخاطر واستمرارية الأعمال</span><span style="color: #FFC800">●</span><span style="padding: 0 26px">استشارات الأراضي والعقارات</span><span style="color: #FFC800">●</span><span style="padding: 0 26px">الهياكل التنظيمية والسياسات</span><span style="color: #FFC800">●</span>
+<span style="padding: 0 26px">الاستراتيجية وتطوير الأعمال</span><span style="color: #FFC800">●</span><span style="padding: 0 26px">مراجعة وصياغة العقود والاتفاقيات</span><span style="color: #FFC800">●</span><span style="padding: 0 26px">الاستشارات الضريبية</span><span style="color: #FFC800">●</span><span style="padding: 0 26px">استشارات التركات والميراث</span><span style="color: #FFC800">●</span><span style="padding: 0 26px">بناء وتطوير النظام المحاسبي</span><span style="color: #FFC800">●</span><span style="padding: 0 26px">إدارة المخاطر واستمرارية الأعمال</span><span style="color: #FFC800">●</span><span style="padding: 0 26px">استشارات الأراضي والعقارات</span><span style="color: #FFC800">●</span><span style="padding: 0 26px">الهياكل التنظيمية والسياسات</span><span style="color: #FFC800">●</span>
+</div>
+</div>
+
+<section id="paths" style="padding: 100px 24px">
+<div style="max-width: 1240px; margin: 0 auto" data-armc-region="r2" data-armc-state="0">
+<div class="rv" style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: flex-end; gap: 24px; margin-bottom: 36px">
+<div>
+<p style="margin: 0 0 12px; color: #A84F00; font-weight: 700">اختر من أنت</p>
+<h2 style="margin: 0; font-size: 50px; color: #2B4944; line-height: 1.25">استشارات تناسبك أنت</h2>
+</div>
+<p style="margin: 0; color: #4A5E5A; font-size: 16px">يظهر الآن: <b style="color: #2B4944">17</b> استشارة</p>
+</div>
+<div role="group" aria-label="تصفية حسب الفئة" style="display: flex; flex-wrap: wrap; gap: 10px; margin-bottom: 36px">
+
+<button type="button" class="pill" aria-pressed="true" style="font-family: inherit; font-size: 16px; font-weight: 600; min-height: 48px; padding: 12px 24px; border-radius: 999px; cursor: pointer; border: 1.5px solid #2B4944; background: #2B4944; color: #FFC800">الكل</button>
+
+<button type="button" class="pill" aria-pressed="false" style="font-family: inherit; font-size: 16px; font-weight: 600; min-height: 48px; padding: 12px 24px; border-radius: 999px; cursor: pointer; border: 1.5px solid #2B4944; background: transparent; color: #2B4944">أفراد</button>
+
+<button type="button" class="pill" aria-pressed="false" style="font-family: inherit; font-size: 16px; font-weight: 600; min-height: 48px; padding: 12px 24px; border-radius: 999px; cursor: pointer; border: 1.5px solid #2B4944; background: transparent; color: #2B4944">منشآت</button>
+
+<button type="button" class="pill" aria-pressed="false" style="font-family: inherit; font-size: 16px; font-weight: 600; min-height: 48px; padding: 12px 24px; border-radius: 999px; cursor: pointer; border: 1.5px solid #2B4944; background: transparent; color: #2B4944">وكلاء</button>
+
+</div>
+<div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(270px, 1fr)); gap: 18px">
+
+<a class="ccard pop" href="service-management.html" style="text-decoration: none; background: #FFFFFF; color: #2B4944; border-radius: 26px; padding: 26px; display: flex; flex-direction: column; gap: 14px; min-height: 200px; border: 1px solid #E6DFD3">
+<span style="font-size: 13px; font-weight: 700; color: #A84F00">إدارية</span>
+<span style="font-size: 21px; font-weight: 700; line-height: 1.45">الاستراتيجية وتطوير الأعمال</span>
+<span style="font-size: 13px; color: #5A6B67">منشآت</span>
+<span style="margin-top: auto; font-weight: 700; font-size: 14px; color: #A84F00">اكتشف المسار ←</span>
+</a>
+
+<a class="ccard pop" href="service-management.html" style="text-decoration: none; background: #FFFFFF; color: #2B4944; border-radius: 26px; padding: 26px; display: flex; flex-direction: column; gap: 14px; min-height: 200px; border: 1px solid #E6DFD3">
+<span style="font-size: 13px; font-weight: 700; color: #A84F00">إدارية</span>
+<span style="font-size: 21px; font-weight: 700; line-height: 1.45">التأسيس والتنظيم الإداري</span>
+<span style="font-size: 13px; color: #5A6B67">منشآت · أفراد</span>
+<span style="margin-top: auto; font-weight: 700; font-size: 14px; color: #A84F00">اكتشف المسار ←</span>
+</a>
+
+<a class="ccard pop" href="service-management.html" style="text-decoration: none; background: #FFFFFF; color: #2B4944; border-radius: 26px; padding: 26px; display: flex; flex-direction: column; gap: 14px; min-height: 200px; border: 1px solid #E6DFD3">
+<span style="font-size: 13px; font-weight: 700; color: #A84F00">إدارية</span>
+<span style="font-size: 21px; font-weight: 700; line-height: 1.45">الهياكل التنظيمية والسياسات والإجراءات</span>
+<span style="font-size: 13px; color: #5A6B67">منشآت</span>
+<span style="margin-top: auto; font-weight: 700; font-size: 14px; color: #A84F00">اكتشف المسار ←</span>
+</a>
+
+<a class="ccard pop" href="service-management.html" style="text-decoration: none; background: #FFFFFF; color: #2B4944; border-radius: 26px; padding: 26px; display: flex; flex-direction: column; gap: 14px; min-height: 200px; border: 1px solid #E6DFD3">
+<span style="font-size: 13px; font-weight: 700; color: #A84F00">إدارية</span>
+<span style="font-size: 21px; font-weight: 700; line-height: 1.45">التشغيل وتحسين العمليات</span>
+<span style="font-size: 13px; color: #5A6B67">منشآت</span>
+<span style="margin-top: auto; font-weight: 700; font-size: 14px; color: #A84F00">اكتشف المسار ←</span>
+</a>
+
+<a class="ccard pop" href="service-management.html" style="text-decoration: none; background: #FFFFFF; color: #2B4944; border-radius: 26px; padding: 26px; display: flex; flex-direction: column; gap: 14px; min-height: 200px; border: 1px solid #E6DFD3">
+<span style="font-size: 13px; font-weight: 700; color: #A84F00">إدارية</span>
+<span style="font-size: 21px; font-weight: 700; line-height: 1.45">إدارة المخاطر واستمرارية الأعمال</span>
+<span style="font-size: 13px; color: #5A6B67">منشآت</span>
+<span style="margin-top: auto; font-weight: 700; font-size: 14px; color: #A84F00">اكتشف المسار ←</span>
+</a>
+
+<a class="ccard pop" href="service-management.html" style="text-decoration: none; background: #FFFFFF; color: #2B4944; border-radius: 26px; padding: 26px; display: flex; flex-direction: column; gap: 14px; min-height: 200px; border: 1px solid #E6DFD3">
+<span style="font-size: 13px; font-weight: 700; color: #A84F00">إدارية</span>
+<span style="font-size: 21px; font-weight: 700; line-height: 1.45">الأداء ومؤشرات الأداء</span>
+<span style="font-size: 13px; color: #5A6B67">منشآت</span>
+<span style="margin-top: auto; font-weight: 700; font-size: 14px; color: #A84F00">اكتشف المسار ←</span>
+</a>
+
+<a class="ccard pop" href="service-legal.html" style="text-decoration: none; background: #2B4944; color: #FFFFFF; border-radius: 26px; padding: 26px; display: flex; flex-direction: column; gap: 14px; min-height: 200px; border: 1px solid #2B4944">
+<span style="font-size: 13px; font-weight: 700; color: #FFC800">قانونية</span>
+<span style="font-size: 21px; font-weight: 700; line-height: 1.45">الاستشارات القانونية العامة</span>
+<span style="font-size: 13px; color: #B9CCC7">أفراد · منشآت · وكلاء</span>
+<span style="margin-top: auto; font-weight: 700; font-size: 14px; color: #FFC800">اكتشف المسار ←</span>
+</a>
+
+<a class="ccard pop" href="service-legal.html" style="text-decoration: none; background: #2B4944; color: #FFFFFF; border-radius: 26px; padding: 26px; display: flex; flex-direction: column; gap: 14px; min-height: 200px; border: 1px solid #2B4944">
+<span style="font-size: 13px; font-weight: 700; color: #FFC800">قانونية</span>
+<span style="font-size: 21px; font-weight: 700; line-height: 1.45">مراجعة وصياغة العقود والاتفاقيات</span>
+<span style="font-size: 13px; color: #B9CCC7">أفراد · منشآت · وكلاء</span>
+<span style="margin-top: auto; font-weight: 700; font-size: 14px; color: #FFC800">اكتشف المسار ←</span>
+</a>
+
+<a class="ccard pop" href="service-legal.html" style="text-decoration: none; background: #2B4944; color: #FFFFFF; border-radius: 26px; padding: 26px; display: flex; flex-direction: column; gap: 14px; min-height: 200px; border: 1px solid #2B4944">
+<span style="font-size: 13px; font-weight: 700; color: #FFC800">قانونية</span>
+<span style="font-size: 21px; font-weight: 700; line-height: 1.45">استشارات النزاعات والمطالبات</span>
+<span style="font-size: 13px; color: #B9CCC7">أفراد · منشآت · وكلاء</span>
+<span style="margin-top: auto; font-weight: 700; font-size: 14px; color: #FFC800">اكتشف المسار ←</span>
+</a>
+
+<a class="ccard pop" href="service-legal.html" style="text-decoration: none; background: #2B4944; color: #FFFFFF; border-radius: 26px; padding: 26px; display: flex; flex-direction: column; gap: 14px; min-height: 200px; border: 1px solid #2B4944">
+<span style="font-size: 13px; font-weight: 700; color: #FFC800">قانونية</span>
+<span style="font-size: 21px; font-weight: 700; line-height: 1.45">استشارات الأراضي والعقارات</span>
+<span style="font-size: 13px; color: #B9CCC7">أفراد · وكلاء</span>
+<span style="margin-top: auto; font-weight: 700; font-size: 14px; color: #FFC800">اكتشف المسار ←</span>
+</a>
+
+<a class="ccard pop" href="service-legal.html" style="text-decoration: none; background: #2B4944; color: #FFFFFF; border-radius: 26px; padding: 26px; display: flex; flex-direction: column; gap: 14px; min-height: 200px; border: 1px solid #2B4944">
+<span style="font-size: 13px; font-weight: 700; color: #FFC800">قانونية</span>
+<span style="font-size: 21px; font-weight: 700; line-height: 1.45">استشارات التركات والميراث</span>
+<span style="font-size: 13px; color: #B9CCC7">أفراد · وكلاء</span>
+<span style="margin-top: auto; font-weight: 700; font-size: 14px; color: #FFC800">اكتشف المسار ←</span>
+</a>
+
+<a class="ccard pop" href="service-legal.html" style="text-decoration: none; background: #2B4944; color: #FFFFFF; border-radius: 26px; padding: 26px; display: flex; flex-direction: column; gap: 14px; min-height: 200px; border: 1px solid #2B4944">
+<span style="font-size: 13px; font-weight: 700; color: #FFC800">قانونية</span>
+<span style="font-size: 21px; font-weight: 700; line-height: 1.45">استشارات الشركات والأنظمة التجارية</span>
+<span style="font-size: 13px; color: #B9CCC7">منشآت</span>
+<span style="margin-top: auto; font-weight: 700; font-size: 14px; color: #FFC800">اكتشف المسار ←</span>
+</a>
+
+<a class="ccard pop" href="service-accounting.html" style="text-decoration: none; background: #FFFFFF; color: #2B4944; border-radius: 26px; padding: 26px; display: flex; flex-direction: column; gap: 14px; min-height: 200px; border: 1px solid #E6DFD3">
+<span style="font-size: 13px; font-weight: 700; color: #A84F00">محاسبية وضريبية</span>
+<span style="font-size: 21px; font-weight: 700; line-height: 1.45">الاستشارات الضريبية</span>
+<span style="font-size: 13px; color: #5A6B67">منشآت · أفراد</span>
+<span style="margin-top: auto; font-weight: 700; font-size: 14px; color: #A84F00">اكتشف المسار ←</span>
+</a>
+
+<a class="ccard pop" href="service-accounting.html" style="text-decoration: none; background: #FFFFFF; color: #2B4944; border-radius: 26px; padding: 26px; display: flex; flex-direction: column; gap: 14px; min-height: 200px; border: 1px solid #E6DFD3">
+<span style="font-size: 13px; font-weight: 700; color: #A84F00">محاسبية وضريبية</span>
+<span style="font-size: 21px; font-weight: 700; line-height: 1.45">مسك الدفاتر</span>
+<span style="font-size: 13px; color: #5A6B67">منشآت</span>
+<span style="margin-top: auto; font-weight: 700; font-size: 14px; color: #A84F00">اكتشف المسار ←</span>
+</a>
+
+<a class="ccard pop" href="service-accounting.html" style="text-decoration: none; background: #FFFFFF; color: #2B4944; border-radius: 26px; padding: 26px; display: flex; flex-direction: column; gap: 14px; min-height: 200px; border: 1px solid #E6DFD3">
+<span style="font-size: 13px; font-weight: 700; color: #A84F00">محاسبية وضريبية</span>
+<span style="font-size: 21px; font-weight: 700; line-height: 1.45">بناء شجرة الحسابات</span>
+<span style="font-size: 13px; color: #5A6B67">منشآت</span>
+<span style="margin-top: auto; font-weight: 700; font-size: 14px; color: #A84F00">اكتشف المسار ←</span>
+</a>
+
+<a class="ccard pop" href="service-accounting.html" style="text-decoration: none; background: #FFFFFF; color: #2B4944; border-radius: 26px; padding: 26px; display: flex; flex-direction: column; gap: 14px; min-height: 200px; border: 1px solid #E6DFD3">
+<span style="font-size: 13px; font-weight: 700; color: #A84F00">محاسبية وضريبية</span>
+<span style="font-size: 21px; font-weight: 700; line-height: 1.45">بناء وتطوير النظام المحاسبي</span>
+<span style="font-size: 13px; color: #5A6B67">منشآت</span>
+<span style="margin-top: auto; font-weight: 700; font-size: 14px; color: #A84F00">اكتشف المسار ←</span>
+</a>
+
+<a class="ccard pop" href="service-accounting.html" style="text-decoration: none; background: #FFFFFF; color: #2B4944; border-radius: 26px; padding: 26px; display: flex; flex-direction: column; gap: 14px; min-height: 200px; border: 1px solid #E6DFD3">
+<span style="font-size: 13px; font-weight: 700; color: #A84F00">محاسبية وضريبية</span>
+<span style="font-size: 21px; font-weight: 700; line-height: 1.45">الفحص والتدقيق المالي الداخلي</span>
+<span style="font-size: 13px; color: #5A6B67">منشآت</span>
+<span style="margin-top: auto; font-weight: 700; font-size: 14px; color: #A84F00">اكتشف المسار ←</span>
+</a>
+
+</div>
+</div>
+</section>
+
+<section style="padding: 0 24px 100px">
+<div class="rv" style="max-width: 1240px; margin: 0 auto; background: #2B4944; color: #F7F2EB; border-radius: 44px; padding: 80px 56px; text-align: center; position: relative; overflow: hidden">
+<svg class="spin" style="position: absolute; right: -200px; top: -240px; width: 640px; opacity: 0.14" viewBox="0 0 400 400" aria-hidden="true"><g fill="none" stroke="#FFC800"><circle cx="200" cy="200" r="190"></circle><circle cx="200" cy="200" r="140"></circle><circle cx="200" cy="200" r="90"></circle></g></svg>
+<p style="margin: 0 0 18px; color: #FFC800; font-weight: 700; position: relative">مبدؤنا</p>
+<h2 style="margin: 0 auto; font-size: 60px; line-height: 1.3; max-width: 900px; position: relative">رأي واضح<br>قبل كل قرار.</h2>
+<p style="margin: 24px auto 0; font-size: 19px; line-height: 1.9; color: #D3E0DC; max-width: 640px; position: relative">نقدّم الاستشارة والرأي المهني، ونترك القرار بين يديك — مع تكلفة واضحة قبل أي التزام.</p>
+</div>
+</section>
+
+<section style="padding: 0 24px 100px">
+<div style="max-width: 1240px; margin: 0 auto">
+<div class="rv" style="margin-bottom: 36px">
+<p style="margin: 0 0 12px; color: #A84F00; font-weight: 700">لماذا أفكار الريادة</p>
+<h2 style="margin: 0; font-size: 46px; color: #2B4944; line-height: 1.3">مصمَّمة لتكون التجربة بسيطة من أولها</h2>
+</div>
+<div style="display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); grid-auto-rows: minmax(190px, auto); gap: 18px">
+<div class="bento rv" style="grid-column: span 2; grid-row: span 2; background: #FFC800; border-radius: 32px; padding: 40px; display: flex; flex-direction: column; justify-content: space-between; gap: 24px">
+<svg width="120" height="76" viewBox="0 0 233 146" aria-hidden="true"><path d="M107 0H131Q135 0 135 4V30Q135 61 172 64.5L232 72H103V4Q103 0 107 0Z" fill="#2B4944"></path><path d="M107 0H131Q135 0 135 4V30Q135 61 172 64.5L232 72H103V4Q103 0 107 0Z" fill="#2B4944" transform="rotate(180 116 72)"></path></svg>
+<div><h3 style="margin: 0 0 12px; font-size: 34px; color: #2B4944; line-height: 1.35">ثلاث خبرات تحت سقف واحد</h3><p style="margin: 0; font-size: 17px; line-height: 1.9; color: #2B4944">إدارية وقانونية ومحاسبية، بفريق من المختصين وشراكات مهنية — فلا تتنقل بين أكثر من جهة.</p></div>
+</div>
+<div class="bento rv" style="grid-column: span 2; background: #FFFFFF; border-radius: 32px; padding: 32px; border: 1px solid #E6DFD3; display: flex; gap: 20px; align-items: center">
+<span style="width: 60px; height: 60px; flex: none; border-radius: 18px; background: #2B4944; display: flex; align-items: center; justify-content: center"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#FFC800" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="6" y="2" width="12" height="20" rx="2.5"></rect><path d="M10 18h4"></path><path d="M9.5 9.5l1.8 1.8 3.2-3.3"></path></svg></span>
+<div><h3 style="margin: 0 0 6px; font-size: 22px; color: #2B4944">دخول برقم الجوال</h3><p style="margin: 0; font-size: 15px; line-height: 1.8; color: #4A5E5A">رمز تحقق على واتساب، بدون حسابات أو كلمات مرور.</p></div>
+</div>
+<div class="bento rv" style="background: #233B37; color: #F7F2EB; border-radius: 32px; padding: 28px; display: flex; flex-direction: column; justify-content: space-between">
+<svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#FFC800" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12a8.5 8.5 0 0 1-12.6 7.4L3 21l1.6-5.2A8.5 8.5 0 1 1 21 12z"></path></svg>
+<div><h3 style="margin: 0 0 6px; font-size: 20px">تحديثات تلقائية</h3><p style="margin: 0; font-size: 14px; line-height: 1.8; color: #D3E0DC">كل مرحلة في طلبك تصلك على واتساب.</p></div>
+</div>
+<div class="bento rv" style="background: #FFFFFF; border-radius: 32px; padding: 28px; border: 1px solid #E6DFD3; display: flex; flex-direction: column; justify-content: space-between">
+<svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#A84F00" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3l7 3v6c0 4.5-3 7.5-7 9-4-1.5-7-4.5-7-9V6z"></path><path d="M9 12l2 2 4-4"></path></svg>
+<div><h3 style="margin: 0 0 6px; font-size: 20px; color: #2B4944">دفع آمن</h3><p style="margin: 0; font-size: 14px; line-height: 1.8; color: #4A5E5A">مدى والبطاقات عبر بوابة دفع معتمدة.</p></div>
+</div>
+<div class="bento rv" style="grid-column: span 2; background: #E9E2D6; border-radius: 32px; padding: 32px; display: flex; gap: 20px; align-items: center">
+<span style="width: 60px; height: 60px; flex: none; border-radius: 18px; background: #FFFFFF; display: flex; align-items: center; justify-content: center"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#2B4944" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="9" cy="8" r="3.5"></circle><circle cx="17" cy="9" r="2.5"></circle><path d="M3 20c0-3.3 2.7-6 6-6s6 2.7 6 6M15 20c0-2.2 1.3-4 3-4.6"></path></svg></span>
+<div><h3 style="margin: 0 0 6px; font-size: 22px; color: #2B4944">للأفراد والمنشآت والوكلاء</h3><p style="margin: 0; font-size: 15px; line-height: 1.8; color: #4A5E5A">حلول عملية تتناسب مع احتياج كل عميل وحجمه.</p></div>
+</div>
+<div class="bento rv" style="grid-column: span 2; background: #FFFFFF; border-radius: 32px; padding: 32px; border: 1px solid #E6DFD3; display: flex; gap: 20px; align-items: center">
+<span style="width: 60px; height: 60px; flex: none; border-radius: 18px; background: #2B4944; display: flex; align-items: center; justify-content: center"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#FFC800" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7S2 12 2 12z"></path><circle cx="12" cy="12" r="3"></circle></svg></span>
+<div><h3 style="margin: 0 0 6px; font-size: 22px; color: #2B4944">تابع طلبك متى شئت</h3><p style="margin: 0; font-size: 15px; line-height: 1.8; color: #4A5E5A">صفحة «تابع طلبك» تعرض المرحلة الحالية والخطوة التالية.</p></div>
+</div>
+</div>
+</div>
+</section>
+
+<section style="padding: 0 24px 100px">
+<div class="rv" style="max-width: 1240px; margin: 0 auto; border-top: 2px solid #2B4944; border-bottom: 2px solid #2B4944; padding: 30px 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 24px">
+<div style="display: flex; align-items: center; gap: 14px"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#2B4944" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="3" width="16" height="18" rx="2"></rect><path d="M8 8h8M8 12h8M8 16h5"></path></svg><span style="font-weight: 600; color: #2B4944">سجل تجاري [رقم]</span></div>
+<div style="display: flex; align-items: center; gap: 14px"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#2B4944" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="10" width="16" height="11" rx="2"></rect><path d="M8 10V7a4 4 0 0 1 8 0v3"></path></svg><span style="font-weight: 600; color: #2B4944">حماية البيانات الشخصية</span></div>
+<div style="display: flex; align-items: center; gap: 14px"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#2B4944" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="5" width="20" height="14" rx="2"></rect><path d="M2 10h20"></path></svg><span style="font-weight: 600; color: #2B4944">دفع آمن عبر بوابة معتمدة</span></div>
+<div style="display: flex; align-items: center; gap: 14px"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#2B4944" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="6" y="2" width="12" height="20" rx="2.5"></rect><path d="M10 18h4"></path></svg><span style="font-weight: 600; color: #2B4944">تحقق برمز على الجوال</span></div>
+</div>
+</section>
+
+<section style="padding: 0 24px 110px">
+<div class="rv" style="max-width: 1240px; margin: 0 auto; display: flex; flex-wrap: wrap; gap: 18px">
+<a class="btn" href="booking.html" style="flex: 2 1 420px; text-decoration: none; background: #FFC800; color: #2B4944; border-radius: 36px; padding: 48px; display: flex; flex-direction: column; gap: 14px">
+<span style="font-size: 15px; font-weight: 700">جديد هنا؟</span><span style="font-size: 40px; font-weight: 700; line-height: 1.3">احجز استشارتك الآن ←</span><span style="font-size: 17px">اختر المسار، اكتب بياناتك، وأكّد برمز التحقق.</span>
+</a>
+<a class="btn" href="track.html" style="flex: 1 1 300px; text-decoration: none; background: #2B4944; color: #F7F2EB; border-radius: 36px; padding: 48px; display: flex; flex-direction: column; gap: 14px">
+<span style="font-size: 15px; font-weight: 700; color: #FFC800">لديك طلب؟</span><span style="font-size: 32px; font-weight: 700; line-height: 1.3">تابع طلبك ←</span><span style="font-size: 16px; color: #D3E0DC">برقم جوالك ورمز التحقق.</span>
+</a>
+</div>
+</section>
+
+<footer style="background: #233B37; color: #B9CCC7; padding: 80px 24px 32px">
+<div style="max-width: 1240px; margin: 0 auto; display: flex; flex-wrap: wrap; justify-content: space-between; gap: 48px">
+<div style="flex: 1 1 300px; min-width: 0">
+<svg width="140" height="50" viewBox="0 0 545 192" role="img" aria-label="أفكار الريادة"><path d="M107 0H131Q135 0 135 4V30Q135 61 172 64.5L232 72H103V4Q103 0 107 0Z" fill="#FFC800"></path><path d="M107 0H131Q135 0 135 4V30Q135 61 172 64.5L232 72H103V4Q103 0 107 0Z" fill="#FFC800" transform="rotate(180 116 72)"></path><text x="146" y="188" direction="ltr" unicode-bidi="bidi-override" textLength="392" lengthAdjust="spacingAndGlyphs" font-family="IBM Plex Sans, sans-serif" font-size="172" font-weight="500" letter-spacing="-3" fill="#FFFFFF">armc</text></svg>
+<p style="margin: 18px 0 0; line-height: 1.9; max-width: 340px">أفكار الريادة للاستشارات — استشارات إدارية وقانونية ومحاسبية للأفراد والمنشآت.</p>
+</div>
+<div style="flex: 0 1 170px"><h3 style="margin: 0 0 16px; color: #FFC800; font-size: 16px">روابط</h3><div style="display: flex; flex-direction: column; gap: 10px"><a class="navl" href="about.html" style="color: #B9CCC7; text-decoration: none">من نحن</a><a class="navl" href="services.html" style="color: #B9CCC7; text-decoration: none">خدماتنا</a><a class="navl" href="booking.html" style="color: #B9CCC7; text-decoration: none">احجز استشارة</a><a class="navl" href="track.html" style="color: #B9CCC7; text-decoration: none">تابع طلبك</a><a class="navl" href="contact.html" style="color: #B9CCC7; text-decoration: none">تواصل معنا</a></div></div>
+<div style="flex: 0 1 220px"><h3 style="margin: 0 0 16px; color: #FFC800; font-size: 16px">الخدمات</h3><div style="display: flex; flex-direction: column; gap: 10px"><a class="navl" href="service-management.html" style="color: #B9CCC7; text-decoration: none">الاستشارات الإدارية</a><a class="navl" href="service-legal.html" style="color: #B9CCC7; text-decoration: none">الاستشارات القانونية</a><a class="navl" href="service-accounting.html" style="color: #B9CCC7; text-decoration: none">المحاسبية والضريبية</a></div></div>
+<div style="flex: 0 1 220px"><h3 style="margin: 0 0 16px; color: #FFC800; font-size: 16px">تواصل</h3><div style="display: flex; flex-direction: column; gap: 10px"><span>[رقم الجوال]</span><span>[البريد الإلكتروني]</span><span>[العنوان — المدينة]</span></div></div>
+</div>
+<div style="max-width: 1240px; margin: 56px auto 0; padding-top: 22px; border-top: 1px solid rgba(255,255,255,0.1); display: flex; flex-wrap: wrap; justify-content: space-between; gap: 12px; font-size: 14px">
+<span>© 2026 أفكار الريادة للاستشارات. جميع الحقوق محفوظة.</span><span>[رقم السجل التجاري] · [الرقم الضريبي]</span>
+</div>
+</footer>
+
+<a class="wa" href="contact.html" aria-label="تواصل عبر واتساب" style="position: fixed; left: 24px; bottom: 24px; width: 60px; height: 60px; border-radius: 50%; background: #25A55F; display: flex; align-items: center; justify-content: center; box-shadow: 0 12px 28px rgba(0,0,0,0.28); z-index: 50">
+<svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12a8.5 8.5 0 0 1-12.6 7.4L3 21l1.6-5.2A8.5 8.5 0 1 1 21 12z"></path><path d="M9 9.5c.3 2.3 2.2 4.2 4.5 4.5l1-1.2 1.8.8"></path></svg>
+</a>
+</div>
+</div>
+
+<!-- حالات العناصر التفاعلية: تُعرض عند الضغط على الأزرار (انظر assets/js/armc.js) -->
+<template id="r1-s1"><div class="up d3" style="flex: 1 1 400px; min-width: 0; background: #FFFFFF; border-radius: 36px 36px 36px 110px; padding: 32px; box-shadow: 0 40px 80px -40px rgba(43,73,68,0.45); border: 1px solid #E6DFD3" data-armc-region="r1" data-armc-state="1">
+<div style="display: flex; justify-content: space-between; align-items: center; gap: 12px; margin-bottom: 20px">
+<span style="font-weight: 700; color: #2B4944; font-size: 18px">معاينة الحجز</span>
+<span style="font-size: 13px; color: #4A5E5A; background: #F7F2EB; border-radius: 999px; padding: 6px 12px">تجربة تفاعلية</span>
+</div>
+<p style="margin: 0 0 10px; font-size: 14px; color: #4A5E5A; font-weight: 600">١. اختر المسار</p>
+<div role="group" aria-label="المسار" style="display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 22px">
+
+<button type="button" class="pill" aria-pressed="false" style="font-family: inherit; font-size: 15px; font-weight: 600; min-height: 44px; padding: 10px 16px; border-radius: 999px; cursor: pointer; border: 1.5px solid #2B4944; background: #FFFFFF; color: #2B4944">إدارية</button>
+
+<button type="button" class="pill" aria-pressed="true" style="font-family: inherit; font-size: 15px; font-weight: 600; min-height: 44px; padding: 10px 16px; border-radius: 999px; cursor: pointer; border: 1.5px solid #2B4944; background: #2B4944; color: #FFFFFF">قانونية</button>
+
+<button type="button" class="pill" aria-pressed="false" style="font-family: inherit; font-size: 15px; font-weight: 600; min-height: 44px; padding: 10px 16px; border-radius: 999px; cursor: pointer; border: 1.5px solid #2B4944; background: #FFFFFF; color: #2B4944">محاسبية وضريبية</button>
+
+</div>
+<p style="margin: 0 0 10px; font-size: 14px; color: #4A5E5A; font-weight: 600">٢. الاستشارة المقترحة</p>
+<div style="background: #F7F2EB; border-radius: 20px; padding: 18px 20px; display: flex; justify-content: space-between; align-items: center; gap: 12px; margin-bottom: 22px">
+<div><div style="font-weight: 700; color: #2B4944; font-size: 17px">مراجعة وصياغة العقود والاتفاقيات</div><div style="font-size: 14px; color: #4A5E5A; margin-top: 4px">حضوري في المكتب · [المدة]</div></div>
+<span style="width: 40px; height: 40px; flex: none; border-radius: 12px; background: #2B4944; display: flex; align-items: center; justify-content: center"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#FFC800" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"></path></svg></span>
+</div>
+<div style="display: flex; justify-content: space-between; align-items: center; gap: 12px; margin-bottom: 10px">
+<p style="margin: 0; font-size: 14px; color: #4A5E5A; font-weight: 600">٣. ما يصلك على واتساب</p>
+<button type="button" style="font-family: inherit; font-size: 13px; font-weight: 700; min-height: 36px; padding: 6px 14px; border-radius: 999px; cursor: pointer; border: 1px solid #1E7A47; background: #FFFFFF; color: #1E7A47">عرض رسالة التأكيد</button>
+</div>
+<div class="pop" style="background: #ECE5D8; border-radius: 22px; padding: 16px">
+<div style="display: flex; align-items: center; gap: 8px; color: #1E7A47; font-weight: 700; font-size: 13px; margin-bottom: 10px"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#1E7A47" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12a8.5 8.5 0 0 1-12.6 7.4L3 21l1.6-5.2A8.5 8.5 0 1 1 21 12z"></path></svg>أفكار الريادة · رمز التحقق</div>
+<p style="margin: 0; background: #DDF3E4; border-radius: 18px 18px 4px 18px; padding: 14px 16px; line-height: 1.8; font-size: 15px; color: #1F2D2A">رمز الدخول إلى بوابة أفكار الريادة هو 4821، وصالح لمدة 5 دقائق.</p>
+</div>
+<a class="btn btn-y" href="booking.html" style="display: block; text-align: center; margin-top: 22px; background: #FFC800; color: #2B4944; text-decoration: none; font-weight: 700; padding: 15px; border-radius: 999px">ابدأ الحجز الفعلي</a>
+</div></template>
+<template id="r1-s2"><div class="up d3" style="flex: 1 1 400px; min-width: 0; background: #FFFFFF; border-radius: 36px 36px 36px 110px; padding: 32px; box-shadow: 0 40px 80px -40px rgba(43,73,68,0.45); border: 1px solid #E6DFD3" data-armc-region="r1" data-armc-state="2">
+<div style="display: flex; justify-content: space-between; align-items: center; gap: 12px; margin-bottom: 20px">
+<span style="font-weight: 700; color: #2B4944; font-size: 18px">معاينة الحجز</span>
+<span style="font-size: 13px; color: #4A5E5A; background: #F7F2EB; border-radius: 999px; padding: 6px 12px">تجربة تفاعلية</span>
+</div>
+<p style="margin: 0 0 10px; font-size: 14px; color: #4A5E5A; font-weight: 600">١. اختر المسار</p>
+<div role="group" aria-label="المسار" style="display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 22px">
+
+<button type="button" class="pill" aria-pressed="false" style="font-family: inherit; font-size: 15px; font-weight: 600; min-height: 44px; padding: 10px 16px; border-radius: 999px; cursor: pointer; border: 1.5px solid #2B4944; background: #FFFFFF; color: #2B4944">إدارية</button>
+
+<button type="button" class="pill" aria-pressed="false" style="font-family: inherit; font-size: 15px; font-weight: 600; min-height: 44px; padding: 10px 16px; border-radius: 999px; cursor: pointer; border: 1.5px solid #2B4944; background: #FFFFFF; color: #2B4944">قانونية</button>
+
+<button type="button" class="pill" aria-pressed="true" style="font-family: inherit; font-size: 15px; font-weight: 600; min-height: 44px; padding: 10px 16px; border-radius: 999px; cursor: pointer; border: 1.5px solid #2B4944; background: #2B4944; color: #FFFFFF">محاسبية وضريبية</button>
+
+</div>
+<p style="margin: 0 0 10px; font-size: 14px; color: #4A5E5A; font-weight: 600">٢. الاستشارة المقترحة</p>
+<div style="background: #F7F2EB; border-radius: 20px; padding: 18px 20px; display: flex; justify-content: space-between; align-items: center; gap: 12px; margin-bottom: 22px">
+<div><div style="font-weight: 700; color: #2B4944; font-size: 17px">الاستشارات الضريبية</div><div style="font-size: 14px; color: #4A5E5A; margin-top: 4px">مكالمة هاتفية · [المدة]</div></div>
+<span style="width: 40px; height: 40px; flex: none; border-radius: 12px; background: #2B4944; display: flex; align-items: center; justify-content: center"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#FFC800" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"></path></svg></span>
+</div>
+<div style="display: flex; justify-content: space-between; align-items: center; gap: 12px; margin-bottom: 10px">
+<p style="margin: 0; font-size: 14px; color: #4A5E5A; font-weight: 600">٣. ما يصلك على واتساب</p>
+<button type="button" style="font-family: inherit; font-size: 13px; font-weight: 700; min-height: 36px; padding: 6px 14px; border-radius: 999px; cursor: pointer; border: 1px solid #1E7A47; background: #FFFFFF; color: #1E7A47">عرض رسالة التأكيد</button>
+</div>
+<div class="pop" style="background: #ECE5D8; border-radius: 22px; padding: 16px">
+<div style="display: flex; align-items: center; gap: 8px; color: #1E7A47; font-weight: 700; font-size: 13px; margin-bottom: 10px"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#1E7A47" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12a8.5 8.5 0 0 1-12.6 7.4L3 21l1.6-5.2A8.5 8.5 0 1 1 21 12z"></path></svg>أفكار الريادة · رمز التحقق</div>
+<p style="margin: 0; background: #DDF3E4; border-radius: 18px 18px 4px 18px; padding: 14px 16px; line-height: 1.8; font-size: 15px; color: #1F2D2A">رمز الدخول إلى بوابة أفكار الريادة هو 4821، وصالح لمدة 5 دقائق.</p>
+</div>
+<a class="btn btn-y" href="booking.html" style="display: block; text-align: center; margin-top: 22px; background: #FFC800; color: #2B4944; text-decoration: none; font-weight: 700; padding: 15px; border-radius: 999px">ابدأ الحجز الفعلي</a>
+</div></template>
+<template id="r1-s3"><div class="up d3" style="flex: 1 1 400px; min-width: 0; background: #FFFFFF; border-radius: 36px 36px 36px 110px; padding: 32px; box-shadow: 0 40px 80px -40px rgba(43,73,68,0.45); border: 1px solid #E6DFD3" data-armc-region="r1" data-armc-state="3">
+<div style="display: flex; justify-content: space-between; align-items: center; gap: 12px; margin-bottom: 20px">
+<span style="font-weight: 700; color: #2B4944; font-size: 18px">معاينة الحجز</span>
+<span style="font-size: 13px; color: #4A5E5A; background: #F7F2EB; border-radius: 999px; padding: 6px 12px">تجربة تفاعلية</span>
+</div>
+<p style="margin: 0 0 10px; font-size: 14px; color: #4A5E5A; font-weight: 600">١. اختر المسار</p>
+<div role="group" aria-label="المسار" style="display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 22px">
+
+<button type="button" class="pill" aria-pressed="true" style="font-family: inherit; font-size: 15px; font-weight: 600; min-height: 44px; padding: 10px 16px; border-radius: 999px; cursor: pointer; border: 1.5px solid #2B4944; background: #2B4944; color: #FFFFFF">إدارية</button>
+
+<button type="button" class="pill" aria-pressed="false" style="font-family: inherit; font-size: 15px; font-weight: 600; min-height: 44px; padding: 10px 16px; border-radius: 999px; cursor: pointer; border: 1.5px solid #2B4944; background: #FFFFFF; color: #2B4944">قانونية</button>
+
+<button type="button" class="pill" aria-pressed="false" style="font-family: inherit; font-size: 15px; font-weight: 600; min-height: 44px; padding: 10px 16px; border-radius: 999px; cursor: pointer; border: 1.5px solid #2B4944; background: #FFFFFF; color: #2B4944">محاسبية وضريبية</button>
+
+</div>
+<p style="margin: 0 0 10px; font-size: 14px; color: #4A5E5A; font-weight: 600">٢. الاستشارة المقترحة</p>
+<div style="background: #F7F2EB; border-radius: 20px; padding: 18px 20px; display: flex; justify-content: space-between; align-items: center; gap: 12px; margin-bottom: 22px">
+<div><div style="font-weight: 700; color: #2B4944; font-size: 17px">الاستراتيجية وتطوير الأعمال</div><div style="font-size: 14px; color: #4A5E5A; margin-top: 4px">اتصال مرئي · 60 دقيقة [المدة]</div></div>
+<span style="width: 40px; height: 40px; flex: none; border-radius: 12px; background: #2B4944; display: flex; align-items: center; justify-content: center"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#FFC800" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"></path></svg></span>
+</div>
+<div style="display: flex; justify-content: space-between; align-items: center; gap: 12px; margin-bottom: 10px">
+<p style="margin: 0; font-size: 14px; color: #4A5E5A; font-weight: 600">٣. ما يصلك على واتساب</p>
+<button type="button" style="font-family: inherit; font-size: 13px; font-weight: 700; min-height: 36px; padding: 6px 14px; border-radius: 999px; cursor: pointer; border: 1px solid #1E7A47; background: #FFFFFF; color: #1E7A47">عرض رمز التحقق</button>
+</div>
+<div class="pop" style="background: #ECE5D8; border-radius: 22px; padding: 16px">
+<div style="display: flex; align-items: center; gap: 8px; color: #1E7A47; font-weight: 700; font-size: 13px; margin-bottom: 10px"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#1E7A47" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12a8.5 8.5 0 0 1-12.6 7.4L3 21l1.6-5.2A8.5 8.5 0 1 1 21 12z"></path></svg>أفكار الريادة · بعد تأكيد الطلب</div>
+<p style="margin: 0; background: #DDF3E4; border-radius: 18px 18px 4px 18px; padding: 14px 16px; line-height: 1.8; font-size: 15px; color: #1F2D2A">تم استلام طلبك رقم [#ARMC-____] لاستشارة «الاستراتيجية وتطوير الأعمال»، وسيتواصل معك فريقنا قريبًا.</p>
+</div>
+<a class="btn btn-y" href="booking.html" style="display: block; text-align: center; margin-top: 22px; background: #FFC800; color: #2B4944; text-decoration: none; font-weight: 700; padding: 15px; border-radius: 999px">ابدأ الحجز الفعلي</a>
+</div></template>
+<template id="r1-s4"><div class="up d3" style="flex: 1 1 400px; min-width: 0; background: #FFFFFF; border-radius: 36px 36px 36px 110px; padding: 32px; box-shadow: 0 40px 80px -40px rgba(43,73,68,0.45); border: 1px solid #E6DFD3" data-armc-region="r1" data-armc-state="4">
+<div style="display: flex; justify-content: space-between; align-items: center; gap: 12px; margin-bottom: 20px">
+<span style="font-weight: 700; color: #2B4944; font-size: 18px">معاينة الحجز</span>
+<span style="font-size: 13px; color: #4A5E5A; background: #F7F2EB; border-radius: 999px; padding: 6px 12px">تجربة تفاعلية</span>
+</div>
+<p style="margin: 0 0 10px; font-size: 14px; color: #4A5E5A; font-weight: 600">١. اختر المسار</p>
+<div role="group" aria-label="المسار" style="display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 22px">
+
+<button type="button" class="pill" aria-pressed="false" style="font-family: inherit; font-size: 15px; font-weight: 600; min-height: 44px; padding: 10px 16px; border-radius: 999px; cursor: pointer; border: 1.5px solid #2B4944; background: #FFFFFF; color: #2B4944">إدارية</button>
+
+<button type="button" class="pill" aria-pressed="true" style="font-family: inherit; font-size: 15px; font-weight: 600; min-height: 44px; padding: 10px 16px; border-radius: 999px; cursor: pointer; border: 1.5px solid #2B4944; background: #2B4944; color: #FFFFFF">قانونية</button>
+
+<button type="button" class="pill" aria-pressed="false" style="font-family: inherit; font-size: 15px; font-weight: 600; min-height: 44px; padding: 10px 16px; border-radius: 999px; cursor: pointer; border: 1.5px solid #2B4944; background: #FFFFFF; color: #2B4944">محاسبية وضريبية</button>
+
+</div>
+<p style="margin: 0 0 10px; font-size: 14px; color: #4A5E5A; font-weight: 600">٢. الاستشارة المقترحة</p>
+<div style="background: #F7F2EB; border-radius: 20px; padding: 18px 20px; display: flex; justify-content: space-between; align-items: center; gap: 12px; margin-bottom: 22px">
+<div><div style="font-weight: 700; color: #2B4944; font-size: 17px">مراجعة وصياغة العقود والاتفاقيات</div><div style="font-size: 14px; color: #4A5E5A; margin-top: 4px">حضوري في المكتب · [المدة]</div></div>
+<span style="width: 40px; height: 40px; flex: none; border-radius: 12px; background: #2B4944; display: flex; align-items: center; justify-content: center"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#FFC800" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"></path></svg></span>
+</div>
+<div style="display: flex; justify-content: space-between; align-items: center; gap: 12px; margin-bottom: 10px">
+<p style="margin: 0; font-size: 14px; color: #4A5E5A; font-weight: 600">٣. ما يصلك على واتساب</p>
+<button type="button" style="font-family: inherit; font-size: 13px; font-weight: 700; min-height: 36px; padding: 6px 14px; border-radius: 999px; cursor: pointer; border: 1px solid #1E7A47; background: #FFFFFF; color: #1E7A47">عرض رمز التحقق</button>
+</div>
+<div class="pop" style="background: #ECE5D8; border-radius: 22px; padding: 16px">
+<div style="display: flex; align-items: center; gap: 8px; color: #1E7A47; font-weight: 700; font-size: 13px; margin-bottom: 10px"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#1E7A47" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12a8.5 8.5 0 0 1-12.6 7.4L3 21l1.6-5.2A8.5 8.5 0 1 1 21 12z"></path></svg>أفكار الريادة · بعد تأكيد الطلب</div>
+<p style="margin: 0; background: #DDF3E4; border-radius: 18px 18px 4px 18px; padding: 14px 16px; line-height: 1.8; font-size: 15px; color: #1F2D2A">تم استلام طلبك رقم [#ARMC-____] لاستشارة «مراجعة وصياغة العقود والاتفاقيات»، وسيتواصل معك فريقنا قريبًا.</p>
+</div>
+<a class="btn btn-y" href="booking.html" style="display: block; text-align: center; margin-top: 22px; background: #FFC800; color: #2B4944; text-decoration: none; font-weight: 700; padding: 15px; border-radius: 999px">ابدأ الحجز الفعلي</a>
+</div></template>
+<template id="r1-s5"><div class="up d3" style="flex: 1 1 400px; min-width: 0; background: #FFFFFF; border-radius: 36px 36px 36px 110px; padding: 32px; box-shadow: 0 40px 80px -40px rgba(43,73,68,0.45); border: 1px solid #E6DFD3" data-armc-region="r1" data-armc-state="5">
+<div style="display: flex; justify-content: space-between; align-items: center; gap: 12px; margin-bottom: 20px">
+<span style="font-weight: 700; color: #2B4944; font-size: 18px">معاينة الحجز</span>
+<span style="font-size: 13px; color: #4A5E5A; background: #F7F2EB; border-radius: 999px; padding: 6px 12px">تجربة تفاعلية</span>
+</div>
+<p style="margin: 0 0 10px; font-size: 14px; color: #4A5E5A; font-weight: 600">١. اختر المسار</p>
+<div role="group" aria-label="المسار" style="display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 22px">
+
+<button type="button" class="pill" aria-pressed="false" style="font-family: inherit; font-size: 15px; font-weight: 600; min-height: 44px; padding: 10px 16px; border-radius: 999px; cursor: pointer; border: 1.5px solid #2B4944; background: #FFFFFF; color: #2B4944">إدارية</button>
+
+<button type="button" class="pill" aria-pressed="false" style="font-family: inherit; font-size: 15px; font-weight: 600; min-height: 44px; padding: 10px 16px; border-radius: 999px; cursor: pointer; border: 1.5px solid #2B4944; background: #FFFFFF; color: #2B4944">قانونية</button>
+
+<button type="button" class="pill" aria-pressed="true" style="font-family: inherit; font-size: 15px; font-weight: 600; min-height: 44px; padding: 10px 16px; border-radius: 999px; cursor: pointer; border: 1.5px solid #2B4944; background: #2B4944; color: #FFFFFF">محاسبية وضريبية</button>
+
+</div>
+<p style="margin: 0 0 10px; font-size: 14px; color: #4A5E5A; font-weight: 600">٢. الاستشارة المقترحة</p>
+<div style="background: #F7F2EB; border-radius: 20px; padding: 18px 20px; display: flex; justify-content: space-between; align-items: center; gap: 12px; margin-bottom: 22px">
+<div><div style="font-weight: 700; color: #2B4944; font-size: 17px">الاستشارات الضريبية</div><div style="font-size: 14px; color: #4A5E5A; margin-top: 4px">مكالمة هاتفية · [المدة]</div></div>
+<span style="width: 40px; height: 40px; flex: none; border-radius: 12px; background: #2B4944; display: flex; align-items: center; justify-content: center"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#FFC800" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"></path></svg></span>
+</div>
+<div style="display: flex; justify-content: space-between; align-items: center; gap: 12px; margin-bottom: 10px">
+<p style="margin: 0; font-size: 14px; color: #4A5E5A; font-weight: 600">٣. ما يصلك على واتساب</p>
+<button type="button" style="font-family: inherit; font-size: 13px; font-weight: 700; min-height: 36px; padding: 6px 14px; border-radius: 999px; cursor: pointer; border: 1px solid #1E7A47; background: #FFFFFF; color: #1E7A47">عرض رمز التحقق</button>
+</div>
+<div class="pop" style="background: #ECE5D8; border-radius: 22px; padding: 16px">
+<div style="display: flex; align-items: center; gap: 8px; color: #1E7A47; font-weight: 700; font-size: 13px; margin-bottom: 10px"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#1E7A47" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12a8.5 8.5 0 0 1-12.6 7.4L3 21l1.6-5.2A8.5 8.5 0 1 1 21 12z"></path></svg>أفكار الريادة · بعد تأكيد الطلب</div>
+<p style="margin: 0; background: #DDF3E4; border-radius: 18px 18px 4px 18px; padding: 14px 16px; line-height: 1.8; font-size: 15px; color: #1F2D2A">تم استلام طلبك رقم [#ARMC-____] لاستشارة «الاستشارات الضريبية»، وسيتواصل معك فريقنا قريبًا.</p>
+</div>
+<a class="btn btn-y" href="booking.html" style="display: block; text-align: center; margin-top: 22px; background: #FFC800; color: #2B4944; text-decoration: none; font-weight: 700; padding: 15px; border-radius: 999px">ابدأ الحجز الفعلي</a>
+</div></template>
+<template id="r2-s1"><div style="max-width: 1240px; margin: 0 auto" data-armc-region="r2" data-armc-state="1">
+<div class="rv" style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: flex-end; gap: 24px; margin-bottom: 36px">
+<div>
+<p style="margin: 0 0 12px; color: #A84F00; font-weight: 700">اختر من أنت</p>
+<h2 style="margin: 0; font-size: 50px; color: #2B4944; line-height: 1.25">استشارات تناسبك أنت</h2>
+</div>
+<p style="margin: 0; color: #4A5E5A; font-size: 16px">يظهر الآن: <b style="color: #2B4944">7</b> استشارة</p>
+</div>
+<div role="group" aria-label="تصفية حسب الفئة" style="display: flex; flex-wrap: wrap; gap: 10px; margin-bottom: 36px">
+
+<button type="button" class="pill" aria-pressed="false" style="font-family: inherit; font-size: 16px; font-weight: 600; min-height: 48px; padding: 12px 24px; border-radius: 999px; cursor: pointer; border: 1.5px solid #2B4944; background: transparent; color: #2B4944">الكل</button>
+
+<button type="button" class="pill" aria-pressed="true" style="font-family: inherit; font-size: 16px; font-weight: 600; min-height: 48px; padding: 12px 24px; border-radius: 999px; cursor: pointer; border: 1.5px solid #2B4944; background: #2B4944; color: #FFC800">أفراد</button>
+
+<button type="button" class="pill" aria-pressed="false" style="font-family: inherit; font-size: 16px; font-weight: 600; min-height: 48px; padding: 12px 24px; border-radius: 999px; cursor: pointer; border: 1.5px solid #2B4944; background: transparent; color: #2B4944">منشآت</button>
+
+<button type="button" class="pill" aria-pressed="false" style="font-family: inherit; font-size: 16px; font-weight: 600; min-height: 48px; padding: 12px 24px; border-radius: 999px; cursor: pointer; border: 1.5px solid #2B4944; background: transparent; color: #2B4944">وكلاء</button>
+
+</div>
+<div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(270px, 1fr)); gap: 18px">
+
+<a class="ccard pop" href="service-management.html" style="text-decoration: none; background: #FFFFFF; color: #2B4944; border-radius: 26px; padding: 26px; display: flex; flex-direction: column; gap: 14px; min-height: 200px; border: 1px solid #E6DFD3">
+<span style="font-size: 13px; font-weight: 700; color: #A84F00">إدارية</span>
+<span style="font-size: 21px; font-weight: 700; line-height: 1.45">التأسيس والتنظيم الإداري</span>
+<span style="font-size: 13px; color: #5A6B67">منشآت · أفراد</span>
+<span style="margin-top: auto; font-weight: 700; font-size: 14px; color: #A84F00">اكتشف المسار ←</span>
+</a>
+
+<a class="ccard pop" href="service-legal.html" style="text-decoration: none; background: #2B4944; color: #FFFFFF; border-radius: 26px; padding: 26px; display: flex; flex-direction: column; gap: 14px; min-height: 200px; border: 1px solid #2B4944">
+<span style="font-size: 13px; font-weight: 700; color: #FFC800">قانونية</span>
+<span style="font-size: 21px; font-weight: 700; line-height: 1.45">الاستشارات القانونية العامة</span>
+<span style="font-size: 13px; color: #B9CCC7">أفراد · منشآت · وكلاء</span>
+<span style="margin-top: auto; font-weight: 700; font-size: 14px; color: #FFC800">اكتشف المسار ←</span>
+</a>
+
+<a class="ccard pop" href="service-legal.html" style="text-decoration: none; background: #2B4944; color: #FFFFFF; border-radius: 26px; padding: 26px; display: flex; flex-direction: column; gap: 14px; min-height: 200px; border: 1px solid #2B4944">
+<span style="font-size: 13px; font-weight: 700; color: #FFC800">قانونية</span>
+<span style="font-size: 21px; font-weight: 700; line-height: 1.45">مراجعة وصياغة العقود والاتفاقيات</span>
+<span style="font-size: 13px; color: #B9CCC7">أفراد · منشآت · وكلاء</span>
+<span style="margin-top: auto; font-weight: 700; font-size: 14px; color: #FFC800">اكتشف المسار ←</span>
+</a>
+
+<a class="ccard pop" href="service-legal.html" style="text-decoration: none; background: #2B4944; color: #FFFFFF; border-radius: 26px; padding: 26px; display: flex; flex-direction: column; gap: 14px; min-height: 200px; border: 1px solid #2B4944">
+<span style="font-size: 13px; font-weight: 700; color: #FFC800">قانونية</span>
+<span style="font-size: 21px; font-weight: 700; line-height: 1.45">استشارات النزاعات والمطالبات</span>
+<span style="font-size: 13px; color: #B9CCC7">أفراد · منشآت · وكلاء</span>
+<span style="margin-top: auto; font-weight: 700; font-size: 14px; color: #FFC800">اكتشف المسار ←</span>
+</a>
+
+<a class="ccard pop" href="service-legal.html" style="text-decoration: none; background: #2B4944; color: #FFFFFF; border-radius: 26px; padding: 26px; display: flex; flex-direction: column; gap: 14px; min-height: 200px; border: 1px solid #2B4944">
+<span style="font-size: 13px; font-weight: 700; color: #FFC800">قانونية</span>
+<span style="font-size: 21px; font-weight: 700; line-height: 1.45">استشارات الأراضي والعقارات</span>
+<span style="font-size: 13px; color: #B9CCC7">أفراد · وكلاء</span>
+<span style="margin-top: auto; font-weight: 700; font-size: 14px; color: #FFC800">اكتشف المسار ←</span>
+</a>
+
+<a class="ccard pop" href="service-legal.html" style="text-decoration: none; background: #2B4944; color: #FFFFFF; border-radius: 26px; padding: 26px; display: flex; flex-direction: column; gap: 14px; min-height: 200px; border: 1px solid #2B4944">
+<span style="font-size: 13px; font-weight: 700; color: #FFC800">قانونية</span>
+<span style="font-size: 21px; font-weight: 700; line-height: 1.45">استشارات التركات والميراث</span>
+<span style="font-size: 13px; color: #B9CCC7">أفراد · وكلاء</span>
+<span style="margin-top: auto; font-weight: 700; font-size: 14px; color: #FFC800">اكتشف المسار ←</span>
+</a>
+
+<a class="ccard pop" href="service-accounting.html" style="text-decoration: none; background: #FFFFFF; color: #2B4944; border-radius: 26px; padding: 26px; display: flex; flex-direction: column; gap: 14px; min-height: 200px; border: 1px solid #E6DFD3">
+<span style="font-size: 13px; font-weight: 700; color: #A84F00">محاسبية وضريبية</span>
+<span style="font-size: 21px; font-weight: 700; line-height: 1.45">الاستشارات الضريبية</span>
+<span style="font-size: 13px; color: #5A6B67">منشآت · أفراد</span>
+<span style="margin-top: auto; font-weight: 700; font-size: 14px; color: #A84F00">اكتشف المسار ←</span>
+</a>
+
+</div>
+</div></template>
+<template id="r2-s2"><div style="max-width: 1240px; margin: 0 auto" data-armc-region="r2" data-armc-state="2">
+<div class="rv" style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: flex-end; gap: 24px; margin-bottom: 36px">
+<div>
+<p style="margin: 0 0 12px; color: #A84F00; font-weight: 700">اختر من أنت</p>
+<h2 style="margin: 0; font-size: 50px; color: #2B4944; line-height: 1.25">استشارات تناسبك أنت</h2>
+</div>
+<p style="margin: 0; color: #4A5E5A; font-size: 16px">يظهر الآن: <b style="color: #2B4944">15</b> استشارة</p>
+</div>
+<div role="group" aria-label="تصفية حسب الفئة" style="display: flex; flex-wrap: wrap; gap: 10px; margin-bottom: 36px">
+
+<button type="button" class="pill" aria-pressed="false" style="font-family: inherit; font-size: 16px; font-weight: 600; min-height: 48px; padding: 12px 24px; border-radius: 999px; cursor: pointer; border: 1.5px solid #2B4944; background: transparent; color: #2B4944">الكل</button>
+
+<button type="button" class="pill" aria-pressed="false" style="font-family: inherit; font-size: 16px; font-weight: 600; min-height: 48px; padding: 12px 24px; border-radius: 999px; cursor: pointer; border: 1.5px solid #2B4944; background: transparent; color: #2B4944">أفراد</button>
+
+<button type="button" class="pill" aria-pressed="true" style="font-family: inherit; font-size: 16px; font-weight: 600; min-height: 48px; padding: 12px 24px; border-radius: 999px; cursor: pointer; border: 1.5px solid #2B4944; background: #2B4944; color: #FFC800">منشآت</button>
+
+<button type="button" class="pill" aria-pressed="false" style="font-family: inherit; font-size: 16px; font-weight: 600; min-height: 48px; padding: 12px 24px; border-radius: 999px; cursor: pointer; border: 1.5px solid #2B4944; background: transparent; color: #2B4944">وكلاء</button>
+
+</div>
+<div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(270px, 1fr)); gap: 18px">
+
+<a class="ccard pop" href="service-management.html" style="text-decoration: none; background: #FFFFFF; color: #2B4944; border-radius: 26px; padding: 26px; display: flex; flex-direction: column; gap: 14px; min-height: 200px; border: 1px solid #E6DFD3">
+<span style="font-size: 13px; font-weight: 700; color: #A84F00">إدارية</span>
+<span style="font-size: 21px; font-weight: 700; line-height: 1.45">الاستراتيجية وتطوير الأعمال</span>
+<span style="font-size: 13px; color: #5A6B67">منشآت</span>
+<span style="margin-top: auto; font-weight: 700; font-size: 14px; color: #A84F00">اكتشف المسار ←</span>
+</a>
+
+<a class="ccard pop" href="service-management.html" style="text-decoration: none; background: #FFFFFF; color: #2B4944; border-radius: 26px; padding: 26px; display: flex; flex-direction: column; gap: 14px; min-height: 200px; border: 1px solid #E6DFD3">
+<span style="font-size: 13px; font-weight: 700; color: #A84F00">إدارية</span>
+<span style="font-size: 21px; font-weight: 700; line-height: 1.45">التأسيس والتنظيم الإداري</span>
+<span style="font-size: 13px; color: #5A6B67">منشآت · أفراد</span>
+<span style="margin-top: auto; font-weight: 700; font-size: 14px; color: #A84F00">اكتشف المسار ←</span>
+</a>
+
+<a class="ccard pop" href="service-management.html" style="text-decoration: none; background: #FFFFFF; color: #2B4944; border-radius: 26px; padding: 26px; display: flex; flex-direction: column; gap: 14px; min-height: 200px; border: 1px solid #E6DFD3">
+<span style="font-size: 13px; font-weight: 700; color: #A84F00">إدارية</span>
+<span style="font-size: 21px; font-weight: 700; line-height: 1.45">الهياكل التنظيمية والسياسات والإجراءات</span>
+<span style="font-size: 13px; color: #5A6B67">منشآت</span>
+<span style="margin-top: auto; font-weight: 700; font-size: 14px; color: #A84F00">اكتشف المسار ←</span>
+</a>
+
+<a class="ccard pop" href="service-management.html" style="text-decoration: none; background: #FFFFFF; color: #2B4944; border-radius: 26px; padding: 26px; display: flex; flex-direction: column; gap: 14px; min-height: 200px; border: 1px solid #E6DFD3">
+<span style="font-size: 13px; font-weight: 700; color: #A84F00">إدارية</span>
+<span style="font-size: 21px; font-weight: 700; line-height: 1.45">التشغيل وتحسين العمليات</span>
+<span style="font-size: 13px; color: #5A6B67">منشآت</span>
+<span style="margin-top: auto; font-weight: 700; font-size: 14px; color: #A84F00">اكتشف المسار ←</span>
+</a>
+
+<a class="ccard pop" href="service-management.html" style="text-decoration: none; background: #FFFFFF; color: #2B4944; border-radius: 26px; padding: 26px; display: flex; flex-direction: column; gap: 14px; min-height: 200px; border: 1px solid #E6DFD3">
+<span style="font-size: 13px; font-weight: 700; color: #A84F00">إدارية</span>
+<span style="font-size: 21px; font-weight: 700; line-height: 1.45">إدارة المخاطر واستمرارية الأعمال</span>
+<span style="font-size: 13px; color: #5A6B67">منشآت</span>
+<span style="margin-top: auto; font-weight: 700; font-size: 14px; color: #A84F00">اكتشف المسار ←</span>
+</a>
+
+<a class="ccard pop" href="service-management.html" style="text-decoration: none; background: #FFFFFF; color: #2B4944; border-radius: 26px; padding: 26px; display: flex; flex-direction: column; gap: 14px; min-height: 200px; border: 1px solid #E6DFD3">
+<span style="font-size: 13px; font-weight: 700; color: #A84F00">إدارية</span>
+<span style="font-size: 21px; font-weight: 700; line-height: 1.45">الأداء ومؤشرات الأداء</span>
+<span style="font-size: 13px; color: #5A6B67">منشآت</span>
+<span style="margin-top: auto; font-weight: 700; font-size: 14px; color: #A84F00">اكتشف المسار ←</span>
+</a>
+
+<a class="ccard pop" href="service-legal.html" style="text-decoration: none; background: #2B4944; color: #FFFFFF; border-radius: 26px; padding: 26px; display: flex; flex-direction: column; gap: 14px; min-height: 200px; border: 1px solid #2B4944">
+<span style="font-size: 13px; font-weight: 700; color: #FFC800">قانونية</span>
+<span style="font-size: 21px; font-weight: 700; line-height: 1.45">الاستشارات القانونية العامة</span>
+<span style="font-size: 13px; color: #B9CCC7">أفراد · منشآت · وكلاء</span>
+<span style="margin-top: auto; font-weight: 700; font-size: 14px; color: #FFC800">اكتشف المسار ←</span>
+</a>
+
+<a class="ccard pop" href="service-legal.html" style="text-decoration: none; background: #2B4944; color: #FFFFFF; border-radius: 26px; padding: 26px; display: flex; flex-direction: column; gap: 14px; min-height: 200px; border: 1px solid #2B4944">
+<span style="font-size: 13px; font-weight: 700; color: #FFC800">قانونية</span>
+<span style="font-size: 21px; font-weight: 700; line-height: 1.45">مراجعة وصياغة العقود والاتفاقيات</span>
+<span style="font-size: 13px; color: #B9CCC7">أفراد · منشآت · وكلاء</span>
+<span style="margin-top: auto; font-weight: 700; font-size: 14px; color: #FFC800">اكتشف المسار ←</span>
+</a>
+
+<a class="ccard pop" href="service-legal.html" style="text-decoration: none; background: #2B4944; color: #FFFFFF; border-radius: 26px; padding: 26px; display: flex; flex-direction: column; gap: 14px; min-height: 200px; border: 1px solid #2B4944">
+<span style="font-size: 13px; font-weight: 700; color: #FFC800">قانونية</span>
+<span style="font-size: 21px; font-weight: 700; line-height: 1.45">استشارات النزاعات والمطالبات</span>
+<span style="font-size: 13px; color: #B9CCC7">أفراد · منشآت · وكلاء</span>
+<span style="margin-top: auto; font-weight: 700; font-size: 14px; color: #FFC800">اكتشف المسار ←</span>
+</a>
+
+<a class="ccard pop" href="service-legal.html" style="text-decoration: none; background: #2B4944; color: #FFFFFF; border-radius: 26px; padding: 26px; display: flex; flex-direction: column; gap: 14px; min-height: 200px; border: 1px solid #2B4944">
+<span style="font-size: 13px; font-weight: 700; color: #FFC800">قانونية</span>
+<span style="font-size: 21px; font-weight: 700; line-height: 1.45">استشارات الشركات والأنظمة التجارية</span>
+<span style="font-size: 13px; color: #B9CCC7">منشآت</span>
+<span style="margin-top: auto; font-weight: 700; font-size: 14px; color: #FFC800">اكتشف المسار ←</span>
+</a>
+
+<a class="ccard pop" href="service-accounting.html" style="text-decoration: none; background: #FFFFFF; color: #2B4944; border-radius: 26px; padding: 26px; display: flex; flex-direction: column; gap: 14px; min-height: 200px; border: 1px solid #E6DFD3">
+<span style="font-size: 13px; font-weight: 700; color: #A84F00">محاسبية وضريبية</span>
+<span style="font-size: 21px; font-weight: 700; line-height: 1.45">الاستشارات الضريبية</span>
+<span style="font-size: 13px; color: #5A6B67">منشآت · أفراد</span>
+<span style="margin-top: auto; font-weight: 700; font-size: 14px; color: #A84F00">اكتشف المسار ←</span>
+</a>
+
+<a class="ccard pop" href="service-accounting.html" style="text-decoration: none; background: #FFFFFF; color: #2B4944; border-radius: 26px; padding: 26px; display: flex; flex-direction: column; gap: 14px; min-height: 200px; border: 1px solid #E6DFD3">
+<span style="font-size: 13px; font-weight: 700; color: #A84F00">محاسبية وضريبية</span>
+<span style="font-size: 21px; font-weight: 700; line-height: 1.45">مسك الدفاتر</span>
+<span style="font-size: 13px; color: #5A6B67">منشآت</span>
+<span style="margin-top: auto; font-weight: 700; font-size: 14px; color: #A84F00">اكتشف المسار ←</span>
+</a>
+
+<a class="ccard pop" href="service-accounting.html" style="text-decoration: none; background: #FFFFFF; color: #2B4944; border-radius: 26px; padding: 26px; display: flex; flex-direction: column; gap: 14px; min-height: 200px; border: 1px solid #E6DFD3">
+<span style="font-size: 13px; font-weight: 700; color: #A84F00">محاسبية وضريبية</span>
+<span style="font-size: 21px; font-weight: 700; line-height: 1.45">بناء شجرة الحسابات</span>
+<span style="font-size: 13px; color: #5A6B67">منشآت</span>
+<span style="margin-top: auto; font-weight: 700; font-size: 14px; color: #A84F00">اكتشف المسار ←</span>
+</a>
+
+<a class="ccard pop" href="service-accounting.html" style="text-decoration: none; background: #FFFFFF; color: #2B4944; border-radius: 26px; padding: 26px; display: flex; flex-direction: column; gap: 14px; min-height: 200px; border: 1px solid #E6DFD3">
+<span style="font-size: 13px; font-weight: 700; color: #A84F00">محاسبية وضريبية</span>
+<span style="font-size: 21px; font-weight: 700; line-height: 1.45">بناء وتطوير النظام المحاسبي</span>
+<span style="font-size: 13px; color: #5A6B67">منشآت</span>
+<span style="margin-top: auto; font-weight: 700; font-size: 14px; color: #A84F00">اكتشف المسار ←</span>
+</a>
+
+<a class="ccard pop" href="service-accounting.html" style="text-decoration: none; background: #FFFFFF; color: #2B4944; border-radius: 26px; padding: 26px; display: flex; flex-direction: column; gap: 14px; min-height: 200px; border: 1px solid #E6DFD3">
+<span style="font-size: 13px; font-weight: 700; color: #A84F00">محاسبية وضريبية</span>
+<span style="font-size: 21px; font-weight: 700; line-height: 1.45">الفحص والتدقيق المالي الداخلي</span>
+<span style="font-size: 13px; color: #5A6B67">منشآت</span>
+<span style="margin-top: auto; font-weight: 700; font-size: 14px; color: #A84F00">اكتشف المسار ←</span>
+</a>
+
+</div>
+</div></template>
+<template id="r2-s3"><div style="max-width: 1240px; margin: 0 auto" data-armc-region="r2" data-armc-state="3">
+<div class="rv" style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: flex-end; gap: 24px; margin-bottom: 36px">
+<div>
+<p style="margin: 0 0 12px; color: #A84F00; font-weight: 700">اختر من أنت</p>
+<h2 style="margin: 0; font-size: 50px; color: #2B4944; line-height: 1.25">استشارات تناسبك أنت</h2>
+</div>
+<p style="margin: 0; color: #4A5E5A; font-size: 16px">يظهر الآن: <b style="color: #2B4944">5</b> استشارة</p>
+</div>
+<div role="group" aria-label="تصفية حسب الفئة" style="display: flex; flex-wrap: wrap; gap: 10px; margin-bottom: 36px">
+
+<button type="button" class="pill" aria-pressed="false" style="font-family: inherit; font-size: 16px; font-weight: 600; min-height: 48px; padding: 12px 24px; border-radius: 999px; cursor: pointer; border: 1.5px solid #2B4944; background: transparent; color: #2B4944">الكل</button>
+
+<button type="button" class="pill" aria-pressed="false" style="font-family: inherit; font-size: 16px; font-weight: 600; min-height: 48px; padding: 12px 24px; border-radius: 999px; cursor: pointer; border: 1.5px solid #2B4944; background: transparent; color: #2B4944">أفراد</button>
+
+<button type="button" class="pill" aria-pressed="false" style="font-family: inherit; font-size: 16px; font-weight: 600; min-height: 48px; padding: 12px 24px; border-radius: 999px; cursor: pointer; border: 1.5px solid #2B4944; background: transparent; color: #2B4944">منشآت</button>
+
+<button type="button" class="pill" aria-pressed="true" style="font-family: inherit; font-size: 16px; font-weight: 600; min-height: 48px; padding: 12px 24px; border-radius: 999px; cursor: pointer; border: 1.5px solid #2B4944; background: #2B4944; color: #FFC800">وكلاء</button>
+
+</div>
+<div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(270px, 1fr)); gap: 18px">
+
+<a class="ccard pop" href="service-legal.html" style="text-decoration: none; background: #2B4944; color: #FFFFFF; border-radius: 26px; padding: 26px; display: flex; flex-direction: column; gap: 14px; min-height: 200px; border: 1px solid #2B4944">
+<span style="font-size: 13px; font-weight: 700; color: #FFC800">قانونية</span>
+<span style="font-size: 21px; font-weight: 700; line-height: 1.45">الاستشارات القانونية العامة</span>
+<span style="font-size: 13px; color: #B9CCC7">أفراد · منشآت · وكلاء</span>
+<span style="margin-top: auto; font-weight: 700; font-size: 14px; color: #FFC800">اكتشف المسار ←</span>
+</a>
+
+<a class="ccard pop" href="service-legal.html" style="text-decoration: none; background: #2B4944; color: #FFFFFF; border-radius: 26px; padding: 26px; display: flex; flex-direction: column; gap: 14px; min-height: 200px; border: 1px solid #2B4944">
+<span style="font-size: 13px; font-weight: 700; color: #FFC800">قانونية</span>
+<span style="font-size: 21px; font-weight: 700; line-height: 1.45">مراجعة وصياغة العقود والاتفاقيات</span>
+<span style="font-size: 13px; color: #B9CCC7">أفراد · منشآت · وكلاء</span>
+<span style="margin-top: auto; font-weight: 700; font-size: 14px; color: #FFC800">اكتشف المسار ←</span>
+</a>
+
+<a class="ccard pop" href="service-legal.html" style="text-decoration: none; background: #2B4944; color: #FFFFFF; border-radius: 26px; padding: 26px; display: flex; flex-direction: column; gap: 14px; min-height: 200px; border: 1px solid #2B4944">
+<span style="font-size: 13px; font-weight: 700; color: #FFC800">قانونية</span>
+<span style="font-size: 21px; font-weight: 700; line-height: 1.45">استشارات النزاعات والمطالبات</span>
+<span style="font-size: 13px; color: #B9CCC7">أفراد · منشآت · وكلاء</span>
+<span style="margin-top: auto; font-weight: 700; font-size: 14px; color: #FFC800">اكتشف المسار ←</span>
+</a>
+
+<a class="ccard pop" href="service-legal.html" style="text-decoration: none; background: #2B4944; color: #FFFFFF; border-radius: 26px; padding: 26px; display: flex; flex-direction: column; gap: 14px; min-height: 200px; border: 1px solid #2B4944">
+<span style="font-size: 13px; font-weight: 700; color: #FFC800">قانونية</span>
+<span style="font-size: 21px; font-weight: 700; line-height: 1.45">استشارات الأراضي والعقارات</span>
+<span style="font-size: 13px; color: #B9CCC7">أفراد · وكلاء</span>
+<span style="margin-top: auto; font-weight: 700; font-size: 14px; color: #FFC800">اكتشف المسار ←</span>
+</a>
+
+<a class="ccard pop" href="service-legal.html" style="text-decoration: none; background: #2B4944; color: #FFFFFF; border-radius: 26px; padding: 26px; display: flex; flex-direction: column; gap: 14px; min-height: 200px; border: 1px solid #2B4944">
+<span style="font-size: 13px; font-weight: 700; color: #FFC800">قانونية</span>
+<span style="font-size: 21px; font-weight: 700; line-height: 1.45">استشارات التركات والميراث</span>
+<span style="font-size: 13px; color: #B9CCC7">أفراد · وكلاء</span>
+<span style="margin-top: auto; font-weight: 700; font-size: 14px; color: #FFC800">اكتشف المسار ←</span>
+</a>
+
+</div>
+</div></template>
+<script type="application/json" id="armc-flow">{"r1":{"0":{"1":1,"2":2,"3":3},"1":{"0":0,"2":2,"3":4},"2":{"0":0,"1":1,"3":5},"3":{"0":0,"1":1,"2":2,"3":0},"4":{"0":0,"1":1,"2":2,"3":1},"5":{"0":0,"1":1,"2":2,"3":2}},"r2":{"0":{"1":1,"2":2,"3":3},"1":{"0":0,"2":2,"3":3},"2":{"0":0,"1":1,"3":3},"3":{"0":0,"1":1,"2":2}}}</script>
+<script src="assets/js/armc.js" defer></script>
+</body>
+</html>

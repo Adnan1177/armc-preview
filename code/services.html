@@ -1,0 +1,720 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>أفكار الريادة — خدماتنا</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@300;400;500;600;700&amp;family=IBM+Plex+Sans:wght@300;400;500;600&amp;display=swap">
+<style>
+body{margin:0;background:#F7F2EB}
+a{color:#2B4944}a:hover{color:#D96C00}
+@keyframes up{from{opacity:0;transform:translateY(28px)}to{opacity:1;transform:none}}
+@keyframes spin{to{transform:rotate(360deg)}}
+@keyframes ring{0%{box-shadow:0 0 0 0 rgba(37,165,95,.5)}100%{box-shadow:0 0 0 20px rgba(37,165,95,0)}}
+@keyframes shine{from{transform:translateX(120%) skewX(-20deg)}to{transform:translateX(-220%) skewX(-20deg)}}
+.up{animation:up .9s cubic-bezier(.2,.7,.2,1) both}
+.d1{animation-delay:.1s}.d2{animation-delay:.25s}.d3{animation-delay:.4s}
+.spin{animation:spin 90s linear infinite}
+.wa{animation:ring 2.4s ease-out infinite}
+.btn{transition:transform .25s ease,box-shadow .25s ease;position:relative;overflow:hidden}
+.btn:hover{transform:translateY(-2px);box-shadow:0 14px 30px -10px rgba(0,0,0,.35)}
+.btn-y::after{content:"";position:absolute;inset:0;width:40%;background:linear-gradient(90deg,transparent,rgba(255,255,255,.55),transparent);animation:shine 3.5s ease-in-out infinite}
+.navl{position:relative;transition:color .2s}
+.navl::after{content:"";position:absolute;right:0;bottom:-6px;height:2px;width:0;background:#FFC800;transition:width .3s}
+.navl:hover{color:#FFC800 !important}.navl:hover::after{width:100%}
+.card{transition:transform .45s cubic-bezier(.2,.7,.2,1),box-shadow .45s,outline-color .3s}
+.card:hover{transform:translateY(-10px);box-shadow:0 30px 60px -22px rgba(43,73,68,.4)}
+.chip{transition:background .25s,color .25s,transform .25s}.chip:hover{transform:translateY(-2px)}
+@supports (animation-timeline: view()){.rv{animation:up linear both;animation-timeline:view();animation-range:entry 0% entry 45%}}
+@media (max-width: 640px){h1{font-size:40px !important}h2{font-size:30px !important}section{padding-left:16px !important;padding-right:16px !important}}
+@media (prefers-reduced-motion: reduce){*{animation:none !important;transition:none !important}}
+</style>
+
+<link rel="stylesheet" href="assets/css/armc.css">
+</head>
+<body>
+
+<div id="armc-page">
+
+<div dir="rtl" style="font-family: 'IBM Plex Sans Arabic', 'IBM Plex Sans', sans-serif; color: #1F2D2A; background: #F7F2EB; min-height: 100vh; position: relative; overflow-x: hidden" data-armc-region="r1" data-armc-state="0">
+
+
+<div role="note" style="background: #1A2B28; color: #FFC800; padding: 8px 24px; text-align: center; font-size: 13px; line-height: 1.7">تصميم أولي للعرض فقط — جميع الحقوق محفوظة © 2026 للمهندس عدنان البنا.</div>
+
+
+<header style="position: sticky; top: 0; z-index: 40; background: rgba(36,62,58,0.92); backdrop-filter: blur(14px); -webkit-backdrop-filter: blur(14px); border-bottom: 1px solid rgba(255,255,255,0.08); padding: 16px 24px">
+<div style="max-width: 1240px; margin: 0 auto; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 16px">
+<a href="index.html" aria-label="أفكار الريادة — الرئيسية" style="display: flex; align-items: center"><svg width="124" height="44" viewBox="0 0 545 192" role="img" aria-label="أفكار الريادة"><path d="M107 0H131Q135 0 135 4V30Q135 61 172 64.5L232 72H103V4Q103 0 107 0Z" fill="#FFC800"></path><path d="M107 0H131Q135 0 135 4V30Q135 61 172 64.5L232 72H103V4Q103 0 107 0Z" fill="#FFC800" transform="rotate(180 116 72)"></path><text x="146" y="188" direction="ltr" unicode-bidi="bidi-override" textLength="392" lengthAdjust="spacingAndGlyphs" font-family="IBM Plex Sans, sans-serif" font-size="172" font-weight="500" letter-spacing="-3" fill="#FFFFFF">armc</text></svg></a>
+<nav aria-label="القائمة الرئيسية" style="display: flex; flex-wrap: wrap; gap: 30px; font-size: 16px">
+<a class="navl" href="index.html" style="color: #FFFFFF; text-decoration: none">الرئيسية</a>
+<a class="navl" href="about.html" style="color: #FFFFFF; text-decoration: none">من نحن</a>
+<a class="navl" href="services.html" style="color: #FFC800; text-decoration: none; font-weight: 600">خدماتنا</a>
+<a class="navl" href="contact.html" style="color: #FFFFFF; text-decoration: none">تواصل معنا</a>
+</nav>
+<div style="display: flex; align-items: center; gap: 10px; flex-wrap: wrap">
+<a class="btn" href="track.html" style="color: #FFFFFF; text-decoration: none; font-weight: 500; padding: 11px 20px; border-radius: 999px; font-size: 15px; border: 1px solid rgba(255,255,255,0.4)">تابع طلبك</a>
+<a class="btn btn-y" href="booking.html" style="background: #FFC800; color: #2B4944; text-decoration: none; font-weight: 700; padding: 12px 22px; border-radius: 999px; font-size: 15px">احجز استشارة</a>
+</div>
+</div>
+</header>
+
+<section style="background: #2B4944; color: #FFFFFF; padding: 72px 24px 120px; position: relative; overflow: hidden">
+<svg class="spin" style="position: absolute; left: -340px; top: -420px; width: 1000px; height: 1000px; opacity: 0.14" viewBox="0 0 1000 1000" aria-hidden="true"><g fill="none" stroke="#FFFFFF" stroke-width="1.2"><circle cx="500" cy="500" r="490"></circle><circle cx="500" cy="500" r="390"></circle><circle cx="500" cy="500" r="290"></circle></g><circle cx="500" cy="10" r="7" fill="#FFC800"></circle></svg>
+<div style="max-width: 1240px; margin: 0 auto; position: relative">
+<p class="up d1" style="margin: 0 0 14px; font-size: 14px; color: #B9CCC7"><a href="index.html" style="color: #B9CCC7; text-decoration: none">الرئيسية</a> / خدماتنا</p>
+<h1 class="up d2" style="margin: 0; font-size: 60px; line-height: 1.25; font-weight: 700">خدماتنا الاستشارية<br><span style="color: #FFC800">ثلاثة مسارات، شريك واحد</span></h1>
+<p class="up d3" style="margin: 22px 0 0; font-size: 19px; line-height: 1.9; color: #D3E0DC; max-width: 640px">استشارات إدارية وقانونية ومحاسبية يقدمها فريق من المختصين وشراكات مهنية — اختر المسار، واحجز، وتابع طلبك من جوالك.</p>
+</div>
+<svg style="position: absolute; left: 0; right: 0; bottom: -1px; width: 100%; height: 90px" viewBox="0 0 1440 90" preserveAspectRatio="none" aria-hidden="true"><path d="M0 90 Q720 -20 1440 90 Z" fill="#F7F2EB"></path><path d="M0 90 Q720 -20 1440 90" fill="none" stroke="#FFC800" stroke-width="3"></path></svg>
+</section>
+
+<section style="padding: 40px 24px 90px; position: relative; z-index: 2">
+<div style="max-width: 1240px; margin: 0 auto">
+<div class="rv" style="background: #FFFFFF; border-radius: 28px; padding: 32px; box-shadow: 0 24px 50px -30px rgba(43,73,68,0.45)">
+<p style="margin: 0 0 6px; color: #A84F00; font-weight: 700">— أي مسار يناسبك؟</p>
+<h2 style="margin: 0 0 18px; font-size: 28px; color: #2B4944">اختر ما يصف احتياجك، ونرشدك للمسار الأنسب</h2>
+<div role="group" aria-label="احتياجك" style="display: flex; flex-wrap: wrap; gap: 10px">
+
+<button type="button" class="chip" aria-pressed="false" style="font-family: inherit; font-size: 15px; font-weight: 600; min-height: 46px; padding: 10px 18px; border-radius: 999px; cursor: pointer; border: 1.5px solid #2B4944; background: #FFFFFF; color: #2B4944">أبدأ منشأة أو أعيد تنظيمها</button>
+
+<button type="button" class="chip" aria-pressed="false" style="font-family: inherit; font-size: 15px; font-weight: 600; min-height: 46px; padding: 10px 18px; border-radius: 999px; cursor: pointer; border: 1.5px solid #2B4944; background: #FFFFFF; color: #2B4944">عندي عقد أو نزاع أو تركة</button>
+
+<button type="button" class="chip" aria-pressed="false" style="font-family: inherit; font-size: 15px; font-weight: 600; min-height: 46px; padding: 10px 18px; border-radius: 999px; cursor: pointer; border: 1.5px solid #2B4944; background: #FFFFFF; color: #2B4944">أحتاج ترتيب حساباتي أو الضريبة</button>
+
+<button type="button" class="chip" aria-pressed="false" style="font-family: inherit; font-size: 15px; font-weight: 600; min-height: 46px; padding: 10px 18px; border-radius: 999px; cursor: pointer; border: 1.5px solid #2B4944; background: #FFFFFF; color: #2B4944">أريد تحسين أداء فريقي</button>
+
+</div>
+
+</div>
+</div>
+</section>
+
+<section style="padding: 0 24px 100px">
+<div style="max-width: 1240px; margin: 0 auto; display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 24px">
+
+<a class="card rv" href="service-management.html" style="text-decoration: none; color: #2B4944; background: #FFFFFF; border-radius: 32px 32px 32px 100px; padding: 40px 34px 52px; display: flex; flex-direction: column; gap: 16px; position: relative; overflow: hidden; outline: 4px solid transparent; outline-offset: 4px">
+<div style="display: flex; justify-content: space-between; align-items: flex-start"><span style="width: 64px; height: 64px; border-radius: 20px; background: #2B4944; display: flex; align-items: center; justify-content: center"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#FFC800" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 3h7v7H3zM14 3h7v7h-7zM8.5 14h7v7h-7zM6.5 10v2h11v-2M12 12v2"></path></svg></span><span style="font-family: 'IBM Plex Sans', sans-serif; font-size: 44px; font-weight: 300; color: #C9C0B1">01</span></div>
+
+<h2 style="margin: 0; font-size: 28px">الاستشارات الإدارية</h2>
+<p style="margin: 0; line-height: 1.85; color: #4A5E5A">نبني معك أساسًا إداريًا متينًا، من الاستراتيجية حتى قياس الأداء.</p>
+<ul style="list-style: none; margin: 4px 0 0; padding: 0; display: flex; flex-direction: column; gap: 10px">
+
+<li style="display: flex; align-items: center; gap: 10px; font-size: 16px"><span style="width: 8px; height: 8px; flex: none; border-radius: 50%; background: #FFC800"></span>الاستراتيجية وتطوير الأعمال</li>
+
+<li style="display: flex; align-items: center; gap: 10px; font-size: 16px"><span style="width: 8px; height: 8px; flex: none; border-radius: 50%; background: #FFC800"></span>التأسيس والتنظيم الإداري</li>
+
+<li style="display: flex; align-items: center; gap: 10px; font-size: 16px"><span style="width: 8px; height: 8px; flex: none; border-radius: 50%; background: #FFC800"></span>الهياكل التنظيمية والسياسات والإجراءات</li>
+
+<li style="display: flex; align-items: center; gap: 10px; font-size: 16px"><span style="width: 8px; height: 8px; flex: none; border-radius: 50%; background: #FFC800"></span>التشغيل وتحسين العمليات</li>
+
+<li style="display: flex; align-items: center; gap: 10px; font-size: 16px"><span style="width: 8px; height: 8px; flex: none; border-radius: 50%; background: #FFC800"></span>إدارة المخاطر واستمرارية الأعمال</li>
+
+<li style="display: flex; align-items: center; gap: 10px; font-size: 16px"><span style="width: 8px; height: 8px; flex: none; border-radius: 50%; background: #FFC800"></span>الأداء ومؤشرات الأداء</li>
+
+</ul>
+<span style="margin-top: 8px; font-weight: 700; color: #A84F00">تفاصيل المسار ←</span>
+</a>
+
+<a class="card rv" href="service-legal.html" style="text-decoration: none; color: #FFFFFF; background: #2B4944; border-radius: 32px 32px 32px 100px; padding: 40px 34px 52px; display: flex; flex-direction: column; gap: 16px; position: relative; overflow: hidden; outline: 4px solid transparent; outline-offset: 4px">
+<div style="display: flex; justify-content: space-between; align-items: flex-start"><span style="width: 64px; height: 64px; border-radius: 20px; background: #FFC800; display: flex; align-items: center; justify-content: center"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#2B4944" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v18M7 21h10M5 7h14M5 7l-3 6a3 3 0 0 0 6 0zM19 7l-3 6a3 3 0 0 0 6 0z"></path></svg></span><span style="font-family: 'IBM Plex Sans', sans-serif; font-size: 44px; font-weight: 300; color: rgba(255,255,255,0.3)">02</span></div>
+
+<h2 style="margin: 0; font-size: 28px">الاستشارات القانونية</h2>
+<p style="margin: 0; line-height: 1.85; color: #D3E0DC">رأي قانوني واضح يساعدك على اتخاذ القرار — استشارات فقط دون ترافع أو تمثيل.</p>
+<ul style="list-style: none; margin: 4px 0 0; padding: 0; display: flex; flex-direction: column; gap: 10px">
+
+<li style="display: flex; align-items: center; gap: 10px; font-size: 16px"><span style="width: 8px; height: 8px; flex: none; border-radius: 50%; background: #FFC800"></span>الاستشارات القانونية العامة</li>
+
+<li style="display: flex; align-items: center; gap: 10px; font-size: 16px"><span style="width: 8px; height: 8px; flex: none; border-radius: 50%; background: #FFC800"></span>مراجعة وصياغة العقود والاتفاقيات</li>
+
+<li style="display: flex; align-items: center; gap: 10px; font-size: 16px"><span style="width: 8px; height: 8px; flex: none; border-radius: 50%; background: #FFC800"></span>استشارات النزاعات والمطالبات</li>
+
+<li style="display: flex; align-items: center; gap: 10px; font-size: 16px"><span style="width: 8px; height: 8px; flex: none; border-radius: 50%; background: #FFC800"></span>استشارات الأراضي والعقارات</li>
+
+<li style="display: flex; align-items: center; gap: 10px; font-size: 16px"><span style="width: 8px; height: 8px; flex: none; border-radius: 50%; background: #FFC800"></span>استشارات التركات والميراث</li>
+
+<li style="display: flex; align-items: center; gap: 10px; font-size: 16px"><span style="width: 8px; height: 8px; flex: none; border-radius: 50%; background: #FFC800"></span>استشارات الشركات والأنظمة التجارية</li>
+
+</ul>
+<span style="margin-top: 8px; font-weight: 700; color: #FFC800">تفاصيل المسار ←</span>
+</a>
+
+<a class="card rv" href="service-accounting.html" style="text-decoration: none; color: #2B4944; background: #FFFFFF; border-radius: 32px 32px 32px 100px; padding: 40px 34px 52px; display: flex; flex-direction: column; gap: 16px; position: relative; overflow: hidden; outline: 4px solid transparent; outline-offset: 4px">
+<div style="display: flex; justify-content: space-between; align-items: flex-start"><span style="width: 64px; height: 64px; border-radius: 20px; background: #2B4944; display: flex; align-items: center; justify-content: center"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#FFC800" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 2.5h16v19H4zM8 7h8M8 11h2M12 11h2M8 15h2M12 15h2M8 18.5h8"></path></svg></span><span style="font-family: 'IBM Plex Sans', sans-serif; font-size: 44px; font-weight: 300; color: #C9C0B1">03</span></div>
+
+<h2 style="margin: 0; font-size: 28px">الاستشارات المحاسبية والضريبية</h2>
+<p style="margin: 0; line-height: 1.85; color: #4A5E5A">أنظمة محاسبية واضحة وامتثال ضريبي يحمي منشأتك.</p>
+<ul style="list-style: none; margin: 4px 0 0; padding: 0; display: flex; flex-direction: column; gap: 10px">
+
+<li style="display: flex; align-items: center; gap: 10px; font-size: 16px"><span style="width: 8px; height: 8px; flex: none; border-radius: 50%; background: #FFC800"></span>الاستشارات الضريبية</li>
+
+<li style="display: flex; align-items: center; gap: 10px; font-size: 16px"><span style="width: 8px; height: 8px; flex: none; border-radius: 50%; background: #FFC800"></span>مسك الدفاتر</li>
+
+<li style="display: flex; align-items: center; gap: 10px; font-size: 16px"><span style="width: 8px; height: 8px; flex: none; border-radius: 50%; background: #FFC800"></span>بناء شجرة الحسابات</li>
+
+<li style="display: flex; align-items: center; gap: 10px; font-size: 16px"><span style="width: 8px; height: 8px; flex: none; border-radius: 50%; background: #FFC800"></span>بناء وتطوير النظام المحاسبي</li>
+
+<li style="display: flex; align-items: center; gap: 10px; font-size: 16px"><span style="width: 8px; height: 8px; flex: none; border-radius: 50%; background: #FFC800"></span>الفحص والتدقيق المالي الداخلي</li>
+
+</ul>
+<span style="margin-top: 8px; font-weight: 700; color: #A84F00">تفاصيل المسار ←</span>
+</a>
+
+</div>
+</section></div>
+
+
+<section style="padding: 0 24px 100px">
+<div class="rv" style="max-width: 1240px; margin: 0 auto; background: #233B37; color: #FFFFFF; border-radius: 36px; padding: 56px 44px">
+<p style="margin: 0 0 10px; color: #FFC800; font-weight: 700">— كيف تتم الاستشارة</p>
+<h2 style="margin: 0 0 36px; font-size: 38px">أربع خطوات واضحة من الطلب إلى الجلسة</h2>
+<ol style="list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 18px">
+<li style="background: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.12); border-radius: 22px; padding: 24px"><span style="display: inline-flex; width: 44px; height: 44px; border-radius: 50%; background: #FFC800; color: #2B4944; align-items: center; justify-content: center; font-family: 'IBM Plex Sans', sans-serif; font-weight: 600; font-size: 20px">1</span><h3 style="margin: 14px 0 6px; font-size: 20px">اختر الاستشارة</h3><p style="margin: 0; color: #D3E0DC; line-height: 1.8; font-size: 15px">المسار ونوع الاستشارة وطريقة الجلسة.</p></li>
+<li style="background: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.12); border-radius: 22px; padding: 24px"><span style="display: inline-flex; width: 44px; height: 44px; border-radius: 50%; background: #FFC800; color: #2B4944; align-items: center; justify-content: center; font-family: 'IBM Plex Sans', sans-serif; font-weight: 600; font-size: 20px">2</span><h3 style="margin: 14px 0 6px; font-size: 20px">تحقق برمز</h3><p style="margin: 0; color: #D3E0DC; line-height: 1.8; font-size: 15px">رمز من 4 أرقام يصلك على واتساب.</p></li>
+<li style="background: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.12); border-radius: 22px; padding: 24px"><span style="display: inline-flex; width: 44px; height: 44px; border-radius: 50%; background: #FFC800; color: #2B4944; align-items: center; justify-content: center; font-family: 'IBM Plex Sans', sans-serif; font-weight: 600; font-size: 20px">3</span><h3 style="margin: 14px 0 6px; font-size: 20px">مراجعة ودفع</h3><p style="margin: 0; color: #D3E0DC; line-height: 1.8; font-size: 15px">يراجع المستشار طلبك، ويصلك رابط دفع آمن.</p></li>
+<li style="background: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.12); border-radius: 22px; padding: 24px"><span style="display: inline-flex; width: 44px; height: 44px; border-radius: 50%; background: #FFC800; color: #2B4944; align-items: center; justify-content: center; font-family: 'IBM Plex Sans', sans-serif; font-weight: 600; font-size: 20px">4</span><h3 style="margin: 14px 0 6px; font-size: 20px">الجلسة</h3><p style="margin: 0; color: #D3E0DC; line-height: 1.8; font-size: 15px">حضوريًا أو عن بُعد، في الموعد المؤكد.</p></li>
+</ol>
+</div>
+</section>
+
+<section style="padding: 0 24px 110px">
+<div class="rv" style="max-width: 1240px; margin: 0 auto; background: #FFC800; border-radius: 40px 40px 40px 180px; padding: 64px 52px; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 28px">
+<div style="flex: 1 1 420px; min-width: 0"><h2 style="margin: 0 0 10px; font-size: 40px; color: #2B4944">جاهز تبدأ؟</h2><p style="margin: 0; font-size: 18px; color: #2B4944; line-height: 1.8">احجز استشارتك في دقيقتين، وتصلك كل التحديثات على واتساب.</p></div>
+<div style="display: flex; flex-wrap: wrap; gap: 12px"><a class="btn" href="booking.html" style="background: #2B4944; color: #FFFFFF; text-decoration: none; font-weight: 700; padding: 18px 34px; border-radius: 999px; font-size: 17px">احجز استشارة</a><a class="btn" href="contact.html" style="background: #FFFFFF; color: #2B4944; text-decoration: none; font-weight: 700; padding: 18px 34px; border-radius: 999px; font-size: 17px">اسألنا أولًا</a></div>
+</div>
+</section>
+
+<footer style="background: #233B37; color: #B9CCC7; padding: 80px 24px 32px">
+<div style="max-width: 1240px; margin: 0 auto; display: flex; flex-wrap: wrap; justify-content: space-between; gap: 48px">
+<div style="flex: 1 1 300px; min-width: 0">
+<svg width="140" height="50" viewBox="0 0 545 192" role="img" aria-label="أفكار الريادة"><path d="M107 0H131Q135 0 135 4V30Q135 61 172 64.5L232 72H103V4Q103 0 107 0Z" fill="#FFC800"></path><path d="M107 0H131Q135 0 135 4V30Q135 61 172 64.5L232 72H103V4Q103 0 107 0Z" fill="#FFC800" transform="rotate(180 116 72)"></path><text x="146" y="188" direction="ltr" unicode-bidi="bidi-override" textLength="392" lengthAdjust="spacingAndGlyphs" font-family="IBM Plex Sans, sans-serif" font-size="172" font-weight="500" letter-spacing="-3" fill="#FFFFFF">armc</text></svg>
+<p style="margin: 18px 0 0; line-height: 1.9; max-width: 340px">أفكار الريادة للاستشارات — استشارات إدارية وقانونية ومحاسبية للأفراد والمنشآت.</p>
+</div>
+<div style="flex: 0 1 170px"><h3 style="margin: 0 0 16px; color: #FFC800; font-size: 16px">روابط</h3><div style="display: flex; flex-direction: column; gap: 10px"><a class="navl" href="about.html" style="color: #B9CCC7; text-decoration: none">من نحن</a><a class="navl" href="services.html" style="color: #B9CCC7; text-decoration: none">خدماتنا</a><a class="navl" href="booking.html" style="color: #B9CCC7; text-decoration: none">احجز استشارة</a><a class="navl" href="track.html" style="color: #B9CCC7; text-decoration: none">تابع طلبك</a><a class="navl" href="contact.html" style="color: #B9CCC7; text-decoration: none">تواصل معنا</a></div></div>
+<div style="flex: 0 1 220px"><h3 style="margin: 0 0 16px; color: #FFC800; font-size: 16px">الخدمات</h3><div style="display: flex; flex-direction: column; gap: 10px"><a class="navl" href="service-management.html" style="color: #B9CCC7; text-decoration: none">الاستشارات الإدارية</a><a class="navl" href="service-legal.html" style="color: #B9CCC7; text-decoration: none">الاستشارات القانونية</a><a class="navl" href="service-accounting.html" style="color: #B9CCC7; text-decoration: none">المحاسبية والضريبية</a></div></div>
+<div style="flex: 0 1 220px"><h3 style="margin: 0 0 16px; color: #FFC800; font-size: 16px">تواصل</h3><div style="display: flex; flex-direction: column; gap: 10px"><span>[رقم الجوال]</span><span>[البريد الإلكتروني]</span><span>[العنوان — المدينة]</span></div></div>
+</div>
+<div style="max-width: 1240px; margin: 56px auto 0; padding-top: 22px; border-top: 1px solid rgba(255,255,255,0.1); display: flex; flex-wrap: wrap; justify-content: space-between; gap: 12px; font-size: 14px">
+<span>© 2026 أفكار الريادة للاستشارات. جميع الحقوق محفوظة.</span><span>[رقم السجل التجاري] · [الرقم الضريبي]</span>
+</div>
+</footer>
+
+<a class="wa" href="contact.html" aria-label="تواصل عبر واتساب" style="position: fixed; left: 24px; bottom: 24px; width: 60px; height: 60px; border-radius: 50%; background: #25A55F; display: flex; align-items: center; justify-content: center; box-shadow: 0 12px 28px rgba(0,0,0,0.28); z-index: 50">
+<svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12a8.5 8.5 0 0 1-12.6 7.4L3 21l1.6-5.2A8.5 8.5 0 1 1 21 12z"></path><path d="M9 9.5c.3 2.3 2.2 4.2 4.5 4.5l1-1.2 1.8.8"></path></svg>
+</a>
+
+</div>
+
+<!-- حالات العناصر التفاعلية: تُعرض عند الضغط على الأزرار (انظر assets/js/armc.js) -->
+<template id="r1-s1"><div dir="rtl" style="font-family: 'IBM Plex Sans Arabic', 'IBM Plex Sans', sans-serif; color: #1F2D2A; background: #F7F2EB; min-height: 100vh; position: relative; overflow-x: hidden" data-armc-region="r1" data-armc-state="1">
+
+
+<div role="note" style="background: #1A2B28; color: #FFC800; padding: 8px 24px; text-align: center; font-size: 13px; line-height: 1.7">تصميم أولي للعرض فقط — جميع الحقوق محفوظة © 2026 للمهندس عدنان البنا.</div>
+
+
+<header style="position: sticky; top: 0; z-index: 40; background: rgba(36,62,58,0.92); backdrop-filter: blur(14px); -webkit-backdrop-filter: blur(14px); border-bottom: 1px solid rgba(255,255,255,0.08); padding: 16px 24px">
+<div style="max-width: 1240px; margin: 0 auto; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 16px">
+<a href="index.html" aria-label="أفكار الريادة — الرئيسية" style="display: flex; align-items: center"><svg width="124" height="44" viewBox="0 0 545 192" role="img" aria-label="أفكار الريادة"><path d="M107 0H131Q135 0 135 4V30Q135 61 172 64.5L232 72H103V4Q103 0 107 0Z" fill="#FFC800"></path><path d="M107 0H131Q135 0 135 4V30Q135 61 172 64.5L232 72H103V4Q103 0 107 0Z" fill="#FFC800" transform="rotate(180 116 72)"></path><text x="146" y="188" direction="ltr" unicode-bidi="bidi-override" textLength="392" lengthAdjust="spacingAndGlyphs" font-family="IBM Plex Sans, sans-serif" font-size="172" font-weight="500" letter-spacing="-3" fill="#FFFFFF">armc</text></svg></a>
+<nav aria-label="القائمة الرئيسية" style="display: flex; flex-wrap: wrap; gap: 30px; font-size: 16px">
+<a class="navl" href="index.html" style="color: #FFFFFF; text-decoration: none">الرئيسية</a>
+<a class="navl" href="about.html" style="color: #FFFFFF; text-decoration: none">من نحن</a>
+<a class="navl" href="services.html" style="color: #FFC800; text-decoration: none; font-weight: 600">خدماتنا</a>
+<a class="navl" href="contact.html" style="color: #FFFFFF; text-decoration: none">تواصل معنا</a>
+</nav>
+<div style="display: flex; align-items: center; gap: 10px; flex-wrap: wrap">
+<a class="btn" href="track.html" style="color: #FFFFFF; text-decoration: none; font-weight: 500; padding: 11px 20px; border-radius: 999px; font-size: 15px; border: 1px solid rgba(255,255,255,0.4)">تابع طلبك</a>
+<a class="btn btn-y" href="booking.html" style="background: #FFC800; color: #2B4944; text-decoration: none; font-weight: 700; padding: 12px 22px; border-radius: 999px; font-size: 15px">احجز استشارة</a>
+</div>
+</div>
+</header>
+
+<section style="background: #2B4944; color: #FFFFFF; padding: 72px 24px 120px; position: relative; overflow: hidden">
+<svg class="spin" style="position: absolute; left: -340px; top: -420px; width: 1000px; height: 1000px; opacity: 0.14" viewBox="0 0 1000 1000" aria-hidden="true"><g fill="none" stroke="#FFFFFF" stroke-width="1.2"><circle cx="500" cy="500" r="490"></circle><circle cx="500" cy="500" r="390"></circle><circle cx="500" cy="500" r="290"></circle></g><circle cx="500" cy="10" r="7" fill="#FFC800"></circle></svg>
+<div style="max-width: 1240px; margin: 0 auto; position: relative">
+<p class="up d1" style="margin: 0 0 14px; font-size: 14px; color: #B9CCC7"><a href="index.html" style="color: #B9CCC7; text-decoration: none">الرئيسية</a> / خدماتنا</p>
+<h1 class="up d2" style="margin: 0; font-size: 60px; line-height: 1.25; font-weight: 700">خدماتنا الاستشارية<br><span style="color: #FFC800">ثلاثة مسارات، شريك واحد</span></h1>
+<p class="up d3" style="margin: 22px 0 0; font-size: 19px; line-height: 1.9; color: #D3E0DC; max-width: 640px">استشارات إدارية وقانونية ومحاسبية يقدمها فريق من المختصين وشراكات مهنية — اختر المسار، واحجز، وتابع طلبك من جوالك.</p>
+</div>
+<svg style="position: absolute; left: 0; right: 0; bottom: -1px; width: 100%; height: 90px" viewBox="0 0 1440 90" preserveAspectRatio="none" aria-hidden="true"><path d="M0 90 Q720 -20 1440 90 Z" fill="#F7F2EB"></path><path d="M0 90 Q720 -20 1440 90" fill="none" stroke="#FFC800" stroke-width="3"></path></svg>
+</section>
+
+<section style="padding: 40px 24px 90px; position: relative; z-index: 2">
+<div style="max-width: 1240px; margin: 0 auto">
+<div class="rv" style="background: #FFFFFF; border-radius: 28px; padding: 32px; box-shadow: 0 24px 50px -30px rgba(43,73,68,0.45)">
+<p style="margin: 0 0 6px; color: #A84F00; font-weight: 700">— أي مسار يناسبك؟</p>
+<h2 style="margin: 0 0 18px; font-size: 28px; color: #2B4944">اختر ما يصف احتياجك، ونرشدك للمسار الأنسب</h2>
+<div role="group" aria-label="احتياجك" style="display: flex; flex-wrap: wrap; gap: 10px">
+
+<button type="button" class="chip" aria-pressed="true" style="font-family: inherit; font-size: 15px; font-weight: 600; min-height: 46px; padding: 10px 18px; border-radius: 999px; cursor: pointer; border: 1.5px solid #2B4944; background: #2B4944; color: #FFFFFF">أبدأ منشأة أو أعيد تنظيمها</button>
+
+<button type="button" class="chip" aria-pressed="false" style="font-family: inherit; font-size: 15px; font-weight: 600; min-height: 46px; padding: 10px 18px; border-radius: 999px; cursor: pointer; border: 1.5px solid #2B4944; background: #FFFFFF; color: #2B4944">عندي عقد أو نزاع أو تركة</button>
+
+<button type="button" class="chip" aria-pressed="false" style="font-family: inherit; font-size: 15px; font-weight: 600; min-height: 46px; padding: 10px 18px; border-radius: 999px; cursor: pointer; border: 1.5px solid #2B4944; background: #FFFFFF; color: #2B4944">أحتاج ترتيب حساباتي أو الضريبة</button>
+
+<button type="button" class="chip" aria-pressed="false" style="font-family: inherit; font-size: 15px; font-weight: 600; min-height: 46px; padding: 10px 18px; border-radius: 999px; cursor: pointer; border: 1.5px solid #2B4944; background: #FFFFFF; color: #2B4944">أريد تحسين أداء فريقي</button>
+
+</div>
+
+<p style="margin: 18px 0 0; display: flex; flex-wrap: wrap; align-items: center; gap: 10px; color: #2B4944; font-size: 16px"><span style="width: 10px; height: 10px; border-radius: 50%; background: #FFC800"></span>المسار المقترح: <b>الاستشارات الإدارية</b> — <a href="service-management.html" style="color: #A84F00; font-weight: 700">اطّلع على تفاصيله ←</a></p>
+
+</div>
+</div>
+</section>
+
+<section style="padding: 0 24px 100px">
+<div style="max-width: 1240px; margin: 0 auto; display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 24px">
+
+<a class="card rv" href="service-management.html" style="text-decoration: none; color: #2B4944; background: #FFFFFF; border-radius: 32px 32px 32px 100px; padding: 40px 34px 52px; display: flex; flex-direction: column; gap: 16px; position: relative; overflow: hidden; outline: 4px solid #FFC800; outline-offset: 4px">
+<div style="display: flex; justify-content: space-between; align-items: flex-start"><span style="width: 64px; height: 64px; border-radius: 20px; background: #2B4944; display: flex; align-items: center; justify-content: center"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#FFC800" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 3h7v7H3zM14 3h7v7h-7zM8.5 14h7v7h-7zM6.5 10v2h11v-2M12 12v2"></path></svg></span><span style="font-family: 'IBM Plex Sans', sans-serif; font-size: 44px; font-weight: 300; color: #C9C0B1">01</span></div>
+<span style="align-self: flex-start; background: #FFC800; color: #2B4944; font-size: 13px; font-weight: 700; padding: 5px 12px; border-radius: 999px">المسار المقترح لك</span>
+<h2 style="margin: 0; font-size: 28px">الاستشارات الإدارية</h2>
+<p style="margin: 0; line-height: 1.85; color: #4A5E5A">نبني معك أساسًا إداريًا متينًا، من الاستراتيجية حتى قياس الأداء.</p>
+<ul style="list-style: none; margin: 4px 0 0; padding: 0; display: flex; flex-direction: column; gap: 10px">
+
+<li style="display: flex; align-items: center; gap: 10px; font-size: 16px"><span style="width: 8px; height: 8px; flex: none; border-radius: 50%; background: #FFC800"></span>الاستراتيجية وتطوير الأعمال</li>
+
+<li style="display: flex; align-items: center; gap: 10px; font-size: 16px"><span style="width: 8px; height: 8px; flex: none; border-radius: 50%; background: #FFC800"></span>التأسيس والتنظيم الإداري</li>
+
+<li style="display: flex; align-items: center; gap: 10px; font-size: 16px"><span style="width: 8px; height: 8px; flex: none; border-radius: 50%; background: #FFC800"></span>الهياكل التنظيمية والسياسات والإجراءات</li>
+
+<li style="display: flex; align-items: center; gap: 10px; font-size: 16px"><span style="width: 8px; height: 8px; flex: none; border-radius: 50%; background: #FFC800"></span>التشغيل وتحسين العمليات</li>
+
+<li style="display: flex; align-items: center; gap: 10px; font-size: 16px"><span style="width: 8px; height: 8px; flex: none; border-radius: 50%; background: #FFC800"></span>إدارة المخاطر واستمرارية الأعمال</li>
+
+<li style="display: flex; align-items: center; gap: 10px; font-size: 16px"><span style="width: 8px; height: 8px; flex: none; border-radius: 50%; background: #FFC800"></span>الأداء ومؤشرات الأداء</li>
+
+</ul>
+<span style="margin-top: 8px; font-weight: 700; color: #A84F00">تفاصيل المسار ←</span>
+</a>
+
+<a class="card rv" href="service-legal.html" style="text-decoration: none; color: #FFFFFF; background: #2B4944; border-radius: 32px 32px 32px 100px; padding: 40px 34px 52px; display: flex; flex-direction: column; gap: 16px; position: relative; overflow: hidden; outline: 4px solid transparent; outline-offset: 4px">
+<div style="display: flex; justify-content: space-between; align-items: flex-start"><span style="width: 64px; height: 64px; border-radius: 20px; background: #FFC800; display: flex; align-items: center; justify-content: center"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#2B4944" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v18M7 21h10M5 7h14M5 7l-3 6a3 3 0 0 0 6 0zM19 7l-3 6a3 3 0 0 0 6 0z"></path></svg></span><span style="font-family: 'IBM Plex Sans', sans-serif; font-size: 44px; font-weight: 300; color: rgba(255,255,255,0.3)">02</span></div>
+
+<h2 style="margin: 0; font-size: 28px">الاستشارات القانونية</h2>
+<p style="margin: 0; line-height: 1.85; color: #D3E0DC">رأي قانوني واضح يساعدك على اتخاذ القرار — استشارات فقط دون ترافع أو تمثيل.</p>
+<ul style="list-style: none; margin: 4px 0 0; padding: 0; display: flex; flex-direction: column; gap: 10px">
+
+<li style="display: flex; align-items: center; gap: 10px; font-size: 16px"><span style="width: 8px; height: 8px; flex: none; border-radius: 50%; background: #FFC800"></span>الاستشارات القانونية العامة</li>
+
+<li style="display: flex; align-items: center; gap: 10px; font-size: 16px"><span style="width: 8px; height: 8px; flex: none; border-radius: 50%; background: #FFC800"></span>مراجعة وصياغة العقود والاتفاقيات</li>
+
+<li style="display: flex; align-items: center; gap: 10px; font-size: 16px"><span style="width: 8px; height: 8px; flex: none; border-radius: 50%; background: #FFC800"></span>استشارات النزاعات والمطالبات</li>
+
+<li style="display: flex; align-items: center; gap: 10px; font-size: 16px"><span style="width: 8px; height: 8px; flex: none; border-radius: 50%; background: #FFC800"></span>استشارات الأراضي والعقارات</li>
+
+<li style="display: flex; align-items: center; gap: 10px; font-size: 16px"><span style="width: 8px; height: 8px; flex: none; border-radius: 50%; background: #FFC800"></span>استشارات التركات والميراث</li>
+
+<li style="display: flex; align-items: center; gap: 10px; font-size: 16px"><span style="width: 8px; height: 8px; flex: none; border-radius: 50%; background: #FFC800"></span>استشارات الشركات والأنظمة التجارية</li>
+
+</ul>
+<span style="margin-top: 8px; font-weight: 700; color: #FFC800">تفاصيل المسار ←</span>
+</a>
+
+<a class="card rv" href="service-accounting.html" style="text-decoration: none; color: #2B4944; background: #FFFFFF; border-radius: 32px 32px 32px 100px; padding: 40px 34px 52px; display: flex; flex-direction: column; gap: 16px; position: relative; overflow: hidden; outline: 4px solid transparent; outline-offset: 4px">
+<div style="display: flex; justify-content: space-between; align-items: flex-start"><span style="width: 64px; height: 64px; border-radius: 20px; background: #2B4944; display: flex; align-items: center; justify-content: center"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#FFC800" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 2.5h16v19H4zM8 7h8M8 11h2M12 11h2M8 15h2M12 15h2M8 18.5h8"></path></svg></span><span style="font-family: 'IBM Plex Sans', sans-serif; font-size: 44px; font-weight: 300; color: #C9C0B1">03</span></div>
+
+<h2 style="margin: 0; font-size: 28px">الاستشارات المحاسبية والضريبية</h2>
+<p style="margin: 0; line-height: 1.85; color: #4A5E5A">أنظمة محاسبية واضحة وامتثال ضريبي يحمي منشأتك.</p>
+<ul style="list-style: none; margin: 4px 0 0; padding: 0; display: flex; flex-direction: column; gap: 10px">
+
+<li style="display: flex; align-items: center; gap: 10px; font-size: 16px"><span style="width: 8px; height: 8px; flex: none; border-radius: 50%; background: #FFC800"></span>الاستشارات الضريبية</li>
+
+<li style="display: flex; align-items: center; gap: 10px; font-size: 16px"><span style="width: 8px; height: 8px; flex: none; border-radius: 50%; background: #FFC800"></span>مسك الدفاتر</li>
+
+<li style="display: flex; align-items: center; gap: 10px; font-size: 16px"><span style="width: 8px; height: 8px; flex: none; border-radius: 50%; background: #FFC800"></span>بناء شجرة الحسابات</li>
+
+<li style="display: flex; align-items: center; gap: 10px; font-size: 16px"><span style="width: 8px; height: 8px; flex: none; border-radius: 50%; background: #FFC800"></span>بناء وتطوير النظام المحاسبي</li>
+
+<li style="display: flex; align-items: center; gap: 10px; font-size: 16px"><span style="width: 8px; height: 8px; flex: none; border-radius: 50%; background: #FFC800"></span>الفحص والتدقيق المالي الداخلي</li>
+
+</ul>
+<span style="margin-top: 8px; font-weight: 700; color: #A84F00">تفاصيل المسار ←</span>
+</a>
+
+</div>
+</section></div></template>
+<template id="r1-s2"><div dir="rtl" style="font-family: 'IBM Plex Sans Arabic', 'IBM Plex Sans', sans-serif; color: #1F2D2A; background: #F7F2EB; min-height: 100vh; position: relative; overflow-x: hidden" data-armc-region="r1" data-armc-state="2">
+
+
+<div role="note" style="background: #1A2B28; color: #FFC800; padding: 8px 24px; text-align: center; font-size: 13px; line-height: 1.7">تصميم أولي للعرض فقط — جميع الحقوق محفوظة © 2026 للمهندس عدنان البنا.</div>
+
+
+<header style="position: sticky; top: 0; z-index: 40; background: rgba(36,62,58,0.92); backdrop-filter: blur(14px); -webkit-backdrop-filter: blur(14px); border-bottom: 1px solid rgba(255,255,255,0.08); padding: 16px 24px">
+<div style="max-width: 1240px; margin: 0 auto; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 16px">
+<a href="index.html" aria-label="أفكار الريادة — الرئيسية" style="display: flex; align-items: center"><svg width="124" height="44" viewBox="0 0 545 192" role="img" aria-label="أفكار الريادة"><path d="M107 0H131Q135 0 135 4V30Q135 61 172 64.5L232 72H103V4Q103 0 107 0Z" fill="#FFC800"></path><path d="M107 0H131Q135 0 135 4V30Q135 61 172 64.5L232 72H103V4Q103 0 107 0Z" fill="#FFC800" transform="rotate(180 116 72)"></path><text x="146" y="188" direction="ltr" unicode-bidi="bidi-override" textLength="392" lengthAdjust="spacingAndGlyphs" font-family="IBM Plex Sans, sans-serif" font-size="172" font-weight="500" letter-spacing="-3" fill="#FFFFFF">armc</text></svg></a>
+<nav aria-label="القائمة الرئيسية" style="display: flex; flex-wrap: wrap; gap: 30px; font-size: 16px">
+<a class="navl" href="index.html" style="color: #FFFFFF; text-decoration: none">الرئيسية</a>
+<a class="navl" href="about.html" style="color: #FFFFFF; text-decoration: none">من نحن</a>
+<a class="navl" href="services.html" style="color: #FFC800; text-decoration: none; font-weight: 600">خدماتنا</a>
+<a class="navl" href="contact.html" style="color: #FFFFFF; text-decoration: none">تواصل معنا</a>
+</nav>
+<div style="display: flex; align-items: center; gap: 10px; flex-wrap: wrap">
+<a class="btn" href="track.html" style="color: #FFFFFF; text-decoration: none; font-weight: 500; padding: 11px 20px; border-radius: 999px; font-size: 15px; border: 1px solid rgba(255,255,255,0.4)">تابع طلبك</a>
+<a class="btn btn-y" href="booking.html" style="background: #FFC800; color: #2B4944; text-decoration: none; font-weight: 700; padding: 12px 22px; border-radius: 999px; font-size: 15px">احجز استشارة</a>
+</div>
+</div>
+</header>
+
+<section style="background: #2B4944; color: #FFFFFF; padding: 72px 24px 120px; position: relative; overflow: hidden">
+<svg class="spin" style="position: absolute; left: -340px; top: -420px; width: 1000px; height: 1000px; opacity: 0.14" viewBox="0 0 1000 1000" aria-hidden="true"><g fill="none" stroke="#FFFFFF" stroke-width="1.2"><circle cx="500" cy="500" r="490"></circle><circle cx="500" cy="500" r="390"></circle><circle cx="500" cy="500" r="290"></circle></g><circle cx="500" cy="10" r="7" fill="#FFC800"></circle></svg>
+<div style="max-width: 1240px; margin: 0 auto; position: relative">
+<p class="up d1" style="margin: 0 0 14px; font-size: 14px; color: #B9CCC7"><a href="index.html" style="color: #B9CCC7; text-decoration: none">الرئيسية</a> / خدماتنا</p>
+<h1 class="up d2" style="margin: 0; font-size: 60px; line-height: 1.25; font-weight: 700">خدماتنا الاستشارية<br><span style="color: #FFC800">ثلاثة مسارات، شريك واحد</span></h1>
+<p class="up d3" style="margin: 22px 0 0; font-size: 19px; line-height: 1.9; color: #D3E0DC; max-width: 640px">استشارات إدارية وقانونية ومحاسبية يقدمها فريق من المختصين وشراكات مهنية — اختر المسار، واحجز، وتابع طلبك من جوالك.</p>
+</div>
+<svg style="position: absolute; left: 0; right: 0; bottom: -1px; width: 100%; height: 90px" viewBox="0 0 1440 90" preserveAspectRatio="none" aria-hidden="true"><path d="M0 90 Q720 -20 1440 90 Z" fill="#F7F2EB"></path><path d="M0 90 Q720 -20 1440 90" fill="none" stroke="#FFC800" stroke-width="3"></path></svg>
+</section>
+
+<section style="padding: 40px 24px 90px; position: relative; z-index: 2">
+<div style="max-width: 1240px; margin: 0 auto">
+<div class="rv" style="background: #FFFFFF; border-radius: 28px; padding: 32px; box-shadow: 0 24px 50px -30px rgba(43,73,68,0.45)">
+<p style="margin: 0 0 6px; color: #A84F00; font-weight: 700">— أي مسار يناسبك؟</p>
+<h2 style="margin: 0 0 18px; font-size: 28px; color: #2B4944">اختر ما يصف احتياجك، ونرشدك للمسار الأنسب</h2>
+<div role="group" aria-label="احتياجك" style="display: flex; flex-wrap: wrap; gap: 10px">
+
+<button type="button" class="chip" aria-pressed="false" style="font-family: inherit; font-size: 15px; font-weight: 600; min-height: 46px; padding: 10px 18px; border-radius: 999px; cursor: pointer; border: 1.5px solid #2B4944; background: #FFFFFF; color: #2B4944">أبدأ منشأة أو أعيد تنظيمها</button>
+
+<button type="button" class="chip" aria-pressed="true" style="font-family: inherit; font-size: 15px; font-weight: 600; min-height: 46px; padding: 10px 18px; border-radius: 999px; cursor: pointer; border: 1.5px solid #2B4944; background: #2B4944; color: #FFFFFF">عندي عقد أو نزاع أو تركة</button>
+
+<button type="button" class="chip" aria-pressed="false" style="font-family: inherit; font-size: 15px; font-weight: 600; min-height: 46px; padding: 10px 18px; border-radius: 999px; cursor: pointer; border: 1.5px solid #2B4944; background: #FFFFFF; color: #2B4944">أحتاج ترتيب حساباتي أو الضريبة</button>
+
+<button type="button" class="chip" aria-pressed="false" style="font-family: inherit; font-size: 15px; font-weight: 600; min-height: 46px; padding: 10px 18px; border-radius: 999px; cursor: pointer; border: 1.5px solid #2B4944; background: #FFFFFF; color: #2B4944">أريد تحسين أداء فريقي</button>
+
+</div>
+
+<p style="margin: 18px 0 0; display: flex; flex-wrap: wrap; align-items: center; gap: 10px; color: #2B4944; font-size: 16px"><span style="width: 10px; height: 10px; border-radius: 50%; background: #FFC800"></span>المسار المقترح: <b>الاستشارات القانونية</b> — <a href="service-legal.html" style="color: #A84F00; font-weight: 700">اطّلع على تفاصيله ←</a></p>
+
+</div>
+</div>
+</section>
+
+<section style="padding: 0 24px 100px">
+<div style="max-width: 1240px; margin: 0 auto; display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 24px">
+
+<a class="card rv" href="service-management.html" style="text-decoration: none; color: #2B4944; background: #FFFFFF; border-radius: 32px 32px 32px 100px; padding: 40px 34px 52px; display: flex; flex-direction: column; gap: 16px; position: relative; overflow: hidden; outline: 4px solid transparent; outline-offset: 4px">
+<div style="display: flex; justify-content: space-between; align-items: flex-start"><span style="width: 64px; height: 64px; border-radius: 20px; background: #2B4944; display: flex; align-items: center; justify-content: center"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#FFC800" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 3h7v7H3zM14 3h7v7h-7zM8.5 14h7v7h-7zM6.5 10v2h11v-2M12 12v2"></path></svg></span><span style="font-family: 'IBM Plex Sans', sans-serif; font-size: 44px; font-weight: 300; color: #C9C0B1">01</span></div>
+
+<h2 style="margin: 0; font-size: 28px">الاستشارات الإدارية</h2>
+<p style="margin: 0; line-height: 1.85; color: #4A5E5A">نبني معك أساسًا إداريًا متينًا، من الاستراتيجية حتى قياس الأداء.</p>
+<ul style="list-style: none; margin: 4px 0 0; padding: 0; display: flex; flex-direction: column; gap: 10px">
+
+<li style="display: flex; align-items: center; gap: 10px; font-size: 16px"><span style="width: 8px; height: 8px; flex: none; border-radius: 50%; background: #FFC800"></span>الاستراتيجية وتطوير الأعمال</li>
+
+<li style="display: flex; align-items: center; gap: 10px; font-size: 16px"><span style="width: 8px; height: 8px; flex: none; border-radius: 50%; background: #FFC800"></span>التأسيس والتنظيم الإداري</li>
+
+<li style="display: flex; align-items: center; gap: 10px; font-size: 16px"><span style="width: 8px; height: 8px; flex: none; border-radius: 50%; background: #FFC800"></span>الهياكل التنظيمية والسياسات والإجراءات</li>
+
+<li style="display: flex; align-items: center; gap: 10px; font-size: 16px"><span style="width: 8px; height: 8px; flex: none; border-radius: 50%; background: #FFC800"></span>التشغيل وتحسين العمليات</li>
+
+<li style="display: flex; align-items: center; gap: 10px; font-size: 16px"><span style="width: 8px; height: 8px; flex: none; border-radius: 50%; background: #FFC800"></span>إدارة المخاطر واستمرارية الأعمال</li>
+
+<li style="display: flex; align-items: center; gap: 10px; font-size: 16px"><span style="width: 8px; height: 8px; flex: none; border-radius: 50%; background: #FFC800"></span>الأداء ومؤشرات الأداء</li>
+
+</ul>
+<span style="margin-top: 8px; font-weight: 700; color: #A84F00">تفاصيل المسار ←</span>
+</a>
+
+<a class="card rv" href="service-legal.html" style="text-decoration: none; color: #FFFFFF; background: #2B4944; border-radius: 32px 32px 32px 100px; padding: 40px 34px 52px; display: flex; flex-direction: column; gap: 16px; position: relative; overflow: hidden; outline: 4px solid #FFC800; outline-offset: 4px">
+<div style="display: flex; justify-content: space-between; align-items: flex-start"><span style="width: 64px; height: 64px; border-radius: 20px; background: #FFC800; display: flex; align-items: center; justify-content: center"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#2B4944" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v18M7 21h10M5 7h14M5 7l-3 6a3 3 0 0 0 6 0zM19 7l-3 6a3 3 0 0 0 6 0z"></path></svg></span><span style="font-family: 'IBM Plex Sans', sans-serif; font-size: 44px; font-weight: 300; color: rgba(255,255,255,0.3)">02</span></div>
+<span style="align-self: flex-start; background: #FFC800; color: #2B4944; font-size: 13px; font-weight: 700; padding: 5px 12px; border-radius: 999px">المسار المقترح لك</span>
+<h2 style="margin: 0; font-size: 28px">الاستشارات القانونية</h2>
+<p style="margin: 0; line-height: 1.85; color: #D3E0DC">رأي قانوني واضح يساعدك على اتخاذ القرار — استشارات فقط دون ترافع أو تمثيل.</p>
+<ul style="list-style: none; margin: 4px 0 0; padding: 0; display: flex; flex-direction: column; gap: 10px">
+
+<li style="display: flex; align-items: center; gap: 10px; font-size: 16px"><span style="width: 8px; height: 8px; flex: none; border-radius: 50%; background: #FFC800"></span>الاستشارات القانونية العامة</li>
+
+<li style="display: flex; align-items: center; gap: 10px; font-size: 16px"><span style="width: 8px; height: 8px; flex: none; border-radius: 50%; background: #FFC800"></span>مراجعة وصياغة العقود والاتفاقيات</li>
+
+<li style="display: flex; align-items: center; gap: 10px; font-size: 16px"><span style="width: 8px; height: 8px; flex: none; border-radius: 50%; background: #FFC800"></span>استشارات النزاعات والمطالبات</li>
+
+<li style="display: flex; align-items: center; gap: 10px; font-size: 16px"><span style="width: 8px; height: 8px; flex: none; border-radius: 50%; background: #FFC800"></span>استشارات الأراضي والعقارات</li>
+
+<li style="display: flex; align-items: center; gap: 10px; font-size: 16px"><span style="width: 8px; height: 8px; flex: none; border-radius: 50%; background: #FFC800"></span>استشارات التركات والميراث</li>
+
+<li style="display: flex; align-items: center; gap: 10px; font-size: 16px"><span style="width: 8px; height: 8px; flex: none; border-radius: 50%; background: #FFC800"></span>استشارات الشركات والأنظمة التجارية</li>
+
+</ul>
+<span style="margin-top: 8px; font-weight: 700; color: #FFC800">تفاصيل المسار ←</span>
+</a>
+
+<a class="card rv" href="service-accounting.html" style="text-decoration: none; color: #2B4944; background: #FFFFFF; border-radius: 32px 32px 32px 100px; padding: 40px 34px 52px; display: flex; flex-direction: column; gap: 16px; position: relative; overflow: hidden; outline: 4px solid transparent; outline-offset: 4px">
+<div style="display: flex; justify-content: space-between; align-items: flex-start"><span style="width: 64px; height: 64px; border-radius: 20px; background: #2B4944; display: flex; align-items: center; justify-content: center"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#FFC800" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 2.5h16v19H4zM8 7h8M8 11h2M12 11h2M8 15h2M12 15h2M8 18.5h8"></path></svg></span><span style="font-family: 'IBM Plex Sans', sans-serif; font-size: 44px; font-weight: 300; color: #C9C0B1">03</span></div>
+
+<h2 style="margin: 0; font-size: 28px">الاستشارات المحاسبية والضريبية</h2>
+<p style="margin: 0; line-height: 1.85; color: #4A5E5A">أنظمة محاسبية واضحة وامتثال ضريبي يحمي منشأتك.</p>
+<ul style="list-style: none; margin: 4px 0 0; padding: 0; display: flex; flex-direction: column; gap: 10px">
+
+<li style="display: flex; align-items: center; gap: 10px; font-size: 16px"><span style="width: 8px; height: 8px; flex: none; border-radius: 50%; background: #FFC800"></span>الاستشارات الضريبية</li>
+
+<li style="display: flex; align-items: center; gap: 10px; font-size: 16px"><span style="width: 8px; height: 8px; flex: none; border-radius: 50%; background: #FFC800"></span>مسك الدفاتر</li>
+
+<li style="display: flex; align-items: center; gap: 10px; font-size: 16px"><span style="width: 8px; height: 8px; flex: none; border-radius: 50%; background: #FFC800"></span>بناء شجرة الحسابات</li>
+
+<li style="display: flex; align-items: center; gap: 10px; font-size: 16px"><span style="width: 8px; height: 8px; flex: none; border-radius: 50%; background: #FFC800"></span>بناء وتطوير النظام المحاسبي</li>
+
+<li style="display: flex; align-items: center; gap: 10px; font-size: 16px"><span style="width: 8px; height: 8px; flex: none; border-radius: 50%; background: #FFC800"></span>الفحص والتدقيق المالي الداخلي</li>
+
+</ul>
+<span style="margin-top: 8px; font-weight: 700; color: #A84F00">تفاصيل المسار ←</span>
+</a>
+
+</div>
+</section></div></template>
+<template id="r1-s3"><div dir="rtl" style="font-family: 'IBM Plex Sans Arabic', 'IBM Plex Sans', sans-serif; color: #1F2D2A; background: #F7F2EB; min-height: 100vh; position: relative; overflow-x: hidden" data-armc-region="r1" data-armc-state="3">
+
+
+<div role="note" style="background: #1A2B28; color: #FFC800; padding: 8px 24px; text-align: center; font-size: 13px; line-height: 1.7">تصميم أولي للعرض فقط — جميع الحقوق محفوظة © 2026 للمهندس عدنان البنا.</div>
+
+
+<header style="position: sticky; top: 0; z-index: 40; background: rgba(36,62,58,0.92); backdrop-filter: blur(14px); -webkit-backdrop-filter: blur(14px); border-bottom: 1px solid rgba(255,255,255,0.08); padding: 16px 24px">
+<div style="max-width: 1240px; margin: 0 auto; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 16px">
+<a href="index.html" aria-label="أفكار الريادة — الرئيسية" style="display: flex; align-items: center"><svg width="124" height="44" viewBox="0 0 545 192" role="img" aria-label="أفكار الريادة"><path d="M107 0H131Q135 0 135 4V30Q135 61 172 64.5L232 72H103V4Q103 0 107 0Z" fill="#FFC800"></path><path d="M107 0H131Q135 0 135 4V30Q135 61 172 64.5L232 72H103V4Q103 0 107 0Z" fill="#FFC800" transform="rotate(180 116 72)"></path><text x="146" y="188" direction="ltr" unicode-bidi="bidi-override" textLength="392" lengthAdjust="spacingAndGlyphs" font-family="IBM Plex Sans, sans-serif" font-size="172" font-weight="500" letter-spacing="-3" fill="#FFFFFF">armc</text></svg></a>
+<nav aria-label="القائمة الرئيسية" style="display: flex; flex-wrap: wrap; gap: 30px; font-size: 16px">
+<a class="navl" href="index.html" style="color: #FFFFFF; text-decoration: none">الرئيسية</a>
+<a class="navl" href="about.html" style="color: #FFFFFF; text-decoration: none">من نحن</a>
+<a class="navl" href="services.html" style="color: #FFC800; text-decoration: none; font-weight: 600">خدماتنا</a>
+<a class="navl" href="contact.html" style="color: #FFFFFF; text-decoration: none">تواصل معنا</a>
+</nav>
+<div style="display: flex; align-items: center; gap: 10px; flex-wrap: wrap">
+<a class="btn" href="track.html" style="color: #FFFFFF; text-decoration: none; font-weight: 500; padding: 11px 20px; border-radius: 999px; font-size: 15px; border: 1px solid rgba(255,255,255,0.4)">تابع طلبك</a>
+<a class="btn btn-y" href="booking.html" style="background: #FFC800; color: #2B4944; text-decoration: none; font-weight: 700; padding: 12px 22px; border-radius: 999px; font-size: 15px">احجز استشارة</a>
+</div>
+</div>
+</header>
+
+<section style="background: #2B4944; color: #FFFFFF; padding: 72px 24px 120px; position: relative; overflow: hidden">
+<svg class="spin" style="position: absolute; left: -340px; top: -420px; width: 1000px; height: 1000px; opacity: 0.14" viewBox="0 0 1000 1000" aria-hidden="true"><g fill="none" stroke="#FFFFFF" stroke-width="1.2"><circle cx="500" cy="500" r="490"></circle><circle cx="500" cy="500" r="390"></circle><circle cx="500" cy="500" r="290"></circle></g><circle cx="500" cy="10" r="7" fill="#FFC800"></circle></svg>
+<div style="max-width: 1240px; margin: 0 auto; position: relative">
+<p class="up d1" style="margin: 0 0 14px; font-size: 14px; color: #B9CCC7"><a href="index.html" style="color: #B9CCC7; text-decoration: none">الرئيسية</a> / خدماتنا</p>
+<h1 class="up d2" style="margin: 0; font-size: 60px; line-height: 1.25; font-weight: 700">خدماتنا الاستشارية<br><span style="color: #FFC800">ثلاثة مسارات، شريك واحد</span></h1>
+<p class="up d3" style="margin: 22px 0 0; font-size: 19px; line-height: 1.9; color: #D3E0DC; max-width: 640px">استشارات إدارية وقانونية ومحاسبية يقدمها فريق من المختصين وشراكات مهنية — اختر المسار، واحجز، وتابع طلبك من جوالك.</p>
+</div>
+<svg style="position: absolute; left: 0; right: 0; bottom: -1px; width: 100%; height: 90px" viewBox="0 0 1440 90" preserveAspectRatio="none" aria-hidden="true"><path d="M0 90 Q720 -20 1440 90 Z" fill="#F7F2EB"></path><path d="M0 90 Q720 -20 1440 90" fill="none" stroke="#FFC800" stroke-width="3"></path></svg>
+</section>
+
+<section style="padding: 40px 24px 90px; position: relative; z-index: 2">
+<div style="max-width: 1240px; margin: 0 auto">
+<div class="rv" style="background: #FFFFFF; border-radius: 28px; padding: 32px; box-shadow: 0 24px 50px -30px rgba(43,73,68,0.45)">
+<p style="margin: 0 0 6px; color: #A84F00; font-weight: 700">— أي مسار يناسبك؟</p>
+<h2 style="margin: 0 0 18px; font-size: 28px; color: #2B4944">اختر ما يصف احتياجك، ونرشدك للمسار الأنسب</h2>
+<div role="group" aria-label="احتياجك" style="display: flex; flex-wrap: wrap; gap: 10px">
+
+<button type="button" class="chip" aria-pressed="false" style="font-family: inherit; font-size: 15px; font-weight: 600; min-height: 46px; padding: 10px 18px; border-radius: 999px; cursor: pointer; border: 1.5px solid #2B4944; background: #FFFFFF; color: #2B4944">أبدأ منشأة أو أعيد تنظيمها</button>
+
+<button type="button" class="chip" aria-pressed="false" style="font-family: inherit; font-size: 15px; font-weight: 600; min-height: 46px; padding: 10px 18px; border-radius: 999px; cursor: pointer; border: 1.5px solid #2B4944; background: #FFFFFF; color: #2B4944">عندي عقد أو نزاع أو تركة</button>
+
+<button type="button" class="chip" aria-pressed="true" style="font-family: inherit; font-size: 15px; font-weight: 600; min-height: 46px; padding: 10px 18px; border-radius: 999px; cursor: pointer; border: 1.5px solid #2B4944; background: #2B4944; color: #FFFFFF">أحتاج ترتيب حساباتي أو الضريبة</button>
+
+<button type="button" class="chip" aria-pressed="false" style="font-family: inherit; font-size: 15px; font-weight: 600; min-height: 46px; padding: 10px 18px; border-radius: 999px; cursor: pointer; border: 1.5px solid #2B4944; background: #FFFFFF; color: #2B4944">أريد تحسين أداء فريقي</button>
+
+</div>
+
+<p style="margin: 18px 0 0; display: flex; flex-wrap: wrap; align-items: center; gap: 10px; color: #2B4944; font-size: 16px"><span style="width: 10px; height: 10px; border-radius: 50%; background: #FFC800"></span>المسار المقترح: <b>الاستشارات المحاسبية والضريبية</b> — <a href="service-accounting.html" style="color: #A84F00; font-weight: 700">اطّلع على تفاصيله ←</a></p>
+
+</div>
+</div>
+</section>
+
+<section style="padding: 0 24px 100px">
+<div style="max-width: 1240px; margin: 0 auto; display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 24px">
+
+<a class="card rv" href="service-management.html" style="text-decoration: none; color: #2B4944; background: #FFFFFF; border-radius: 32px 32px 32px 100px; padding: 40px 34px 52px; display: flex; flex-direction: column; gap: 16px; position: relative; overflow: hidden; outline: 4px solid transparent; outline-offset: 4px">
+<div style="display: flex; justify-content: space-between; align-items: flex-start"><span style="width: 64px; height: 64px; border-radius: 20px; background: #2B4944; display: flex; align-items: center; justify-content: center"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#FFC800" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 3h7v7H3zM14 3h7v7h-7zM8.5 14h7v7h-7zM6.5 10v2h11v-2M12 12v2"></path></svg></span><span style="font-family: 'IBM Plex Sans', sans-serif; font-size: 44px; font-weight: 300; color: #C9C0B1">01</span></div>
+
+<h2 style="margin: 0; font-size: 28px">الاستشارات الإدارية</h2>
+<p style="margin: 0; line-height: 1.85; color: #4A5E5A">نبني معك أساسًا إداريًا متينًا، من الاستراتيجية حتى قياس الأداء.</p>
+<ul style="list-style: none; margin: 4px 0 0; padding: 0; display: flex; flex-direction: column; gap: 10px">
+
+<li style="display: flex; align-items: center; gap: 10px; font-size: 16px"><span style="width: 8px; height: 8px; flex: none; border-radius: 50%; background: #FFC800"></span>الاستراتيجية وتطوير الأعمال</li>
+
+<li style="display: flex; align-items: center; gap: 10px; font-size: 16px"><span style="width: 8px; height: 8px; flex: none; border-radius: 50%; background: #FFC800"></span>التأسيس والتنظيم الإداري</li>
+
+<li style="display: flex; align-items: center; gap: 10px; font-size: 16px"><span style="width: 8px; height: 8px; flex: none; border-radius: 50%; background: #FFC800"></span>الهياكل التنظيمية والسياسات والإجراءات</li>
+
+<li style="display: flex; align-items: center; gap: 10px; font-size: 16px"><span style="width: 8px; height: 8px; flex: none; border-radius: 50%; background: #FFC800"></span>التشغيل وتحسين العمليات</li>
+
+<li style="display: flex; align-items: center; gap: 10px; font-size: 16px"><span style="width: 8px; height: 8px; flex: none; border-radius: 50%; background: #FFC800"></span>إدارة المخاطر واستمرارية الأعمال</li>
+
+<li style="display: flex; align-items: center; gap: 10px; font-size: 16px"><span style="width: 8px; height: 8px; flex: none; border-radius: 50%; background: #FFC800"></span>الأداء ومؤشرات الأداء</li>
+
+</ul>
+<span style="margin-top: 8px; font-weight: 700; color: #A84F00">تفاصيل المسار ←</span>
+</a>
+
+<a class="card rv" href="service-legal.html" style="text-decoration: none; color: #FFFFFF; background: #2B4944; border-radius: 32px 32px 32px 100px; padding: 40px 34px 52px; display: flex; flex-direction: column; gap: 16px; position: relative; overflow: hidden; outline: 4px solid transparent; outline-offset: 4px">
+<div style="display: flex; justify-content: space-between; align-items: flex-start"><span style="width: 64px; height: 64px; border-radius: 20px; background: #FFC800; display: flex; align-items: center; justify-content: center"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#2B4944" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v18M7 21h10M5 7h14M5 7l-3 6a3 3 0 0 0 6 0zM19 7l-3 6a3 3 0 0 0 6 0z"></path></svg></span><span style="font-family: 'IBM Plex Sans', sans-serif; font-size: 44px; font-weight: 300; color: rgba(255,255,255,0.3)">02</span></div>
+
+<h2 style="margin: 0; font-size: 28px">الاستشارات القانونية</h2>
+<p style="margin: 0; line-height: 1.85; color: #D3E0DC">رأي قانوني واضح يساعدك على اتخاذ القرار — استشارات فقط دون ترافع أو تمثيل.</p>
+<ul style="list-style: none; margin: 4px 0 0; padding: 0; display: flex; flex-direction: column; gap: 10px">
+
+<li style="display: flex; align-items: center; gap: 10px; font-size: 16px"><span style="width: 8px; height: 8px; flex: none; border-radius: 50%; background: #FFC800"></span>الاستشارات القانونية العامة</li>
+
+<li style="display: flex; align-items: center; gap: 10px; font-size: 16px"><span style="width: 8px; height: 8px; flex: none; border-radius: 50%; background: #FFC800"></span>مراجعة وصياغة العقود والاتفاقيات</li>
+
+<li style="display: flex; align-items: center; gap: 10px; font-size: 16px"><span style="width: 8px; height: 8px; flex: none; border-radius: 50%; background: #FFC800"></span>استشارات النزاعات والمطالبات</li>
+
+<li style="display: flex; align-items: center; gap: 10px; font-size: 16px"><span style="width: 8px; height: 8px; flex: none; border-radius: 50%; background: #FFC800"></span>استشارات الأراضي والعقارات</li>
+
+<li style="display: flex; align-items: center; gap: 10px; font-size: 16px"><span style="width: 8px; height: 8px; flex: none; border-radius: 50%; background: #FFC800"></span>استشارات التركات والميراث</li>
+
+<li style="display: flex; align-items: center; gap: 10px; font-size: 16px"><span style="width: 8px; height: 8px; flex: none; border-radius: 50%; background: #FFC800"></span>استشارات الشركات والأنظمة التجارية</li>
+
+</ul>
+<span style="margin-top: 8px; font-weight: 700; color: #FFC800">تفاصيل المسار ←</span>
+</a>
+
+<a class="card rv" href="service-accounting.html" style="text-decoration: none; color: #2B4944; background: #FFFFFF; border-radius: 32px 32px 32px 100px; padding: 40px 34px 52px; display: flex; flex-direction: column; gap: 16px; position: relative; overflow: hidden; outline: 4px solid #FFC800; outline-offset: 4px">
+<div style="display: flex; justify-content: space-between; align-items: flex-start"><span style="width: 64px; height: 64px; border-radius: 20px; background: #2B4944; display: flex; align-items: center; justify-content: center"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#FFC800" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 2.5h16v19H4zM8 7h8M8 11h2M12 11h2M8 15h2M12 15h2M8 18.5h8"></path></svg></span><span style="font-family: 'IBM Plex Sans', sans-serif; font-size: 44px; font-weight: 300; color: #C9C0B1">03</span></div>
+<span style="align-self: flex-start; background: #FFC800; color: #2B4944; font-size: 13px; font-weight: 700; padding: 5px 12px; border-radius: 999px">المسار المقترح لك</span>
+<h2 style="margin: 0; font-size: 28px">الاستشارات المحاسبية والضريبية</h2>
+<p style="margin: 0; line-height: 1.85; color: #4A5E5A">أنظمة محاسبية واضحة وامتثال ضريبي يحمي منشأتك.</p>
+<ul style="list-style: none; margin: 4px 0 0; padding: 0; display: flex; flex-direction: column; gap: 10px">
+
+<li style="display: flex; align-items: center; gap: 10px; font-size: 16px"><span style="width: 8px; height: 8px; flex: none; border-radius: 50%; background: #FFC800"></span>الاستشارات الضريبية</li>
+
+<li style="display: flex; align-items: center; gap: 10px; font-size: 16px"><span style="width: 8px; height: 8px; flex: none; border-radius: 50%; background: #FFC800"></span>مسك الدفاتر</li>
+
+<li style="display: flex; align-items: center; gap: 10px; font-size: 16px"><span style="width: 8px; height: 8px; flex: none; border-radius: 50%; background: #FFC800"></span>بناء شجرة الحسابات</li>
+
+<li style="display: flex; align-items: center; gap: 10px; font-size: 16px"><span style="width: 8px; height: 8px; flex: none; border-radius: 50%; background: #FFC800"></span>بناء وتطوير النظام المحاسبي</li>
+
+<li style="display: flex; align-items: center; gap: 10px; font-size: 16px"><span style="width: 8px; height: 8px; flex: none; border-radius: 50%; background: #FFC800"></span>الفحص والتدقيق المالي الداخلي</li>
+
+</ul>
+<span style="margin-top: 8px; font-weight: 700; color: #A84F00">تفاصيل المسار ←</span>
+</a>
+
+</div>
+</section></div></template>
+<template id="r1-s4"><div dir="rtl" style="font-family: 'IBM Plex Sans Arabic', 'IBM Plex Sans', sans-serif; color: #1F2D2A; background: #F7F2EB; min-height: 100vh; position: relative; overflow-x: hidden" data-armc-region="r1" data-armc-state="4">
+
+
+<div role="note" style="background: #1A2B28; color: #FFC800; padding: 8px 24px; text-align: center; font-size: 13px; line-height: 1.7">تصميم أولي للعرض فقط — جميع الحقوق محفوظة © 2026 للمهندس عدنان البنا.</div>
+
+
+<header style="position: sticky; top: 0; z-index: 40; background: rgba(36,62,58,0.92); backdrop-filter: blur(14px); -webkit-backdrop-filter: blur(14px); border-bottom: 1px solid rgba(255,255,255,0.08); padding: 16px 24px">
+<div style="max-width: 1240px; margin: 0 auto; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 16px">
+<a href="index.html" aria-label="أفكار الريادة — الرئيسية" style="display: flex; align-items: center"><svg width="124" height="44" viewBox="0 0 545 192" role="img" aria-label="أفكار الريادة"><path d="M107 0H131Q135 0 135 4V30Q135 61 172 64.5L232 72H103V4Q103 0 107 0Z" fill="#FFC800"></path><path d="M107 0H131Q135 0 135 4V30Q135 61 172 64.5L232 72H103V4Q103 0 107 0Z" fill="#FFC800" transform="rotate(180 116 72)"></path><text x="146" y="188" direction="ltr" unicode-bidi="bidi-override" textLength="392" lengthAdjust="spacingAndGlyphs" font-family="IBM Plex Sans, sans-serif" font-size="172" font-weight="500" letter-spacing="-3" fill="#FFFFFF">armc</text></svg></a>
+<nav aria-label="القائمة الرئيسية" style="display: flex; flex-wrap: wrap; gap: 30px; font-size: 16px">
+<a class="navl" href="index.html" style="color: #FFFFFF; text-decoration: none">الرئيسية</a>
+<a class="navl" href="about.html" style="color: #FFFFFF; text-decoration: none">من نحن</a>
+<a class="navl" href="services.html" style="color: #FFC800; text-decoration: none; font-weight: 600">خدماتنا</a>
+<a class="navl" href="contact.html" style="color: #FFFFFF; text-decoration: none">تواصل معنا</a>
+</nav>
+<div style="display: flex; align-items: center; gap: 10px; flex-wrap: wrap">
+<a class="btn" href="track.html" style="color: #FFFFFF; text-decoration: none; font-weight: 500; padding: 11px 20px; border-radius: 999px; font-size: 15px; border: 1px solid rgba(255,255,255,0.4)">تابع طلبك</a>
+<a class="btn btn-y" href="booking.html" style="background: #FFC800; color: #2B4944; text-decoration: none; font-weight: 700; padding: 12px 22px; border-radius: 999px; font-size: 15px">احجز استشارة</a>
+</div>
+</div>
+</header>
+
+<section style="background: #2B4944; color: #FFFFFF; padding: 72px 24px 120px; position: relative; overflow: hidden">
+<svg class="spin" style="position: absolute; left: -340px; top: -420px; width: 1000px; height: 1000px; opacity: 0.14" viewBox="0 0 1000 1000" aria-hidden="true"><g fill="none" stroke="#FFFFFF" stroke-width="1.2"><circle cx="500" cy="500" r="490"></circle><circle cx="500" cy="500" r="390"></circle><circle cx="500" cy="500" r="290"></circle></g><circle cx="500" cy="10" r="7" fill="#FFC800"></circle></svg>
+<div style="max-width: 1240px; margin: 0 auto; position: relative">
+<p class="up d1" style="margin: 0 0 14px; font-size: 14px; color: #B9CCC7"><a href="index.html" style="color: #B9CCC7; text-decoration: none">الرئيسية</a> / خدماتنا</p>
+<h1 class="up d2" style="margin: 0; font-size: 60px; line-height: 1.25; font-weight: 700">خدماتنا الاستشارية<br><span style="color: #FFC800">ثلاثة مسارات، شريك واحد</span></h1>
+<p class="up d3" style="margin: 22px 0 0; font-size: 19px; line-height: 1.9; color: #D3E0DC; max-width: 640px">استشارات إدارية وقانونية ومحاسبية يقدمها فريق من المختصين وشراكات مهنية — اختر المسار، واحجز، وتابع طلبك من جوالك.</p>
+</div>
+<svg style="position: absolute; left: 0; right: 0; bottom: -1px; width: 100%; height: 90px" viewBox="0 0 1440 90" preserveAspectRatio="none" aria-hidden="true"><path d="M0 90 Q720 -20 1440 90 Z" fill="#F7F2EB"></path><path d="M0 90 Q720 -20 1440 90" fill="none" stroke="#FFC800" stroke-width="3"></path></svg>
+</section>
+
+<section style="padding: 40px 24px 90px; position: relative; z-index: 2">
+<div style="max-width: 1240px; margin: 0 auto">
+<div class="rv" style="background: #FFFFFF; border-radius: 28px; padding: 32px; box-shadow: 0 24px 50px -30px rgba(43,73,68,0.45)">
+<p style="margin: 0 0 6px; color: #A84F00; font-weight: 700">— أي مسار يناسبك؟</p>
+<h2 style="margin: 0 0 18px; font-size: 28px; color: #2B4944">اختر ما يصف احتياجك، ونرشدك للمسار الأنسب</h2>
+<div role="group" aria-label="احتياجك" style="display: flex; flex-wrap: wrap; gap: 10px">
+
+<button type="button" class="chip" aria-pressed="false" style="font-family: inherit; font-size: 15px; font-weight: 600; min-height: 46px; padding: 10px 18px; border-radius: 999px; cursor: pointer; border: 1.5px solid #2B4944; background: #FFFFFF; color: #2B4944">أبدأ منشأة أو أعيد تنظيمها</button>
+
+<button type="button" class="chip" aria-pressed="false" style="font-family: inherit; font-size: 15px; font-weight: 600; min-height: 46px; padding: 10px 18px; border-radius: 999px; cursor: pointer; border: 1.5px solid #2B4944; background: #FFFFFF; color: #2B4944">عندي عقد أو نزاع أو تركة</button>
+
+<button type="button" class="chip" aria-pressed="false" style="font-family: inherit; font-size: 15px; font-weight: 600; min-height: 46px; padding: 10px 18px; border-radius: 999px; cursor: pointer; border: 1.5px solid #2B4944; background: #FFFFFF; color: #2B4944">أحتاج ترتيب حساباتي أو الضريبة</button>
+
+<button type="button" class="chip" aria-pressed="true" style="font-family: inherit; font-size: 15px; font-weight: 600; min-height: 46px; padding: 10px 18px; border-radius: 999px; cursor: pointer; border: 1.5px solid #2B4944; background: #2B4944; color: #FFFFFF">أريد تحسين أداء فريقي</button>
+
+</div>
+
+<p style="margin: 18px 0 0; display: flex; flex-wrap: wrap; align-items: center; gap: 10px; color: #2B4944; font-size: 16px"><span style="width: 10px; height: 10px; border-radius: 50%; background: #FFC800"></span>المسار المقترح: <b>الاستشارات الإدارية</b> — <a href="service-management.html" style="color: #A84F00; font-weight: 700">اطّلع على تفاصيله ←</a></p>
+
+</div>
+</div>
+</section>
+
+<section style="padding: 0 24px 100px">
+<div style="max-width: 1240px; margin: 0 auto; display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 24px">
+
+<a class="card rv" href="service-management.html" style="text-decoration: none; color: #2B4944; background: #FFFFFF; border-radius: 32px 32px 32px 100px; padding: 40px 34px 52px; display: flex; flex-direction: column; gap: 16px; position: relative; overflow: hidden; outline: 4px solid #FFC800; outline-offset: 4px">
+<div style="display: flex; justify-content: space-between; align-items: flex-start"><span style="width: 64px; height: 64px; border-radius: 20px; background: #2B4944; display: flex; align-items: center; justify-content: center"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#FFC800" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 3h7v7H3zM14 3h7v7h-7zM8.5 14h7v7h-7zM6.5 10v2h11v-2M12 12v2"></path></svg></span><span style="font-family: 'IBM Plex Sans', sans-serif; font-size: 44px; font-weight: 300; color: #C9C0B1">01</span></div>
+<span style="align-self: flex-start; background: #FFC800; color: #2B4944; font-size: 13px; font-weight: 700; padding: 5px 12px; border-radius: 999px">المسار المقترح لك</span>
+<h2 style="margin: 0; font-size: 28px">الاستشارات الإدارية</h2>
+<p style="margin: 0; line-height: 1.85; color: #4A5E5A">نبني معك أساسًا إداريًا متينًا، من الاستراتيجية حتى قياس الأداء.</p>
+<ul style="list-style: none; margin: 4px 0 0; padding: 0; display: flex; flex-direction: column; gap: 10px">
+
+<li style="display: flex; align-items: center; gap: 10px; font-size: 16px"><span style="width: 8px; height: 8px; flex: none; border-radius: 50%; background: #FFC800"></span>الاستراتيجية وتطوير الأعمال</li>
+
+<li style="display: flex; align-items: center; gap: 10px; font-size: 16px"><span style="width: 8px; height: 8px; flex: none; border-radius: 50%; background: #FFC800"></span>التأسيس والتنظيم الإداري</li>
+
+<li style="display: flex; align-items: center; gap: 10px; font-size: 16px"><span style="width: 8px; height: 8px; flex: none; border-radius: 50%; background: #FFC800"></span>الهياكل التنظيمية والسياسات والإجراءات</li>
+
+<li style="display: flex; align-items: center; gap: 10px; font-size: 16px"><span style="width: 8px; height: 8px; flex: none; border-radius: 50%; background: #FFC800"></span>التشغيل وتحسين العمليات</li>
+
+<li style="display: flex; align-items: center; gap: 10px; font-size: 16px"><span style="width: 8px; height: 8px; flex: none; border-radius: 50%; background: #FFC800"></span>إدارة المخاطر واستمرارية الأعمال</li>
+
+<li style="display: flex; align-items: center; gap: 10px; font-size: 16px"><span style="width: 8px; height: 8px; flex: none; border-radius: 50%; background: #FFC800"></span>الأداء ومؤشرات الأداء</li>
+
+</ul>
+<span style="margin-top: 8px; font-weight: 700; color: #A84F00">تفاصيل المسار ←</span>
+</a>
+
+<a class="card rv" href="service-legal.html" style="text-decoration: none; color: #FFFFFF; background: #2B4944; border-radius: 32px 32px 32px 100px; padding: 40px 34px 52px; display: flex; flex-direction: column; gap: 16px; position: relative; overflow: hidden; outline: 4px solid transparent; outline-offset: 4px">
+<div style="display: flex; justify-content: space-between; align-items: flex-start"><span style="width: 64px; height: 64px; border-radius: 20px; background: #FFC800; display: flex; align-items: center; justify-content: center"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#2B4944" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v18M7 21h10M5 7h14M5 7l-3 6a3 3 0 0 0 6 0zM19 7l-3 6a3 3 0 0 0 6 0z"></path></svg></span><span style="font-family: 'IBM Plex Sans', sans-serif; font-size: 44px; font-weight: 300; color: rgba(255,255,255,0.3)">02</span></div>
+
+<h2 style="margin: 0; font-size: 28px">الاستشارات القانونية</h2>
+<p style="margin: 0; line-height: 1.85; color: #D3E0DC">رأي قانوني واضح يساعدك على اتخاذ القرار — استشارات فقط دون ترافع أو تمثيل.</p>
+<ul style="list-style: none; margin: 4px 0 0; padding: 0; display: flex; flex-direction: column; gap: 10px">
+
+<li style="display: flex; align-items: center; gap: 10px; font-size: 16px"><span style="width: 8px; height: 8px; flex: none; border-radius: 50%; background: #FFC800"></span>الاستشارات القانونية العامة</li>
+
+<li style="display: flex; align-items: center; gap: 10px; font-size: 16px"><span style="width: 8px; height: 8px; flex: none; border-radius: 50%; background: #FFC800"></span>مراجعة وصياغة العقود والاتفاقيات</li>
+
+<li style="display: flex; align-items: center; gap: 10px; font-size: 16px"><span style="width: 8px; height: 8px; flex: none; border-radius: 50%; background: #FFC800"></span>استشارات النزاعات والمطالبات</li>
+
+<li style="display: flex; align-items: center; gap: 10px; font-size: 16px"><span style="width: 8px; height: 8px; flex: none; border-radius: 50%; background: #FFC800"></span>استشارات الأراضي والعقارات</li>
+
+<li style="display: flex; align-items: center; gap: 10px; font-size: 16px"><span style="width: 8px; height: 8px; flex: none; border-radius: 50%; background: #FFC800"></span>استشارات التركات والميراث</li>
+
+<li style="display: flex; align-items: center; gap: 10px; font-size: 16px"><span style="width: 8px; height: 8px; flex: none; border-radius: 50%; background: #FFC800"></span>استشارات الشركات والأنظمة التجارية</li>
+
+</ul>
+<span style="margin-top: 8px; font-weight: 700; color: #FFC800">تفاصيل المسار ←</span>
+</a>
+
+<a class="card rv" href="service-accounting.html" style="text-decoration: none; color: #2B4944; background: #FFFFFF; border-radius: 32px 32px 32px 100px; padding: 40px 34px 52px; display: flex; flex-direction: column; gap: 16px; position: relative; overflow: hidden; outline: 4px solid transparent; outline-offset: 4px">
+<div style="display: flex; justify-content: space-between; align-items: flex-start"><span style="width: 64px; height: 64px; border-radius: 20px; background: #2B4944; display: flex; align-items: center; justify-content: center"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#FFC800" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 2.5h16v19H4zM8 7h8M8 11h2M12 11h2M8 15h2M12 15h2M8 18.5h8"></path></svg></span><span style="font-family: 'IBM Plex Sans', sans-serif; font-size: 44px; font-weight: 300; color: #C9C0B1">03</span></div>
+
+<h2 style="margin: 0; font-size: 28px">الاستشارات المحاسبية والضريبية</h2>
+<p style="margin: 0; line-height: 1.85; color: #4A5E5A">أنظمة محاسبية واضحة وامتثال ضريبي يحمي منشأتك.</p>
+<ul style="list-style: none; margin: 4px 0 0; padding: 0; display: flex; flex-direction: column; gap: 10px">
+
+<li style="display: flex; align-items: center; gap: 10px; font-size: 16px"><span style="width: 8px; height: 8px; flex: none; border-radius: 50%; background: #FFC800"></span>الاستشارات الضريبية</li>
+
+<li style="display: flex; align-items: center; gap: 10px; font-size: 16px"><span style="width: 8px; height: 8px; flex: none; border-radius: 50%; background: #FFC800"></span>مسك الدفاتر</li>
+
+<li style="display: flex; align-items: center; gap: 10px; font-size: 16px"><span style="width: 8px; height: 8px; flex: none; border-radius: 50%; background: #FFC800"></span>بناء شجرة الحسابات</li>
+
+<li style="display: flex; align-items: center; gap: 10px; font-size: 16px"><span style="width: 8px; height: 8px; flex: none; border-radius: 50%; background: #FFC800"></span>بناء وتطوير النظام المحاسبي</li>
+
+<li style="display: flex; align-items: center; gap: 10px; font-size: 16px"><span style="width: 8px; height: 8px; flex: none; border-radius: 50%; background: #FFC800"></span>الفحص والتدقيق المالي الداخلي</li>
+
+</ul>
+<span style="margin-top: 8px; font-weight: 700; color: #A84F00">تفاصيل المسار ←</span>
+</a>
+
+</div>
+</section></div></template>
+<script type="application/json" id="armc-flow">{"r1":{"0":{"0":1,"1":2,"2":3,"3":4},"1":{"0":0,"1":2,"2":3,"3":4},"2":{"0":1,"1":0,"2":3,"3":4},"3":{"0":1,"1":2,"2":0,"3":4},"4":{"0":1,"1":2,"2":3,"3":0}}}</script>
+<script src="assets/js/armc.js" defer></script>
+</body>
+</html>
