@@ -71,6 +71,11 @@
         if (typeof fn === 'function') node.addEventListener(a.name.slice(2), fn);
         return;
       }
+      if (/^(disabled|checked|hidden|selected|readonly|required)$/.test(a.name) && m) {
+        const v = lookup(m[1], scope);
+        if (v === false || v === null || v === undefined || v === 'false' || v === '') node.removeAttribute(a.name); else node.setAttribute(a.name, '');
+        return;
+      }
       node.setAttribute(a.name, interp(a.value, scope));
     });
     processChildren(node, scope);
